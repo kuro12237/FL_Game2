@@ -37,9 +37,6 @@ void PlayerStateWalk::Update([[maybe_unused]] Player* p)
 		p->MarkStateForRemoval<PlayerStateWalk>();
 	}
 
-	if (p->IsInState<PlayerStateAim>())
-	{
-		p->MarkStateForRemoval<PlayerStateWalk>();
-	}
+
 }
 

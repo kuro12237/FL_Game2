@@ -3,9 +3,7 @@
 
 #include"PlayerJampCommand.h"
 #include"PlayerMoveCommand.h"
-#include"PlayerShootCommand.h"
 #include"playerDashMoveCommand.h"
-#include"PlayerAimCommand.h"
 
 /// <summary>
 /// プレイヤー操作仕分け

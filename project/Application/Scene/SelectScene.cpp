@@ -99,6 +99,8 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
       stageNumbers_[i]->SetNum(uint32_t(i) + 1);
       stageNumbers_[i]->Initialize();
    }
+
+
 }
 
 void SelectScene::Update(GameManager *Scene)
@@ -144,6 +146,7 @@ void SelectScene::Update(GameManager *Scene)
       }
    }
 
+   ChangeSceneAnimation::GetInstance()->ChangeStart();
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
       int32_t stageNumber = 0;
       for (size_t i = 0; i < goals_.size(); i++) {
@@ -215,12 +218,7 @@ void SelectScene::Collision()
    if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
       gameCollisionManager_->ListPushback(player_->GetPlayerCore());
    }
-   // playerの弾
-   for (size_t index = 0; index < player_->GetBullet().size(); index++) {
-      if (player_->GetBullet()[index]) {
-         gameCollisionManager_->ListPushback(player_->GetBullet()[index].get());
-      }
-   }
+ 
    // ブロック
    for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
       gameCollisionManager_->ListPushback(b.get());

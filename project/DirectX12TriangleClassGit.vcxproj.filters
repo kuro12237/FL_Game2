@@ -748,18 +748,6 @@
     <ClCompile Include="Application\GameObject\Player\PlayerCamera\PlayerCamera.cpp">
       <Filter>Project\GameObject\Character\Player\Camera</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Bullet\PlayerBulletManager.cpp">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Bullet\state\PlayerBulletStateNone.cpp">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Gun\PlayerGun.cpp">
-      <Filter>Project\GameObject\Character\Player\PlayerGun</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Hp\PlayerHp.cpp">
-      <Filter>Project\GameObject\Character\Player\PlayerHp</Filter>
-    </ClCompile>
     <ClCompile Include="Application\GameObject\Player\command\PlayerCommandHandler.cpp">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClCompile>
@@ -772,16 +760,7 @@
     <ClCompile Include="Application\GameObject\Player\command\PlayerJampCommand.cpp">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Bullet\PlayerBullet.cpp">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\Reticle\PlayerReticle.cpp">
-      <Filter>Project\GameObject\Character\Player\Reticle</Filter>
-    </ClCompile>
     <ClCompile Include="Application\GameObject\Player\command\PlayerMoveCommand.cpp">
-      <Filter>Project\GameObject\Character\Player\Command</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\command\PlayerShootCommand.cpp">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Player\state\PlayerStateDeadAnimation.cpp">
@@ -800,9 +779,6 @@
       <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Player\state\PlayerStateNone.cpp">
-      <Filter>Project\GameObject\Character\Player\State</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\state\PlayerStateRock.cpp">
       <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Player\state\PlayerStateWalk.cpp">
@@ -915,12 +891,6 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\Player\Particle\PlayerMoveParticle.cpp">
       <Filter>Project\GameObject\Character\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\command\PlayerAimCommand.cpp">
-      <Filter>Project\GameObject\Character\Player\Command</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Player\state\PlayerStateAim.cpp">
-      <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Lava\LavaParticle.cpp">
       <Filter>Project\GameObject\Lava</Filter>
@@ -1449,21 +1419,6 @@
     <ClInclude Include="Application\GameObject\Player\PlayerCamera\PlayerCamera.h">
       <Filter>Project\GameObject\Character\Player\Camera</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Bullet\state\IPlayerBulletState.h">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Bullet\PlayerBulletManager.h">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Bullet\state\PlayerBulletStateNone.h">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Gun\PlayerGun.h">
-      <Filter>Project\GameObject\Character\Player\PlayerGun</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Hp\PlayerHp.h">
-      <Filter>Project\GameObject\Character\Player\PlayerHp</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameObject\Player\command\IPlayerCommand.h">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClInclude>
@@ -1479,16 +1434,7 @@
     <ClInclude Include="Application\GameObject\Player\command\PlayerJampCommand.h">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Bullet\PlayerBullet.h">
-      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\Reticle\PlayerReticle.h">
-      <Filter>Project\GameObject\Character\Player\Reticle</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameObject\Player\command\PlayerMoveCommand.h">
-      <Filter>Project\GameObject\Character\Player\Command</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\command\PlayerShootCommand.h">
       <Filter>Project\GameObject\Character\Player\Command</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\state\PlayerStateDeadAnimation.h">
@@ -1507,9 +1453,6 @@
       <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\state\PlayerStateNone.h">
-      <Filter>Project\GameObject\Character\Player\State</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\state\PlayerStateRock.h">
       <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\state\PlayerStateWalk.h">
@@ -1643,12 +1586,6 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\Particle\PlayerMoveParticle.h">
       <Filter>Project\GameObject\Character\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\command\PlayerAimCommand.h">
-      <Filter>Project\GameObject\Character\Player\Command</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Player\state\PlayerStateAim.h">
-      <Filter>Project\GameObject\Character\Player\State</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Lava\LavaParticle.h">
       <Filter>Project\GameObject\Lava</Filter>

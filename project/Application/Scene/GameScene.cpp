@@ -18,9 +18,8 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
 
    // levelDataの読み込み
-   inputLevelDataFileName_ = "LevelData_" + to_string(selectSceneData_.stageNumber + 1) + ".json";
-   shared_ptr<LevelData> levelData =
-       move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
+   inputLevelDataFileName_ = "Stages" + to_string(selectSceneData_.stageNumber + 1) + ".json";
+   shared_ptr<LevelData> levelData = move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
 
    changeSceneAnmation_ = ChangeSceneAnimation::GetInstance();
 
@@ -30,28 +29,15 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
 
-  
    // マネージャー初期化
    player_ = make_shared<PlayerManager>();
    managerList_.push_back(player_);
-
-   enemyWalkManager_ = make_shared<EnemyWalkManager>();
-   managerList_.push_back(enemyWalkManager_);
-
-   bulletEnemyManager_ = make_shared<GunEnemyManager>();
-   managerList_.push_back(bulletEnemyManager_);
 
    blockManager_ = make_shared<BlockManager>();
    managerList_.push_back(blockManager_);
 
    breakBlockManager_ = make_shared<BreakBlockManager>();
    managerList_.push_back(breakBlockManager_);
-
-   warpManager_ = make_shared<WarpManager>();
-   managerList_.push_back(warpManager_);
-
-   stageCoinManager_ = make_shared<StageCoinManager>();
-   managerList_.push_back(stageCoinManager_);
 
    gravityManager_ = make_shared<GravityManager>();
    managerList_.push_back(gravityManager_);
@@ -73,8 +59,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    AddJsonItem<decltype(lavaIndex_)>(lavaName, lavaIndex_);
    lavaIndex_ = GetJsonItem<decltype(lavaIndex_)>(lavaName);
 
-
-
    // ライト
    light_ = make_shared<GameLight>();
    lightDataList_.push_back(light_);
@@ -87,7 +71,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    // ゲーム終了のつなぐ
    isGameEnd_ = &player_->GetPlayerCore()->GetIsGameEnd();
 
-   
    context_ = make_unique<ISceneContext>();
 
    // パーティクル
@@ -122,9 +105,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    for (weak_ptr<ObjectComponent> data : objctDataList_) {
       data.lock()->Initialize();
    }
-
-   // 各クラスの設定
-   enemyWalkManager_->SetDeadParticle(deadParticle_);
 
    player_->SetDeadParticle(playerDeadParticle_);
    player_->SetMoveParticle(playerMoveParticle_);
@@ -174,12 +154,8 @@ bool GameScene::CheckChangeScene(GameManager *Scene)
       return false;
    }
 
-   if (player_->GetHp()->GetHp() <= 0) {
-      Scene->ChangeScene(make_unique<GameOverScene>());
-      return true;
-   }
-   else {
-      nextSceneData_.stageConinsCount = stageCoinManager_->GetCoinsCount();
+   {
+      // nextSceneData_.stageConinsCount = stageCoinManager_->GetCoinsCount();
       context_->SetData(nextSceneData_);
 
       Scene->SetMoveSceneContext(move(context_));
@@ -246,50 +222,6 @@ void GameScene::Collision()
    if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
       gameCollisionManager_->ListPushback(player_->GetPlayerCore());
    }
-   for (size_t index = 0; index < player_->GetBullet().size(); index++) {
-      if (player_->GetBullet()[index]) {
-         gameCollisionManager_->ListPushback(player_->GetBullet()[index].get());
-      }
-   }
-
-   for (shared_ptr<StageCoin> &coin : stageCoinManager_->GetCoins()) {
-      if (coin) {
-         gameCollisionManager_->ListPushback(coin.get());
-      }
-   }
-
-   if (bulletEnemyManager_->GetIsStartFlag()) {
-      for (auto &enemy : bulletEnemyManager_->GetGunEnemys()) {
-         weak_ptr<GunEnemy> obj = enemy.core;
-         auto it = obj.lock();
-         if (it) {
-            gameCollisionManager_->ListPushback(it.get());
-
-            for (shared_ptr<GunEnemyBullet> &b : it->GetBullets()) {
-               if (b) {
-                  gameCollisionManager_->ListPushback(b.get());
-               }
-            }
-         }
-
-         for (auto &parts : enemy.parts) {
-            if (!parts) {
-               continue;
-            }
-            if (parts->GetIsEnd()) {
-               gameCollisionManager_->ListPushback(parts.get());
-            }
-         }
-      }
-   }
-   // 歩く敵
-   for (shared_ptr<EnemyWalk> &e : enemyWalkManager_->GetData()) {
-      weak_ptr<EnemyWalk> obj = e;
-      auto it = obj.lock();
-      if (it) {
-         gameCollisionManager_->ListPushback(it.get());
-      }
-   }
 
    // ブロック
    for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
@@ -305,11 +237,6 @@ void GameScene::Collision()
    }
    // ゴール
    gameCollisionManager_->ListPushback(goal_.get());
-
-   // ワープ
-   for (auto &warp : warpManager_->GetWarps()) {
-      gameCollisionManager_->ListPushback(warp->GetWarpGate());
-   }
 
    gameCollisionManager_->CheckAllCollisoin();
 
@@ -329,8 +256,7 @@ void GameScene::Gravitys()
    }
 
    gravityManager_->PushParticleList(deadParticle_->GetParticle());
-   gravityManager_->PushParticleList(
-       lavaManager_->GetLava(lavaIndex_).lock()->GetLavaParticle().lock()->GetParticle());
+   gravityManager_->PushParticleList(lavaManager_->GetLava(lavaIndex_).lock()->GetLavaParticle().lock()->GetParticle());
 
    gravityManager_->CheckGravity();
 }

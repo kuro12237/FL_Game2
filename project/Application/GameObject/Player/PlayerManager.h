@@ -2,15 +2,10 @@
 #include "Utility/ObjectManager/GameObjectManager.h"
 
 #include "Player.h"
-#include "Reticle/PlayerReticle.h"
 
 #include "command/PlayerCommandHandler.h"
 
-#include "Bullet/PlayerBullet.h"
-#include "Bullet/PlayerBulletManager.h"
 #include "GameObject/ObjectInterface/ManagerComponent.h"
-#include "Gun/PlayerGun.h"
-#include "Hp/PlayerHp.h"
 #include "Particle/PlayerMoveParticle.h"
 #include "PlayerCamera/PlayerCamera.h"
 #include "Utility/RandomGenerator/RandomGenerator.h"
@@ -57,11 +52,7 @@ class PlayerManager : public ManagerComponent
 #pragma region Get
 
    Player *GetPlayerCore() const { return playerCore_.get(); }
-   PlayerReticle *GetReticle() const { return reticle_.get(); }
-   PlayerGun *GetGun() const { return gun_.get(); }
    PlayerCamera *GetCamera() const { return camera_.get(); }
-   PlayerHp *GetHp() const { return hp_.get(); }
-   vector<shared_ptr<PlayerBullet>> GetBullet() const { return bullets_; }
 #pragma endregion
 
 #pragma region Set
@@ -93,15 +84,9 @@ class PlayerManager : public ManagerComponent
    shared_ptr<PlayerCommandHandler> commandHandler_ = nullptr;
 
    shared_ptr<Player> playerCore_ = nullptr;
-   shared_ptr<PlayerReticle> reticle_ = nullptr;
-   shared_ptr<PlayerGun> gun_ = nullptr;
    shared_ptr<PlayerCamera> camera_ = nullptr;
-   shared_ptr<PlayerHp> hp_ = nullptr;
 
    int32_t kPlayerHp_ = 2;
-
-   unique_ptr<PlayerBulletManager> bulletManager_ = nullptr;
-   vector<shared_ptr<PlayerBullet>> bullets_{};
    queue<uint32_t> deadBulletIndex_;
 
    uint32_t bulletModelHandle_ = 0;

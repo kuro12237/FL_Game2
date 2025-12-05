@@ -131,12 +131,8 @@ class GameScene : public IScene, public JsonComponent
 
    // manager
    shared_ptr<PlayerManager> player_ = nullptr;
-   shared_ptr<EnemyWalkManager> enemyWalkManager_ = nullptr;
-   shared_ptr<GunEnemyManager> bulletEnemyManager_ = nullptr;
-   shared_ptr<WarpManager> warpManager_ = nullptr;
    shared_ptr<BlockManager> blockManager_ = nullptr;
    shared_ptr<BreakBlockManager> breakBlockManager_ = nullptr;
-   shared_ptr<StageCoinManager> stageCoinManager_ = nullptr;
    shared_ptr<LavaManager> lavaManager_ = nullptr;
 
    shared_ptr<GravityManager> gravityManager_ = nullptr;

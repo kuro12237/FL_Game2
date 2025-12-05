@@ -1,0 +1,304 @@
+{
+    "name": "scene",
+    "objects": [
+        {
+            "type": "CAMERA",
+            "name": "Camera",
+            "transform": {
+                "translate": [
+                    7.358891487121582,
+                    -6.925790786743164,
+                    4.958309173583984
+                ],
+                "rotate": [
+                    63.559295654296875,
+                    2.2983238068263745e-07,
+                    46.69194412231445
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "PlayerCore",
+            "file_name": "PlayerCore",
+            "Directory_name": "Resources/Model/Player/PlayerCore",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    4.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "StartHouse",
+            "file_name": "StartHouse",
+            "Directory_name": "Resources/Model/StartHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    0.0,
+                    2.0,
+                    3.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    90.00000762939453
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.010",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    9.0,
+                    0.0,
+                    1.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    2.8787088273037054e-13,
+                    179.99998474121094
+                ],
+                "scale": [
+                    20.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.033",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    -10.0,
+                    0.0,
+                    15.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    1.0,
+                    15.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.001",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    9.0,
+                    0.0,
+                    29.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    2.8787088273037054e-13,
+                    179.99998474121094
+                ],
+                "scale": [
+                    20.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.002",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    -4.0,
+                    0.0,
+                    13.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    7.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.003",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    6.0,
+                    0.0,
+                    11.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    4.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.004",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    11.0,
+                    0.0,
+                    9.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    4.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.006",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    16.0,
+                    0.0,
+                    7.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    4.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.005",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Model/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    28.0,
+                    0.0,
+                    15.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    179.99998474121094
+                ],
+                "scale": [
+                    1.0,
+                    15.0,
+                    1.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        }
+    ]
+}

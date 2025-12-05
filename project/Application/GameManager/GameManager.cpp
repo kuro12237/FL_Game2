@@ -8,8 +8,13 @@ using namespace Engine::Manager;
 GameManager::GameManager()
 {
    Cleyera::Initialize();
+
    scene_ = make_unique<TitleScene>();
    scene_->Initialize(this);
+
+   scene_ = make_unique<SelectScene>();
+   scene_->Initialize(this);
+ 
 }
 
 GameManager::~GameManager()

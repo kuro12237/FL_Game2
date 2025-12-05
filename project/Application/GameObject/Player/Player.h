@@ -13,7 +13,6 @@
 
 #include"state/IPlayerState.h"
 #include"state/PlayerStateNone.h"
-#include"state/PlayerStateRock.h"
 #include"state/PlayerStateGoalAnimation.h"
 #include"state/PlayerStateWarpMove.h"
 #include"state/PlayerStateDeadAnimation.h"
@@ -22,13 +21,10 @@
 #include"state/PlayerStateJamp.h"
 #include"state/PlayerStateFall.h"
 #include"state/PlayerStateDash.h"
-#include"state/PlayerStateAim.h"
 
 #include"Utility/ObjectManager/GameObjectManager.h"
 
 #include"Particle/PlayerDeadParticle.h"
-#include"Hp/PlayerHp.h"
-
 /// <summary>
 /// 操作するCoreクラス
 /// </summary>
@@ -174,8 +170,6 @@ public:
 	void SetIsUseGravityFlag(bool f) { isUseGravityFlag_ = f; }
 	void SetIsGameEnd(bool f) { isGameEnd_ = f; }
 	void SetIsDeadComplite(bool f) { isDeadAnimationComplite_ = f; }
-	void SetPlayerHP(const shared_ptr<PlayerHp> &hp) { hp_ = hp; }
-
 	void SetReduceHpFunc(const std::function<void()>&f) { reduceHpFunc_ = f; }
 	void SetDamageUpdateFunc(const std::function<void()>&f) { damegeUpdateFunc_ = f; }
 	void SetDamageUpdateEndFunc(const std::function<void()>&f) { damegeUpdateEndFunc_ = f; }
@@ -217,6 +211,5 @@ private:
 
 	string warpFilePath_ = "";
 
-	weak_ptr<PlayerHp> hp_;
 	string hitGoalName_ = "";
 };
