@@ -1,0 +1,131 @@
+{
+    "name": "Rail",
+    "positions": [
+        {
+            "number": 0,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    -73.0,
+                    0.0,
+                    58.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    0.5,
+                    0.5,
+                    0.5
+                ]
+            }
+        },
+        {
+            "number": 1,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    0.0,
+                    13.859624862670898,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "number": 2,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    0.0,
+                    10.883787155151367,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "number": 3,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    0.0,
+                    12.46451187133789,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "number": 4,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    32.52259826660156,
+                    -0.5700454711914062,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "number": 5,
+            "RailGroup": "warpRoot_2",
+            "transform": {
+                "translate": [
+                    1.4774017333984375,
+                    27.36212158203125,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

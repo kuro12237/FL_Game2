@@ -1,0 +1,5604 @@
+{
+    "name": "scene",
+    "objects": [
+        {
+            "type": "MESH",
+            "name": "Bridge",
+            "file_name": "Bridge",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "paramFileNames": {
+                "File 0": ""
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    8.0,
+                    8.0,
+                    8.0
+                ]
+            },
+            "children": [
+                {
+                    "type": "MESH",
+                    "name": "Fence",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.001",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.002",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.003",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.004",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.005",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.006",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.007",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.008",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.009",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.010",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.011",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.012",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.013",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.014",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.015",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.016",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.017",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.018",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.019",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.020",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.021",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.022",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.023",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.024",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.025",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.026",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.027",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.028",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.029",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.030",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.031",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.032",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.033",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.034",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.035",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.036",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.037",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.038",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.039",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.040",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.041",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.042",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.043",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.044",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.045",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.046",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.047",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.048",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.049",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.050",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.051",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.052",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.053",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.054",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.055",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.056",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.5625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.057",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.6875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.058",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.9375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.059",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.8125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.060",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.3125,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.061",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.4375,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.062",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.1875,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.063",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.0625,
+                            0.2874999940395355
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "MESH",
+            "name": "Bridge.001",
+            "file_name": "Bridge",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    -11.362702369689941
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    8.0,
+                    8.0,
+                    8.0
+                ]
+            },
+            "children": [
+                {
+                    "type": "MESH",
+                    "name": "Fence.064",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.065",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.066",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.067",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.068",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.069",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.070",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.071",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.072",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.073",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.074",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.075",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.076",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.077",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.078",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.079",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.080",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.081",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.082",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.083",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.084",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.085",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.086",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.087",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.088",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.089",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.090",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.091",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.092",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.093",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.094",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.095",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.096",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.097",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.098",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.099",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.100",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.101",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.102",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.103",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.104",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.105",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.106",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.107",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.108",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.109",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.110",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.111",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.112",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.113",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.114",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.115",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.116",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.117",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.118",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.119",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.120",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.5625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.121",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.6875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.122",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.9375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.123",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.8125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.124",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.3125,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.125",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.4375,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.126",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.1875,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.127",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.0625,
+                            0.2875000238418579
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "MESH",
+            "name": "Lava",
+            "file_name": "LavaPlane",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.0,
+                    1.1062816381454468
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    64.0,
+                    64.0,
+                    54.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -8.083243370056152,
+                    18.08740997314453,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.001",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -17.322528839111328,
+                    0.2142009735107422,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.002",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    14.236527442932129,
+                    8.257819175720215,
+                    -0.7694801092147827
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.003",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    6.807492256164551,
+                    18.803115844726562,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "ArchBridge",
+            "file_name": "Bridge",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "paramFileNames": {
+                "File 0": ""
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    17.963220596313477,
+                    -43.597496032714844
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    8.0,
+                    8.0,
+                    8.0
+                ]
+            },
+            "children": [
+                {
+                    "type": "MESH",
+                    "name": "Fence.128",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.129",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.130",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.131",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.132",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.133",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.134",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.135",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            0.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.136",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.137",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.138",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.937499761581421,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.139",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.812499761581421,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.140",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.141",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.142",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.143",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            1.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.144",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.145",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.146",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.147",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.148",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.149",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.150",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.151",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -0.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.152",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.153",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.154",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.155",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.156",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.157",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.158",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.159",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            0.22499999403953552,
+                            -1.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.160",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.161",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.162",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.163",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.164",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.165",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.166",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.167",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -1.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.168",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.169",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.170",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.171",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.172",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.173",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.174",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.175",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            -0.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.176",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.177",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.178",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.179",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.180",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.812499761581421,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.181",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.937499761581421,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.182",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.183",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            1.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.184",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.5625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.185",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.6875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.186",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.9375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.187",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.8125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.188",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.3125,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.189",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.4375,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.190",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.1875,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                },
+                {
+                    "type": "MESH",
+                    "name": "Fence.191",
+                    "file_name": "Fence",
+                    "ModelFileType": "obj",
+                    "DrawType": "Instancing",
+                    "InstancingObjName": "Fence",
+                    "transform": {
+                        "translate": [
+                            -0.22499999403953552,
+                            0.0625,
+                            0.28749990463256836
+                        ],
+                        "rotate": [
+                            0.0,
+                            -0.0,
+                            90.00000762939453
+                        ],
+                        "scale": [
+                            0.125,
+                            0.125,
+                            0.125
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.004",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -19.96384620666504,
+                    23.75058364868164,
+                    -2.152121067047119
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.005",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    6.555927276611328,
+                    8.300079345703125,
+                    -3.5127673149108887
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.006",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -10.019801139831543,
+                    0.5958423614501953,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.007",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -12.142234802246094,
+                    12.75678825378418,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.008",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    14.484299659729004,
+                    -21.06598472595215,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.009",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    12.361865997314453,
+                    -33.2269287109375,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.010",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -26.59400177001953,
+                    -25.522693634033203,
+                    -3.5127673149108887
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.011",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    22.305912017822266,
+                    -10.072189331054688,
+                    -2.152121067047119
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.012",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -4.465428352355957,
+                    -15.019657135009766,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.013",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -11.894463539123535,
+                    -25.564952850341797,
+                    -0.7694801092147827
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.014",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    19.664592742919922,
+                    -33.60857391357422,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.015",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    10.425308227539062,
+                    -15.735363006591797,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.016",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    13.010008811950684,
+                    56.92182159423828,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.017",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    12.054850578308105,
+                    36.824462890625,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.018",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -11.231627464294434,
+                    59.59316635131836,
+                    -0.7694801092147827
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.019",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -15.428938865661621,
+                    41.106292724609375,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.020",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    26.12946319580078,
+                    55.87290954589844,
+                    -2.152121067047119
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.021",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -23.933311462402344,
+                    66.99217987060547,
+                    -3.5127673149108887
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.022",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    5.925293922424316,
+                    40.81244659423828,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.023",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    13.853269577026367,
+                    50.275028228759766,
+                    -1.081925392150879
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Tower.024",
+            "file_name": "Tower",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Tower",
+            "transform": {
+                "translate": [
+                    -17.480443954467773,
+                    52.51009750366211,
+                    -2.152121067047119
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "CAMERA",
+            "name": "BackCamera",
+            "transform": {
+                "translate": [
+                    0.0,
+                    -26.74262809753418,
+                    3.333294630050659
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "CAMERA",
+            "name": "RightCamera",
+            "transform": {
+                "translate": [
+                    55.46965408325195,
+                    -58.8429069519043,
+                    40.82935333251953
+                ],
+                "rotate": [
+                    70.56507110595703,
+                    0.7581616640090942,
+                    16.02165412902832
+                ],
+                "scale": [
+                    0.9999999403953552,
+                    1.0,
+                    0.9999999403953552
+                ]
+            }
+        },
+        {
+            "type": "CAMERA",
+            "name": "TitleCamera",
+            "paramFileNames": {
+                "File 0": "TitleCameraParam"
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    0.5,
+                    3.6836600303649902
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

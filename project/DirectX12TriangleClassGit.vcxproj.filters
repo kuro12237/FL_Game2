@@ -1,0 +1,1833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="CLEYERA">
+      <UniqueIdentifier>{9ab55b8a-64fe-4d67-8d71-e5b9dee912ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\base">
+      <UniqueIdentifier>{204edb48-7755-42a7-a61d-7d905828b260}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\base\Win">
+      <UniqueIdentifier>{43c8fee7-2ab5-42b8-a709-4bed7f6e47b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\base\DX">
+      <UniqueIdentifier>{017f8792-fd1a-4636-a1e8-9cdf1151f7e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility">
+      <UniqueIdentifier>{06f07548-f2dd-4bf5-af1c-efff3fe1d603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\Pch">
+      <UniqueIdentifier>{65d73a79-29d0-48a6-a57a-a34b5eb0662c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\config">
+      <UniqueIdentifier>{8b599666-8065-4bcf-aaf9-c3c2837290c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\LogManager">
+      <UniqueIdentifier>{b67d1e82-2147-439b-85b5-dca6f7ac9655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics">
+      <UniqueIdentifier>{eddfe59e-92dc-4d1f-9c69-0b1ecce6088a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\GraphicsPipelineManager">
+      <UniqueIdentifier>{a485ec73-e80c-4af8-82bf-ff922e9a87eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\CompileShaders">
+      <UniqueIdentifier>{cc587c9c-3c0b-42de-af43-dd42597eb5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{fb13fadd-3e00-414f-b0b7-9654c61d327d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Model">
+      <UniqueIdentifier>{34952989-3102-48d1-a740-9c6ad56ab3ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Transform">
+      <UniqueIdentifier>{3a8bfbae-0acc-40fc-ba35-5e6fa5bb1c93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\math">
+      <UniqueIdentifier>{df1d8822-d2f8-42f4-b43e-f0b3d1ed1520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\math\Matrix">
+      <UniqueIdentifier>{692e5c6d-0514-47b2-8bce-9c008250ca03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\TextureManager">
+      <UniqueIdentifier>{597ae9e2-f16c-45fb-9f5d-7940671c8212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\ImGuiManager">
+      <UniqueIdentifier>{1310bbed-7a84-468e-8f4f-9dac43a57489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\DebugTools">
+      <UniqueIdentifier>{0e048dfb-f3ee-43a9-9ed9-7e69565dfa83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\DebugTools\DebugGrid">
+      <UniqueIdentifier>{910d38c5-eed0-437d-b10d-55ce3a3c775d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Model\ObjState">
+      <UniqueIdentifier>{7ad064f9-c521-4fd5-a423-17a94a8c7364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Sprite">
+      <UniqueIdentifier>{8ca2e2a2-0644-42de-8d42-6af1da68f612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project">
+      <UniqueIdentifier>{387c7c14-6a86-4f80-8065-ebfe3a2a4364}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Scene">
+      <UniqueIdentifier>{0c802be9-ee57-4ecc-a25c-5d726d7ef52b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Input">
+      <UniqueIdentifier>{0594f166-5a6b-43b3-8c36-5010288e57ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Audio">
+      <UniqueIdentifier>{4ee1b44c-d002-488d-8839-c1fc665d795c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\DebugTools\DebugCamera">
+      <UniqueIdentifier>{37a1bfe0-2b42-4cbc-b26f-65f851b2677c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\FileLoader">
+      <UniqueIdentifier>{13b52452-38fe-4472-b33d-1e13f29e3436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Particle">
+      <UniqueIdentifier>{efaa3838-3aa8-48b6-8460-43d30a48c24c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\math\Quaternion">
+      <UniqueIdentifier>{d1cf5c41-681a-4ff6-92df-656d7304e1f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\math\Vector">
+      <UniqueIdentifier>{3cb29394-5a40-4ddb-a173-7994b23f6ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Light">
+      <UniqueIdentifier>{fa6556f0-e893-424a-ac19-2af4803be191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\MulitiPass">
+      <UniqueIdentifier>{a2ca512a-1a6d-4cb5-adcf-d78c00b802ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\CollisionManager">
+      <UniqueIdentifier>{fdcd6478-86f6-4622-a9fa-5a063fc9b748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Lighting">
+      <UniqueIdentifier>{fee1b180-4afe-4841-be51-eaaa789a7b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Lighting\testShader">
+      <UniqueIdentifier>{7fb5b88b-e7ea-44db-b98f-9283481ec238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\Descripters">
+      <UniqueIdentifier>{97bd1649-5ec5-41e7-9771-154261bb6980}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\PostEffect">
+      <UniqueIdentifier>{b34fba0f-9839-4f13-80cc-20f3ac55bd98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Animation">
+      <UniqueIdentifier>{369c9399-2d61-48c1-ac34-ea3c22c09445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject">
+      <UniqueIdentifier>{905ceaaa-5921-4a26-80c4-d2ea01e4f6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Utility">
+      <UniqueIdentifier>{2df31ff6-7e31-46dd-b85b-0a148da18c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Sun">
+      <UniqueIdentifier>{ff6c3ada-0d10-4bc1-a23f-436509fd401c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Utility\GameCollider">
+      <UniqueIdentifier>{4effafe8-ec4e-4616-acdc-dca0fe45207a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Utility\Deltatimer">
+      <UniqueIdentifier>{f105f24d-7bbc-444d-9549-68c082336067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\block">
+      <UniqueIdentifier>{d7b2e6d2-9fce-44fd-a59d-0043a0ada381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\RandomGenetor">
+      <UniqueIdentifier>{00e9cb2a-42d6-4773-b3ab-ac0e1da2e694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\BufferResource">
+      <UniqueIdentifier>{8ec2c8d0-3091-448c-b950-a31b124c497c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\Color">
+      <UniqueIdentifier>{1382ba80-a386-451e-b1e6-3d539446b826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Model\instancing">
+      <UniqueIdentifier>{ba0d744a-1885-4168-a500-5cee93745c18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\CallPipline">
+      <UniqueIdentifier>{4a26a8e6-c9ff-4174-98b3-2fabc4a9fc22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\CallPipline\commands">
+      <UniqueIdentifier>{e04d6b35-6333-42dc-ad7b-3eab8c0675e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Graphics\CallPipline\commands\3d">
+      <UniqueIdentifier>{701216fb-9d1f-454a-8081-93aa7649411a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\DebugTools\DebugSkeltonDraw">
+      <UniqueIdentifier>{1907b5a0-cd77-42dc-acc3-3665dde9d34c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Model\Primitive">
+      <UniqueIdentifier>{7d583def-2b9f-4a75-9461-34a3e4c8bd37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\primitive">
+      <UniqueIdentifier>{e5533b57-22cb-4593-be54-d40c716d1bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\SceneFileLoader">
+      <UniqueIdentifier>{0bbb4abe-9208-48d1-85e6-e40e30f08f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\LevelData">
+      <UniqueIdentifier>{9547930a-9d27-4a3d-8fdc-098b93a6998e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Collision">
+      <UniqueIdentifier>{2fdb30de-9bcc-4ca6-ba12-e19d91d182b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ChangeSceneAnimation">
+      <UniqueIdentifier>{e58a1261-eef1-4bd4-ac59-88a05e56f9ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Particles">
+      <UniqueIdentifier>{b195687e-5b25-4f18-9fce-3144aae3ef6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Camera">
+      <UniqueIdentifier>{0b63f958-630e-49bc-8cca-9b926e7e4624}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ObjectData">
+      <UniqueIdentifier>{e0a83e22-ab35-4177-8c2a-3eabaa0b7818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\UI">
+      <UniqueIdentifier>{71fb1f74-daa1-4d90-9f4f-fc9d55568b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Goal">
+      <UniqueIdentifier>{35eab1b0-fb3c-44a3-9306-34be1f89c371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Gravity">
+      <UniqueIdentifier>{09bdfd97-f494-403b-a503-df498952c48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Particle">
+      <UniqueIdentifier>{a2fb1c65-459e-4f3c-ae4f-9861ed27fb72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\Noise">
+      <UniqueIdentifier>{7f8eae1a-f474-4ac6-b833-04e77bdab4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\GlobalVariables">
+      <UniqueIdentifier>{7c330eb0-0845-45a2-af73-6bb823a9a659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\RunTimeCounter">
+      <UniqueIdentifier>{cda044af-3b64-472d-bf1a-8bbfb89c1c6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLEYERA\Utility\SkyBox">
+      <UniqueIdentifier>{0afbe2cf-b213-4c1b-83fc-624167aa276c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Arch">
+      <UniqueIdentifier>{c89ddf49-61a3-4698-9712-ca167312ad62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Bridge">
+      <UniqueIdentifier>{ad5fa2c8-ef99-4727-90e4-811f5cf0614a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Tower">
+      <UniqueIdentifier>{c1947989-5c52-42bb-997c-0d3d3c0d84b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ObjectInterface">
+      <UniqueIdentifier>{7f4dc075-072e-4d1c-9898-b67704f364ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Lava">
+      <UniqueIdentifier>{9f3d1695-2d03-48fe-b657-38bb363ce143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StartAnimation">
+      <UniqueIdentifier>{2eeca8a2-4499-4358-81ae-fdad95ac3284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Warp">
+      <UniqueIdentifier>{ad6edd8e-1d04-4c45-aac9-6313b2b23d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Title">
+      <UniqueIdentifier>{bad870cf-3c48-44d7-99fe-87f627747646}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Interface">
+      <UniqueIdentifier>{544ce00a-d535-4e1b-8cf8-47961097d825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StartAnimation\StartCount">
+      <UniqueIdentifier>{eded2341-c2b3-489f-8191-df30e3076a18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StartAnimation\StartCamera">
+      <UniqueIdentifier>{a09cd3bb-5a24-4aa0-a505-50358ab7b08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\EndAnimation">
+      <UniqueIdentifier>{c954124d-8a9a-4f43-bebc-f2ba6b99d38f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StartAnimation\Interface">
+      <UniqueIdentifier>{6f4d554a-0e0b-4b0c-8819-71a44fe34a02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StageManager">
+      <UniqueIdentifier>{a3ed7b8e-6419-405a-9763-885fc8c55e08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character">
+      <UniqueIdentifier>{694f639d-3f1c-490d-a5e0-d644f7e6f069}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\EnemyWalk">
+      <UniqueIdentifier>{b6fe2e92-0ed4-4ae0-acf5-169be0b91690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player">
+      <UniqueIdentifier>{a80660f2-3fea-41f8-92fc-55442960f271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerAudioHandler">
+      <UniqueIdentifier>{979548b9-f698-44f9-a4ef-dea93fa21bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerGun">
+      <UniqueIdentifier>{6bf36003-277e-41e2-8905-6705815e79b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerGun\state">
+      <UniqueIdentifier>{20dbadd9-1c05-4041-aafc-e7d1a82cbce4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\Camera">
+      <UniqueIdentifier>{e75e4e93-f90e-4de9-80a8-fe5470a255bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerInputHandler">
+      <UniqueIdentifier>{28c6cabe-2e20-4451-9927-e3ce79af1948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerInputHandler\command">
+      <UniqueIdentifier>{5d8cf1a6-9971-40b7-85cd-247e5fdf6a49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\Reticle">
+      <UniqueIdentifier>{67cd6af7-db50-454e-aa00-b27b15b2f613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\PlayerHp">
+      <UniqueIdentifier>{0638e986-b10d-48ff-adc6-d75df96db655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\Bullet">
+      <UniqueIdentifier>{ae489afb-ca94-4359-9413-5a91e7f172a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\Command">
+      <UniqueIdentifier>{5e490108-f234-4de0-8602-473cff6ee0ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\Particle">
+      <UniqueIdentifier>{43351ac3-f881-4970-a7fb-7bd2c5632e7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\Player\State">
+      <UniqueIdentifier>{686d8fec-747a-4246-9bea-4fc2084e4711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ClearCamera">
+      <UniqueIdentifier>{1e488989-52e0-4716-bf3f-8c098defb357}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ClearCharacter">
+      <UniqueIdentifier>{fc83e337-3e01-4dfa-b6b9-4dc4c752a565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\ClearCoin">
+      <UniqueIdentifier>{b007310c-5d33-4523-ba91-93c2c3fd25c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\StageCoin">
+      <UniqueIdentifier>{d7670724-31df-4535-912c-4bdab68f1fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Character\GunEnemy">
+      <UniqueIdentifier>{733770d1-4f3e-4d4e-b70d-f786db579b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\BreakBlock">
+      <UniqueIdentifier>{0662c8cb-8dfe-4d80-b044-23890165e5c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Scene\GameSceneState">
+      <UniqueIdentifier>{202d6f36-d2d1-4ffa-9edd-ff4835357478}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CLEYERA\Config\.editorconfig">
+      <Filter>CLEYERA\config</Filter>
+    </None>
+    <None Include="Resources\Shader\SpriteObject3d.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\Sprite2d\SpriteObject2d.PS.hlsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\Sprite2d\SpriteObject2d.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\LightingObject3d.hlsli">
+      <Filter>Shader\Lighting</Filter>
+    </None>
+    <None Include="Resources\Shader\PostEffect\PostEffect.hlsli">
+      <Filter>Shader\PostEffect</Filter>
+    </None>
+    <None Include="Resources\Shader\PostEffect\Shadow.hlsli">
+      <Filter>Shader\PostEffect</Filter>
+    </None>
+    <None Include="Resources\Shader\primitives.hlsli">
+      <Filter>Shader\primitive</Filter>
+    </None>
+    <None Include="Resources\Shader\Particle\MatrixFanc.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\Particle\Particle.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\PerlinNoise\PerlineNoise.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\Phong\PhongObject3d.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\Random\RandomGenerator.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\SkyBox.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Resources\Shader\PBR\PBR.hlsli">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include=".clang-format" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CLEYERA\Cleyera.cpp">
+      <Filter>CLEYERA</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Base\Win\WinApp.cpp">
+      <Filter>CLEYERA\base\Win</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\base\DX\DirectXCommon.cpp">
+      <Filter>CLEYERA\base\DX</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\LogManager\LogManager.cpp">
+      <Filter>CLEYERA\Utility\LogManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\GraphicsPipelineManager.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\ShaderManager\ShaderManager.cpp">
+      <Filter>CLEYERA\Graphics\CompileShaders</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\Model.cpp">
+      <Filter>CLEYERA\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\math\Matrix\MatrixTransform.cpp">
+      <Filter>CLEYERA\math\Matrix</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Transform\CameraData.cpp">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\TextureManager\TextureManager.cpp">
+      <Filter>CLEYERA\Graphics\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ImGuiManager\ImGuiManager.cpp">
+      <Filter>CLEYERA\Utility\ImGuiManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\State\ModelObjState.cpp">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Sprite\Sprite.cpp">
+      <Filter>CLEYERA\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Input\Input.cpp">
+      <Filter>CLEYERA\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\FileLoader\FileLoader.cpp">
+      <Filter>CLEYERA\Utility\FileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\TextureManager\TexDataResource.cpp">
+      <Filter>CLEYERA\Graphics\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\math\Quaternion\QuaternionTransform.cpp">
+      <Filter>CLEYERA\math\Quaternion</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\ModelManager.cpp">
+      <Filter>CLEYERA\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Transform\WorldTransform.cpp">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Light\Light.cpp">
+      <Filter>CLEYERA\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Light\LightingManager.cpp">
+      <Filter>CLEYERA\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\Game3dObject.cpp">
+      <Filter>CLEYERA\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\math\Vector\VectorTransform.cpp">
+      <Filter>CLEYERA\math\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Audio\AudioDataResource.cpp">
+      <Filter>CLEYERA\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Audio\AudioManager.cpp">
+      <Filter>CLEYERA\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\PostEffect\PostEffect.cpp">
+      <Filter>CLEYERA\MulitiPass</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\DescripterManager\DescriptorManager.cpp">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\DescripterManager\RTVDescripterManager.cpp">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\DescripterManager\DSVDescriptorManager.cpp">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Light\DirectionLIght.cpp">
+      <Filter>CLEYERA\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Animation\AnimationManager.cpp">
+      <Filter>CLEYERA\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\CreateGraphicsPiplineFanc.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\DebugTool\DebugCamera\DebugCamera.cpp">
+      <Filter>CLEYERA\DebugTools\DebugCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\DeltaTimer\DeltaTimer.cpp">
+      <Filter>Project\Utility\Deltatimer</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\ModelCreatePipline\ModelCreatePipline.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\GlobalVariables\GlobalVariables.cpp">
+      <Filter>CLEYERA\Utility\GlobalVariables</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\RandomGenerator\RandomGenerator.cpp">
+      <Filter>CLEYERA\Utility\RandomGenetor</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\CreateResource\CreateResource.cpp">
+      <Filter>CLEYERA\Graphics\BufferResource</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ColorConverter\ColorConverter.cpp">
+      <Filter>CLEYERA\Utility\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\Game3dInstancingObject\GameInstancing3dObject.cpp">
+      <Filter>CLEYERA\Model\instancing</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\State\ModelSkinningState.cpp">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Default3dPiplineCommand.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineCommand.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Phong3dSkinningPipline.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\IPipelineCommand.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\DebugTool\DebugSkeleton\DebugSkeleton.cpp">
+      <Filter>CLEYERA\DebugTools\DebugSkeltonDraw</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\primitive\LineModel.cpp">
+      <Filter>CLEYERA\Model\Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Application\GameObject\Block\Block.cpp">
+      <Filter>Project\GameObject\block</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Block\BlockManager.cpp">
+      <Filter>Project\GameObject\block</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameCollider\BoxCollisionManager.cpp">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\ChangeSceneAnimation\ChangeSceneAnimation.cpp">
+      <Filter>Project\GameObject\ChangeSceneAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Particles\CharacterDeadParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Particles\CharacterMoveParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.cpp">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameManager\GameManager.cpp">
+      <Filter>Project</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\CameraManager\CameraManager.cpp">
+      <Filter>CLEYERA\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ObjectManager\Game3dInstancingObjectData.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ObjectManager\Game3dObjectData.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ObjectManager\GameCameraData.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameScene.cpp">
+      <Filter>Project\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\GameSceneUI\GameSceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Goal\Goal.cpp">
+      <Filter>Project\GameObject\Goal</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Goal\Particle\GoalParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Model\Game3dInstancingObject\IGameInstancing3dObject.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ObjectManager\IGameObjectData.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ObjectInterface\ObjectComponent.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GravityManager\GravityManager.cpp">
+      <Filter>Project\GameObject\Gravity</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameCollider\Collider.cpp">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\Noise\NoiseTexture.cpp">
+      <Filter>CLEYERA\Utility\Noise</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Player.cpp">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\PlayerManager.cpp">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\ObjectManager\GameObjectManager.cpp">
+      <Filter>Project\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\GpuParticlePipline\CreateGpuParticlePipline.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Particle\GpuParticle.cpp">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Sprite\ISpriteBuf.cpp">
+      <Filter>CLEYERA\Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Particle\Emitter\ParticleEmitter.cpp">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\Phong_CreatePipline\Phong_CreatePipline.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Phong3dDissolvePiplineCommand.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\PipelineHandler.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\RuntimeCounter\RunTimeCounter.cpp">
+      <Filter>CLEYERA\Utility\RunTimeCounter</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.cpp">
+      <Filter>Project\SceneFileLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\SelectScene.cpp">
+      <Filter>Project\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Utility\SkyBox\SkyBox.cpp">
+      <Filter>CLEYERA\Utility\SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Sprite3dAddNoneWritePiplineCommand.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\PipelineManager\Sprite_2dPipline\Sprite_2d_CreatePipline.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCount\StartCount.cpp">
+      <Filter>Project\GameObject\StartAnimation\StartCount</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Particle\Emitter\StructGpuParticleEmitter.cpp">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\TitleScene.cpp">
+      <Filter>Project\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Arch\Arch.cpp">
+      <Filter>Project\GameObject\Arch</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Bridge\Bridge.cpp">
+      <Filter>Project\GameObject\Bridge</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Utility\convert\convert.cpp">
+      <Filter>Project\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ObjectInterface\ISpriteData.cpp">
+      <Filter>Project\GameObject\ObjectInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Lava\Lava.cpp">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Warp\Warp.cpp">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Warp\WarpGate\WarpGate.cpp">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Warp\WarpRuate\WarpRuate.cpp">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameFileLoader\RailLoader\RailLoader.cpp">
+      <Filter>Project\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\ChangeSceneAnimation\RodingIcon2d\RodingIcon.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Utility\SplineMotion\SplineMotion.cpp">
+      <Filter>Project\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartAnimation.cpp">
+      <Filter>Project\GameObject\StartAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\ChangeSceneAnimation\BackTitle2d\TitleBack2d.cpp">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\TitleCamera\TitleCamera.cpp">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\TitleLight\TitleLight.cpp">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\TitleName\TitleName.cpp">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\ChangeSceneAnimation\TitleName2d\TitleName2d.cpp">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\TowerManager\Tower.cpp">
+      <Filter>Project\GameObject\Tower</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\TowerManager\TowerManager.cpp">
+      <Filter>Project\GameObject\Tower</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameOverUI\UI\GameOverUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameOverUI\GameOverUIManager.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\BaseSceneBottonUI\BaseBottonUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneJoyStick.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneTitleText.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ClearSceneUI\ClearSceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsControl\ClearSceneUIControl.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameOverUI\UIActiveParticle\GameOverActiveUIParticle.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameOverText\GameOverText.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonA.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonRT.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonsAction.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneJoyStick.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameClearScene.cpp">
+      <Filter>Project\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ISceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\PlayerCamera\PlayerCamera.cpp">
+      <Filter>Project\GameObject\Character\Player\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Bullet\PlayerBulletManager.cpp">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Bullet\state\PlayerBulletStateNone.cpp">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Gun\PlayerGun.cpp">
+      <Filter>Project\GameObject\Character\Player\PlayerGun</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Hp\PlayerHp.cpp">
+      <Filter>Project\GameObject\Character\Player\PlayerHp</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\PlayerCommandHandler.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\playerDashMoveCommand.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Particle\PlayerDeadParticle.cpp">
+      <Filter>Project\GameObject\Character\Player\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\PlayerJampCommand.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Bullet\PlayerBullet.cpp">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Reticle\PlayerReticle.cpp">
+      <Filter>Project\GameObject\Character\Player\Reticle</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\PlayerMoveCommand.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\PlayerShootCommand.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateDeadAnimation.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateFall.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateGoalAnimation.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateInvincible.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateJamp.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateNone.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateRock.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateWalk.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateWarpMove.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCameraMotion\StartCameraMotion.cpp">
+      <Filter>Project\GameObject\StartAnimation\StartCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\GameOverAnimation\EndAnimation.cpp">
+      <Filter>Project\GameObject\EndAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Utility\LerpMotion\LerpMotion.cpp">
+      <Filter>Project\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\state\StartAnimationStateCamera.cpp">
+      <Filter>Project\GameObject\StartAnimation</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GameSceneAnimation\IGameSceneAnimation.cpp">
+      <Filter>Project\GameObject\StartAnimation\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\TitleSceneUI\TitleSceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Warp\WarpManager.cpp">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\StageManager\StageManager.cpp">
+      <Filter>Project\GameObject\StageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineDepthNoneWriteCommand.cpp">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyManager.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCamera\ClearCamera.cpp">
+      <Filter>Project\GameObject\ClearCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCharacter\ClearCharacter.cpp">
+      <Filter>Project\GameObject\ClearCharacter</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCoinManager\ClearCoin.cpp">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCoinManager\ClearCoinManager.cpp">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCoinManager\particle\ClearCoinSplashParticle.cpp">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ClearCoinManager\state\ClearCoinStateActive.cpp">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\IScene.cpp">
+      <Filter>Project\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\DissolvePipline\DissolvePiplineRasterFrontBackWriteCommand.cpp">
+      <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\StageCoin\StageCoin.cpp">
+      <Filter>Project\GameObject\StageCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\StageCoin\StageCoinManager.cpp">
+      <Filter>Project\GameObject\StageCoin</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemy.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyBullet\GunEnemyBullet.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateMove.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateShoot.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateDash.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\BreakBlock\BreakBlock.cpp">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\BreakBlock\BreakBlockHp.cpp">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\BreakBlock\BreakBlockManager.cpp">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyPart.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateDeadAnimation.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\GunEnemy\IGunEnemy.cpp">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ObjectInterface\ParticleComponent.cpp">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\Particle\PlayerMoveParticle.cpp">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\command\PlayerAimCommand.cpp">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Player\state\PlayerStateAim.cpp">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Lava\LavaParticle.cpp">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameOverScene.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Particles\Explosion\ExplosionParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Particles\TitleNameParticle\TitleNameParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Particles\WallHitParticle.cpp">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\SelectStageNumber\StageNumber.cpp">
+      <Filter>Project\GameObject\StageManager</Filter>
+    </ClCompile>
+    <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\PBRPiplineCommand.cpp">
+      <Filter>CLEYERA\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Light\GameLight.cpp">
+      <Filter>Project\GameObject\Sun</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\GameOverUI\GameOverSceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonRB.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\UI\SelectSceneUI\SelectSceneUI.cpp">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ObjectInterface\LightComponent.cpp">
+      <Filter>Project\GameObject\ObjectInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\ObjectInterface\ManagerComponent.cpp">
+      <Filter>Project\GameObject\ObjectInterface</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameScene\GameSceneEndState.cpp">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameScene\GameScenePlayState.cpp">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\GameScene\GameSceneStartState.cpp">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\GameObject\Lava\LavaManager.cpp">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
+      <Filter>CLEYERA\Utility\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Cleyera.h">
+      <Filter>CLEYERA</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Base\Win\WinApp.h">
+      <Filter>CLEYERA\base\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\base\DX\DirectXCommon.h">
+      <Filter>CLEYERA\base\DX</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\LogManager\LogManager.h">
+      <Filter>CLEYERA\Utility\LogManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\GraphicsPipelineManager.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\ShaderManager\ShaderManager.h">
+      <Filter>CLEYERA\Graphics\CompileShaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\Model.h">
+      <Filter>CLEYERA\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Transform\WorldTransform.h">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Matrix\MatrixTransform.h">
+      <Filter>CLEYERA\math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Matrix\Matrix2x2.h">
+      <Filter>CLEYERA\math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Matrix\Matrix3x3.h">
+      <Filter>CLEYERA\math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Matrix\Matrix4x4.h">
+      <Filter>CLEYERA\math\Matrix</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Transform\CameraData.h">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\TextureManager\TextureManager.h">
+      <Filter>CLEYERA\Graphics\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ImGuiManager\ImGuiManager.h">
+      <Filter>CLEYERA\Utility\ImGuiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\State\ModelObjState.h">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Sprite\Sprite.h">
+      <Filter>CLEYERA\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Input\Input.h">
+      <Filter>CLEYERA\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\FileLoader\FileLoader.h">
+      <Filter>CLEYERA\Utility\FileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\TextureManager\TexDataResource.h">
+      <Filter>CLEYERA\Graphics\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Quaternion\QuaternionTransform.h">
+      <Filter>CLEYERA\math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Vector\Vector2.h">
+      <Filter>CLEYERA\math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Vector\Vector3.h">
+      <Filter>CLEYERA\math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Vector\Vector4.h">
+      <Filter>CLEYERA\math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\ModelManager.h">
+      <Filter>CLEYERA\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\State\ModelObjData.h">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Light\Light.h">
+      <Filter>CLEYERA\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Light\LightingManager.h">
+      <Filter>CLEYERA\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Quaternion\Quaternion.h">
+      <Filter>CLEYERA\math\Quaternion</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\Game3dObject.h">
+      <Filter>CLEYERA\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\math\Vector\VectorTransform.h">
+      <Filter>CLEYERA\math\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Audio\AudioDataResource.h">
+      <Filter>CLEYERA\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Audio\AudioManager.h">
+      <Filter>CLEYERA\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\PostEffect\PostEffect.h">
+      <Filter>CLEYERA\MulitiPass</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\DescripterManager\DescriptorManager.h">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\DescripterManager\RTVDescripterManager.h">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\DescripterManager\DSVDescriptorManager.h">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\DescripterManager\DescripterData.h">
+      <Filter>CLEYERA\Graphics\Descripters</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Light\DirectionLIght.h">
+      <Filter>CLEYERA\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Animation\AnimationManager.h">
+      <Filter>CLEYERA\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ImGuiManager\ImGuiJapaneseGlyphArray.h">
+      <Filter>CLEYERA\Utility\ImGuiManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\CreateGraphicsPiplineFanc.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\DebugTool\DebugCamera\DebugCamera.h">
+      <Filter>CLEYERA\DebugTools\DebugCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\Game3dObjectDesc.h">
+      <Filter>CLEYERA\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\DeltaTimer\DeltaTimer.h">
+      <Filter>Project\Utility\Deltatimer</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\ModelCreatePipline\ModelCreatePipline.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\StructGraphicsPipline.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\GlobalVariables\GlobalVariables.h">
+      <Filter>CLEYERA\Utility\GlobalVariables</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\RandomGenerator\RandomGenerator.h">
+      <Filter>CLEYERA\Utility\RandomGenetor</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\CreateResource\CreateResource.h">
+      <Filter>CLEYERA\Graphics\BufferResource</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\CreateResource\BufferResources.h">
+      <Filter>CLEYERA\Graphics\BufferResource</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Transform\STransformQua.h">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Transform\STransformEular.h">
+      <Filter>CLEYERA\Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Animation\SAnimation.h">
+      <Filter>CLEYERA\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ColorConverter\ColorConverter.h">
+      <Filter>CLEYERA\Utility\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\State\ModelSkinningState.h">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\Game3dInstancingObject\GameInstancing3dObject.h">
+      <Filter>CLEYERA\Model\instancing</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\Game3dInstancingObject\IGameInstancing3dObject.h">
+      <Filter>CLEYERA\Model\instancing</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\State\IModelState.h">
+      <Filter>CLEYERA\Model\ObjState</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\PipelineHandler.h">
+      <Filter>CLEYERA\Graphics\CallPipline</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\IPipelineCommand.h">
+      <Filter>CLEYERA\Graphics\CallPipline</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Default3dPiplineCommand.h">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineCommand.h">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Phong3dSkinningPipline.h">
+      <Filter>CLEYERA\Graphics\CallPipline\commands\3d</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\DebugTool\DebugSkeleton\DebugSkeleton.h">
+      <Filter>CLEYERA\DebugTools\DebugSkeltonDraw</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\primitive\LineModel.h">
+      <Filter>CLEYERA\Model\Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\LevelData\LevelData.h">
+      <Filter>CLEYERA\Utility\LevelData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Block\Block.h">
+      <Filter>Project\GameObject\block</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Block\BlockManager.h">
+      <Filter>Project\GameObject\block</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameCollider\BoxCollisionManager.h">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\ChangeSceneAnimation\ChangeSceneAnimation.h">
+      <Filter>Project\GameObject\ChangeSceneAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Particles\CharacterDeadParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Particles\CharacterMoveParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\CollisionMask\CollisionMask.h">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.h">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.h">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameManager\GameManager.h">
+      <Filter>Project</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\CameraManager\CameraManager.h">
+      <Filter>CLEYERA\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ObjectManager\Game3dInstancingObjectData.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ObjectManager\Game3dObjectData.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ObjectManager\GameCameraData.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\ObjectId\GameObjectId.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameScene.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\GameSceneUI\GameSceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Goal\Goal.h">
+      <Filter>Project\GameObject\Goal</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Goal\Particle\GoalParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ObjectManager\IGameObjectData.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\ObjectComponent.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GravityManager\GravityManager.h">
+      <Filter>Project\GameObject\Gravity</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameCollider\Collider.h">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\IScene.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\IPlayerState.h">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h">
+      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\Noise\NoiseTexture.h">
+      <Filter>CLEYERA\Utility\Noise</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Player.h">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\PlayerManager.h">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\ObjectManager\GameObjectManager.h">
+      <Filter>Project\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\GpuParticlePipline\CreateGpuParticlePipline.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Particle\GpuParticle.h">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Sprite\ISpriteBuf.h">
+      <Filter>CLEYERA\Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Particle\Emitter\ParticleEmitter.h">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Particle\Field\ParticleField.h">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\Phong_CreatePipline\Phong_CreatePipline.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Phong3dDissolvePiplineCommand.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\RuntimeCounter\RunTimeCounter.h">
+      <Filter>CLEYERA\Utility\RunTimeCounter</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Model\primitive\Primitive.h">
+      <Filter>CLEYERA\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.h">
+      <Filter>Project\SceneFileLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\SelectScene.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Utility\SkyBox\SkyBox.h">
+      <Filter>CLEYERA\Utility\SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Sprite3dAddNoneWritePiplineCommand.h">
+      <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\PipelineManager\Sprite_2dPipline\Sprite_2d_CreatePipline.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCount\StartCount.h">
+      <Filter>Project\GameObject\StartAnimation\StartCount</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Particle\Emitter\StructGpuParticleEmitter.h">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Particle\Field\StructParticleField.h">
+      <Filter>CLEYERA\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\TitleScene.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Arch\Arch.h">
+      <Filter>Project\GameObject\Arch</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Bridge\Bridge.h">
+      <Filter>Project\GameObject\Bridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\convert\convert.h">
+      <Filter>Project\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\ISpriteData.h">
+      <Filter>Project\GameObject\ObjectInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Lava\Lava.h">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Warp\Warp.h">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Warp\WarpGate\WarpGate.h">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Warp\WarpRuate\WarpRuate.h">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Arch\state\IArchState.h">
+      <Filter>Project\GameObject\Arch</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameFileLoader\RailLoader\RailLoader.h">
+      <Filter>Project\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\ChangeSceneAnimation\RodingIcon2d\RodingIcon.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\SplineMotion\SplineMotion.h">
+      <Filter>Project\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartAnimation.h">
+      <Filter>Project\GameObject\StartAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\ChangeSceneAnimation\BackTitle2d\TitleBack2d.h">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\TitleCamera\TitleCamera.h">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\TitleLight\TitleLight.h">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\TitleName\TitleName.h">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\ChangeSceneAnimation\TitleName2d\TitleName2d.h">
+      <Filter>Project\GameObject\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\TowerManager\Tower.h">
+      <Filter>Project\GameObject\Tower</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\TowerManager\TowerManager.h">
+      <Filter>Project\GameObject\Tower</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameOverUI\UI\GameOverUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameOverUI\GameOverUIManager.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\BaseSceneBottonUI\BaseBottonUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneJoyStick.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneTitleText.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ClearSceneUI\ClearSceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsControl\ClearSceneUIControl.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameOverUI\UIActiveParticle\GameOverActiveUIParticle.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameOverText\GameOverText.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonA.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonRT.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonsAction.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneJoyStick.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\GameSceneUI\GameSceneUIData.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameCollider\ColliderData.h">
+      <Filter>Project\GameObject\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameClearScene.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\JsonComponent.h">
+      <Filter>Project\GameObject\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\INameable.h">
+      <Filter>Project\GameObject\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ISceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\PlayerCamera\PlayerCamera.h">
+      <Filter>Project\GameObject\Character\Player\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Bullet\state\IPlayerBulletState.h">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Bullet\PlayerBulletManager.h">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Bullet\state\PlayerBulletStateNone.h">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Gun\PlayerGun.h">
+      <Filter>Project\GameObject\Character\Player\PlayerGun</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Hp\PlayerHp.h">
+      <Filter>Project\GameObject\Character\Player\PlayerHp</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\IPlayerCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\PlayerCommandHandler.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\playerDashMoveCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Particle\PlayerDeadParticle.h">
+      <Filter>Project\GameObject\Character\Player\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\PlayerJampCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Bullet\PlayerBullet.h">
+      <Filter>Project\GameObject\Character\Player\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Reticle\PlayerReticle.h">
+      <Filter>Project\GameObject\Character\Player\Reticle</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\PlayerMoveCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\PlayerShootCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateDeadAnimation.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateFall.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateGoalAnimation.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateInvincible.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateJamp.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateNone.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateRock.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateWalk.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateWarpMove.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\ITransform.h">
+      <Filter>Project\GameObject\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCameraMotion\StartCameraMotion.h">
+      <Filter>Project\GameObject\StartAnimation\StartCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\GameOverAnimation\EndAnimation.h">
+      <Filter>Project\GameObject\EndAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\LerpMotion\LerpMotion.h">
+      <Filter>Project\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\StartAnimation\state\StartAnimationStateCamera.h">
+      <Filter>Project\GameObject\StartAnimation</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\IGameSceneAnimation.h">
+      <Filter>Project\GameObject\StartAnimation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GameSceneAnimation\StartAnimation\state\IStartAnimationState.h">
+      <Filter>Project\GameObject\StartAnimation\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\TitleSceneUI\TitleSceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Warp\WarpManager.h">
+      <Filter>Project\GameObject\Warp</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\StageManager\StageManager.h">
+      <Filter>Project\GameObject\StageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\ObjectNumberPool\ObjectPool.h">
+      <Filter>Project\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineDepthNoneWriteCommand.h">
+      <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyManager.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCamera\ClearCamera.h">
+      <Filter>Project\GameObject\ClearCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCharacter\ClearCharacter.h">
+      <Filter>Project\GameObject\ClearCharacter</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCoinManager\ClearCoin.h">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCoinManager\ClearCoinManager.h">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCoinManager\Particle\ClearCoinSplashParticle.h">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCoinManager\state\ClearCoinStateActive.h">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\SceneContextData\SceneContextData.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\ISceneContext.h">
+      <Filter>Project\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\DissolvePipline\DissolvePiplineRasterFrontBackWriteCommand.h">
+      <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ClearCoinManager\state\IClearCoinState.h">
+      <Filter>Project\GameObject\ClearCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\StageCoin\StageCoin.h">
+      <Filter>Project\GameObject\StageCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\StageCoin\StageCoinManager.h">
+      <Filter>Project\GameObject\StageCoin</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\state\IGunEnemyState.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemy.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyBullet\GunEnemyBullet.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateMove.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateShoot.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateDash.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\BreakBlock\BreakBlock.h">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\BreakBlock\BreakBlockHp.h">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\BreakBlock\BreakBlockManager.h">
+      <Filter>Project\GameObject\BreakBlock</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyPart.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateDeadAnimation.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\GunEnemy\IGunEnemy.h">
+      <Filter>Project\GameObject\Character\GunEnemy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\ManagerComponent.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\ParticleComponent.h">
+      <Filter>Project\GameObject\ObjectData</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\Particle\PlayerMoveParticle.h">
+      <Filter>Project\GameObject\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\command\PlayerAimCommand.h">
+      <Filter>Project\GameObject\Character\Player\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Player\state\PlayerStateAim.h">
+      <Filter>Project\GameObject\Character\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Lava\LavaParticle.h">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameOverScene.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Particles\Explosion\ExplosionParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Particles\WallHitParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Particles\TitleNameParticle\TitleNameParticle.h">
+      <Filter>Project\GameObject\Particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\SelectStageNumber\StageNumber.h">
+      <Filter>Project\GameObject\StageManager</Filter>
+    </ClInclude>
+    <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\PBRPiplineCommand.h">
+      <Filter>CLEYERA\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Light\GameLight.h">
+      <Filter>Project\GameObject\Sun</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonRB.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\GameOverUI\GameOverSceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\UI\SelectSceneUI\SelectSceneUI.h">
+      <Filter>Project\GameObject\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\ObjectInterface\LightComponent.h">
+      <Filter>Project\GameObject\ObjectInterface</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameScene\GameSceneEndState.h">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameScene\GameScenePlayState.h">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameScene\GameSceneStartState.h">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\GameScene\IGameSceneState.h">
+      <Filter>Project\Scene\GameSceneState</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\GameObject\Lava\LavaManager.h">
+      <Filter>Project\GameObject\Lava</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\ShapeObject3d.VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\SpriteObject3d.VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\SpriteObject3d.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Sprite2d\SpriteObject2d.VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_NormalMap_Model3dObject.PS.hlsl">
+      <Filter>Shader\Lighting\testShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_NormalMap_Model3dObject.VS.hlsl">
+      <Filter>Shader\Lighting\testShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PBR_ModelObject3d.PS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PBR_ModelObject3d.VS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_Subsurface_Model3dObject.PS.hlsl">
+      <Filter>Shader\Lighting\testShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_Subsurface_Model3dObject.VS.hlsl">
+      <Filter>Shader\Lighting\testShader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PostEffect\PostEffect.VS.hlsl">
+      <Filter>Shader\PostEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PostEffect\PostEffect.PS.hlsl">
+      <Filter>Shader\PostEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PostEffect\Shadow.VS.hlsl">
+      <Filter>Shader\PostEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\SkinningObject3d.VS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PostEffect\Shadow.PS.hlsl">
+      <Filter>Shader\PostEffect</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_NormalMap_ModelInstancing3dObject.PS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_NormalMap_ModelInstancing3dObject.VS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Line.VS.hlsl">
+      <Filter>Shader\primitive</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Primitives.PS.hlsl">
+      <Filter>Shader\primitive</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Draw\Particle_DebugDraw.PS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Draw\Particle_DebugDraw.VS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Field\Particle_Field_TypeBox_Suction.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Particle_Init.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Emitter\Particle_TypeCircleGoal.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Emitter\Particle_TypeShpere.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Update\Particle_Update.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\PhongBase.GS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Phong\Phong_Dissolve_Model3dObject.PS.hlsl">
+      <Filter>Shader\Lighting</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Sprite2d\SpriteObject2d_Dissolve.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Sprite2d\SpriteObject2d_PerlinNoise.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Skinning.CS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\SkyBox.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\SkyBox.VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Draw\Particle_Dissolve.PS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Emitter\Particle_TypeBox.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Draw\Particle2d_Draw.VS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PBR\PBR.GS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PBR\PBR.PS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\PBR\PBR.VS.hlsl">
+      <Filter>Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Field\Particle_Field_TypeBox_Gravity.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+    <FxCompile Include="Resources\Shader\Particle\Field\Particle_Field_TypeBox_HitBlock.CS.hlsl">
+      <Filter>Shader\Particle</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

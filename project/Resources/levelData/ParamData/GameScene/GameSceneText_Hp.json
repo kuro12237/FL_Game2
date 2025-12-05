@@ -1,0 +1,26 @@
+{
+    "GameSceneText_Hp": {
+        "ankerPos": [
+            0.0,
+            0.0
+        ],
+        "fileName": "Hp/HpText.png",
+        "transform": {
+            "rotate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "scale": {
+                "x": 0.125,
+                "y": 0.125,
+                "z": 0.125
+            },
+            "translate": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            }
+        }
+    }
+}
