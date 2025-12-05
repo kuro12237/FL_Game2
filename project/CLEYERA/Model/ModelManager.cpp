@@ -57,6 +57,7 @@ uint32_t ModelManager::LoadObjectFile(string directoryPath)
 		else {
 
 			file = directoryPath;
+                   ModelManager::GetInstance()->isUseFilePath_ = true;
 		}
 		const aiScene* scene = importer.ReadFile(file.c_str(), aiProcess_FlipWindingOrder | aiProcess_FlipUVs);
 		assert(scene->HasMeshes());

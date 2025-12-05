@@ -7,7 +7,7 @@ using namespace Engine::Transform;
 
 void Player::Initialize()
 {
-   INameable::name_ = "Player";
+   INameable::name_ = "PlayerCore";
    jsonGropName_ = INameable::name_;
    CreateJsonData();
 

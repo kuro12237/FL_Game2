@@ -90,6 +90,8 @@ namespace Engine::Manager
 		/// <returns></returns>
 		static SkinCluster CreateSkinCluster(const SAnimation::Skeleton& skeleton, const SModelData& modelData);
 
+		static void SetIsDirectoryFilePath() { ModelManager::GetInstance()->isUseFilePath_ = false; }
+
 	private:
 
 		/// <summary>

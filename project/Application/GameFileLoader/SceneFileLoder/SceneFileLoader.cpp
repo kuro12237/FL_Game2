@@ -19,7 +19,7 @@ shared_ptr<LevelData> SceneFileLoader::ReLoad(const string& filePath)
 	assert(deserialized.contains("name"));
 	assert(deserialized["name"].is_string());
 
-	//scene‚¶‚á‚È‚©‚Á‚½ƒGƒ‰[‚ğ“f‚­
+	//sceneã˜ã‚ƒãªã‹ã£ãŸæ™‚ã‚¨ãƒ©ãƒ¼ã‚’åã
 	string name = deserialized["name"].get<string>();
 	assert(name.compare("scene") == 0);
 
@@ -71,9 +71,12 @@ uint32_t SceneFileLoader::LoadModelData(nlohmann::json& object, shared_ptr<Game3
 	std::string modelFileName;
 	string fileType = object["ModelFileType"].get<string>();
 	string fileName = object["file_name"].get<string>();
+        string filePath = object["Directory_name"].get<string>();
+
 	if (fileType == "obj")
 	{
-		ModelManager::ModelLoadNormalMap();
+		//ModelManager::ModelLoadNormalMap();
+           //ModelManager::SetIsDirectoryFilePath();
 		modelHandle = ModelManager::LoadObjectFile(fileName);
 	}
 	if (fileType == "gltf")
@@ -134,7 +137,7 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 		data->PushBackChildren(objectName);
 	}
 
-	//’Êí•\¦
+	//é€šå¸¸è¡¨ç¤º
 	if (drawType.compare("Normal") == 0)
 	{
 		obj3dData = make_shared<Game3dObjectData>();
@@ -147,14 +150,14 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 		vector<string>childName;
 
 		objectDesc.useLight = true;
-		//model‚Ìƒtƒ@ƒCƒ‹“Ç‚İ‚İ
+		//modelã®ãƒ•ã‚¡ã‚¤ãƒ«èª­ã¿è¾¼ã¿
 
 		if (CheckJsonObjectContains(object, "file_name"))
 		{
 			modelHandle = LoadModelData(object, obj3dData);
 		}
 
-		//transform‚ÌGet
+		//transformã®Get
 		nlohmann::json& transform = object["transform"];
 		TransformEular transformEular = GetTransform(transform);
 		transformEular.rotate = degreesToRadians(transformEular.rotate);
@@ -194,11 +197,11 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 				}
 			}
 		}
-		//•Û‘¶
+		//ä¿å­˜
 		obj3dData->Initialize(transformEular, objectDesc, modelHandle);
 		levelData->obj3dData[objectName] = move(obj3dData);
 	}
-	//ƒCƒ“ƒXƒ^ƒ“ƒVƒ“ƒO•\¦
+	//ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚·ãƒ³ã‚°è¡¨ç¤º
 	if (drawType.compare("Instancing") == 0)
 	{
 		string objectINstancingGrop = object["InstancingObjName"].get<string>();
@@ -210,7 +213,7 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 			//transformGet
 			nlohmann::json& transform = object["transform"];
 			TransformEular transformEular = GetTransform(transform);
-			//‰ñ“]‚ğƒ‰ƒWƒAƒ“‚É•ÏŠ·
+			//å›è»¢ã‚’ãƒ©ã‚¸ã‚¢ãƒ³ã«å¤‰æ›
 			transformEular.rotate = degreesToRadians(transformEular.rotate);
 
 			if (object.contains("collider"))
@@ -234,10 +237,10 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 		}
 		else
 		{
-			//ƒCƒ“ƒXƒ^ƒ“ƒX‚Ì¶¬
+			//ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã®ç”Ÿæˆ
 			obj3dInstancingData = make_shared<Game3dInstancingObjectData>();
 
-			//model‚Ìƒtƒ@ƒCƒ‹“Ç‚İ‚İ
+			//modelã®ãƒ•ã‚¡ã‚¤ãƒ«èª­ã¿è¾¼ã¿
 			if (CheckJsonObjectContains(object, "file_name"))
 			{
 				modelHandle = LoadModelData(object, obj3dData);
@@ -247,10 +250,10 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 
 			shared_ptr<IGameInstancing3dObject> transforms = make_shared<IGameInstancing3dObject>();
 
-			//transform‚ÌGet
+			//transformã®Get
 			nlohmann::json& transform = object["transform"];
 			TransformEular transformEular = GetTransform(transform);
-			//‰ñ“]‚ğƒ‰ƒWƒAƒ“‚É•ÏŠ·
+			//å›è»¢ã‚’ãƒ©ã‚¸ã‚¢ãƒ³ã«å¤‰æ›
 			transformEular.rotate = degreesToRadians(transformEular.rotate);
 
 			transforms->SetTransformEular(transformEular);
@@ -270,7 +273,7 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 			transforms->Update();
 
 			obj3dInstancingData->PushBackTransform(transforms);
-			//•Û‘¶
+			//ä¿å­˜
 			levelData->objInstancing3dData[objectINstancingGrop] = move(obj3dInstancingData);
 
 			uint32_t size = uint32_t(levelData->objInstancing3dData[objectINstancingGrop]->GetTransforms().size());
@@ -302,16 +305,16 @@ void SceneFileLoader::LoadObj3dData(shared_ptr<LevelData>& levelData, nlohmann::
 void SceneFileLoader::LoadCameraData(shared_ptr<LevelData>& levelData, nlohmann::json& object)
 {
 	shared_ptr<GameCameraData> cameraData;
-	//object‚Ì–¼‘O
+	//objectã®åå‰
 	string name = object["name"].get<string>();
 	//transormGet
 	TransformEular transformEular = GetTransform(object["transform"]);
-	//•â³
+	//è£œæ­£
 	transformEular.rotate.x += 90.0f;
-	//‰ñ“]‚ğƒ‰ƒWƒAƒ“‚É•ÏŠ·
+	//å›è»¢ã‚’ãƒ©ã‚¸ã‚¢ãƒ³ã«å¤‰æ›
 	transformEular.rotate = degreesToRadians(transformEular.rotate);
 
-	//dataì¬
+	//dataä½œæˆ
 	cameraData = make_shared<GameCameraData>();
 	cameraData->SetObjName(name);
 	cameraData->SetObjectType("CAMERA");
@@ -322,7 +325,7 @@ void SceneFileLoader::LoadCameraData(shared_ptr<LevelData>& levelData, nlohmann:
 void SceneFileLoader::LoadChildCameraData(shared_ptr<LevelData>& levelData, nlohmann::json& object, IGameObjectData* data)
 {
 	shared_ptr<GameCameraData> cameraData;
-	//object‚Ì–¼‘O
+	//objectã®åå‰
 	string name = object["name"].get<string>();
 
 	//parentData
@@ -333,15 +336,15 @@ void SceneFileLoader::LoadChildCameraData(shared_ptr<LevelData>& levelData, nloh
 
 	//transormGet
 	TransformEular transformEular = GetTransform(object["transform"]);
-	//•â³
+	//è£œæ­£
 	transformEular.rotate.x += 90.0f;
-	//ƒ‰ƒWƒAƒ““ñ•ÏŠ·
+	//ãƒ©ã‚¸ã‚¢ãƒ³äºŒå¤‰æ›
 	transformEular.rotate.x = transformEular.rotate.x * float(std::numbers::pi) / 180.0f;
 	transformEular.rotate.y = transformEular.rotate.y * float(std::numbers::pi) / 180.0f;
 	transformEular.rotate.z = transformEular.rotate.z * float(std::numbers::pi) / 180.0f;
 
 
-	//dataì¬
+	//dataä½œæˆ
 	cameraData = make_shared<GameCameraData>();
 
 	if (CheckJsonObjectContains(object, "paramFileNames"))

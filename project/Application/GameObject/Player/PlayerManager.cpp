@@ -64,39 +64,13 @@ void PlayerManager::Update()
       commandHandler_->CommandsExec(*playerCore_);
    }
 
-
-   // Bullet
-   if (playerCore_->GetIsShoot()) {
-
-   }
-
-
    for (auto &it : objDataList_) {
       if (auto obj = it.lock()) {
          obj->Update();
       }
    }
 
-   // Bullets
-   CheckisDeadBullets();
 
-   auto moveParticle = moveParticle_.lock();
-   auto deadParticle = deadParticle_.lock();
-   if (playerCore_->IsInState<PlayerStateWalk>() || playerCore_->IsInState<PlayerStateDash>()) {
-      if (moveParticle)
-
-         moveParticle->SetIsEmit(true);
-   }
-   else {
-      if (moveParticle)
-         moveParticle->SetIsEmit(false);
-   }
-
-   // 死んだアニメーションを再生してるとき
-   if (playerCore_->IsInState<PlayerStateDeadAnimation>()) {
-      if (deadParticle)
-         deadParticle->SetIsEmit(true);
-   }
 }
 
 void PlayerManager::Draw2d()
@@ -113,10 +87,10 @@ void PlayerManager::Draw2dBullet()
 
 void PlayerManager::SetParticlePos()
 {
-   moveParticle_.lock()->SetPlayerPos(
+ /*  moveParticle_.lock()->SetPlayerPos(
        this->playerCore_->GetObjectData().lock()->GetWorldTransform().transform.translate);
    deadParticle_.lock()->SetPlayerPos(
-       this->playerCore_->GetObjectData().lock()->GetWorldTransform().transform.translate);
+       this->playerCore_->GetObjectData().lock()->GetWorldTransform().transform.translate);*/
 }
 
 void PlayerManager::PushBullet([[maybe_unused]]const Math::Vector::Vector3 &pos)

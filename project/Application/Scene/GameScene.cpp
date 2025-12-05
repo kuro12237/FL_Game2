@@ -15,10 +15,10 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    this->CreateJsonData();
 
    // selectからのデータを移動
-   selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
+   //selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
 
    // levelDataの読み込み
-   inputLevelDataFileName_ = "Stages" + to_string(selectSceneData_.stageNumber + 1) + ".json";
+   inputLevelDataFileName_ = "Stages" + to_string(1) + ".json";
    shared_ptr<LevelData> levelData = move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
 
    changeSceneAnmation_ = ChangeSceneAnimation::GetInstance();
@@ -42,8 +42,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_shared<GravityManager>();
    managerList_.push_back(gravityManager_);
 
-   lavaManager_ = make_shared<LavaManager>();
-   managerList_.push_back(lavaManager_);
 
    for (weak_ptr<ManagerComponent> manager : managerList_) {
       manager.lock()->Initialize();
@@ -80,8 +78,8 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    playerDeadParticle_ = make_unique<PlayerDeadParticle>();
    particleList_.push_back(playerDeadParticle_);
 
-   playerMoveParticle_ = make_unique<PlayerMoveParticle>();
-   particleList_.push_back(playerMoveParticle_);
+   //playerMoveParticle_ = make_unique<PlayerMoveParticle>();
+   //particleList_.push_back(playerMoveParticle_);
 
    deadParticle_ = make_unique<CharacterDeadParticle>();
    particleList_.push_back(deadParticle_);
@@ -93,21 +91,10 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
       obj.lock()->Initialize();
    }
 
-   particleList_.push_back(lavaManager_->GetLava(lavaIndex_).lock()->GetLavaParticle());
-
+  
    // obj
-   goal_ = make_unique<Goal>();
-   goal_->SetGoalIndex(goalIndex);
-   goal_->SetGoalObjectId(ObjectId::kGoalId);
-   goal_->SetGoalParticle(goalParticle_);
-   objctDataList_.push_back(goal_);
-
-   for (weak_ptr<ObjectComponent> data : objctDataList_) {
-      data.lock()->Initialize();
-   }
-
    player_->SetDeadParticle(playerDeadParticle_);
-   player_->SetMoveParticle(playerMoveParticle_);
+   //player_->SetMoveParticle(playerMoveParticle_);
    player_->SetParticlePos();
 
 #pragma region PostEffectSetting
@@ -137,7 +124,7 @@ void GameScene::Update([[maybe_unused]] GameManager *Scene)
 
    this->ListUpdate();
 
-   ParticlesUpdate();
+   //ParticlesUpdate();
 
    Gravitys();
    Collision();
@@ -236,7 +223,6 @@ void GameScene::Collision()
       }
    }
    // ゴール
-   gameCollisionManager_->ListPushback(goal_.get());
 
    gameCollisionManager_->CheckAllCollisoin();
 
@@ -256,7 +242,6 @@ void GameScene::Gravitys()
    }
 
    gravityManager_->PushParticleList(deadParticle_->GetParticle());
-   gravityManager_->PushParticleList(lavaManager_->GetLava(lavaIndex_).lock()->GetLavaParticle().lock()->GetParticle());
 
    gravityManager_->CheckGravity();
 }

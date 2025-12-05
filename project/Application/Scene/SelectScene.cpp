@@ -21,6 +21,9 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
 
    goalParticle_ = make_unique<GoalParticle>();
    goalParticle_->Initialize();
+   context_ = make_unique<ISceneContext>();
+
+   return;
 
    player_ = make_unique<PlayerManager>();
    player_->Initialize();
@@ -71,7 +74,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    isGameEnd_ = &player_->GetPlayerCore()->GetIsGameEnd();
    player_->SetGameStartFlag(&isGameStart_);
 
-   context_ = make_unique<ISceneContext>();
 
    SkyBox::GetInstance()->Reset();
    const float kSkyBoxScale_ = 256.0f;
@@ -108,43 +110,43 @@ void SelectScene::Update(GameManager *Scene)
 
    ChangeSceneAnimation::GetInstance()->Update();
 
-   // シーン切替が終わったら
-   if (ChangeSceneAnimation::GetInstance()->GetIsComplite()) {
-      isGameStart_ = true;
-   }
+   //// シーン切替が終わったら
+   //if (ChangeSceneAnimation::GetInstance()->GetIsComplite()) {
+   //   isGameStart_ = true;
+   //}
 
-   player_->Update();
+   //player_->Update();
 
-   for (size_t i = 0; i < portalMax_; i++) {
-      goals_[i]->Update();
-   }
+   //for (size_t i = 0; i < portalMax_; i++) {
+   //   goals_[i]->Update();
+   //}
 
-   for (size_t i = 0; i < portalMax_; i++) {
-      stageNumbers_[i]->Update();
-   }
+   //for (size_t i = 0; i < portalMax_; i++) {
+   //   stageNumbers_[i]->Update();
+   //}
 
-   SkyBox::GetInstance()->Update();
-   goalParticle_->Update();
-   lava_->Update();
+   //SkyBox::GetInstance()->Update();
+   //goalParticle_->Update();
+   //lava_->Update();
 
-   blockManager_->Update();
+   //blockManager_->Update();
 
-   LightingManager::AddList(light_);
+   //LightingManager::AddList(light_);
 
-   Gravitys();
+   //Gravitys();
 
-   Collision();
+   //Collision();
 
-   gameObjectManager_->Update();
+   //gameObjectManager_->Update();
 
-   ui_->Update();
+   //ui_->Update();
 
-   for (size_t i = 0; i < goals_.size(); i++) {
-      if (goals_[i]->GetIsGoalFlag()) {
+   //for (size_t i = 0; i < goals_.size(); i++) {
+   //   if (goals_[i]->GetIsGoalFlag()) {
 
-         ChangeSceneAnimation::GetInstance()->ChangeStart();
-      }
-   }
+   //      ChangeSceneAnimation::GetInstance()->ChangeStart();
+   //   }
+   //}
 
    ChangeSceneAnimation::GetInstance()->ChangeStart();
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
@@ -155,19 +157,19 @@ void SelectScene::Update(GameManager *Scene)
          }
       }
 
-      contextData_.stageNumber = stageNumber;
+      contextData_.stageNumber = 1;
       context_->SetData(contextData_);
       Scene->SetMoveSceneContext(move(context_));
       Scene->ChangeScene(make_unique<GameScene>());
       return;
    }
 
-   gameCollisionManager_->End();
+   //gameCollisionManager_->End();
 }
 
 void SelectScene::ImGuiUpdate()
 {
-
+   return;
    ImGui::Begin("PostEffect");
    ImGui::DragFloat("scale::%f",
                     &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogScale_, 0.01f);
@@ -195,7 +197,7 @@ void SelectScene::ImGuiUpdate()
 
 void SelectScene::PostProcessDraw()
 {
-
+   return;
    gameObjectManager_->InstancingDraw();
    gameObjectManager_->NormalDraw();
 
@@ -206,9 +208,10 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
+  /* return;
    player_->Draw2d();
    player_->Draw2dBullet();
-   ui_->Draw2d();
+   ui_->Draw2d();*/
    ChangeSceneAnimation::GetInstance()->Draw();
 }
 

@@ -124,7 +124,6 @@ class GameScene : public IScene, public JsonComponent
    unique_ptr<IGameSceneState> state_ = nullptr;
 
    // obj
-   shared_ptr<Goal> goal_ = nullptr;
 
    // light
    shared_ptr<GameLight> light_ = nullptr;
@@ -133,7 +132,6 @@ class GameScene : public IScene, public JsonComponent
    shared_ptr<PlayerManager> player_ = nullptr;
    shared_ptr<BlockManager> blockManager_ = nullptr;
    shared_ptr<BreakBlockManager> breakBlockManager_ = nullptr;
-   shared_ptr<LavaManager> lavaManager_ = nullptr;
 
    shared_ptr<GravityManager> gravityManager_ = nullptr;
    shared_ptr<BoxCollisionManager> gameCollisionManager_ = nullptr;

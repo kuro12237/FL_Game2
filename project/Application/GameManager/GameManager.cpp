@@ -9,12 +9,10 @@ GameManager::GameManager()
 {
    Cleyera::Initialize();
 
-   scene_ = make_unique<TitleScene>();
-   scene_->Initialize(this);
+   ChangeSceneAnimation::GetInstance()->Initialize();
 
-   scene_ = make_unique<SelectScene>();
+   scene_ = make_unique<GameScene>();
    scene_->Initialize(this);
- 
 }
 
 GameManager::~GameManager()
