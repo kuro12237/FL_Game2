@@ -319,6 +319,9 @@
     <Filter Include="Project\Scene\GameSceneState">
       <UniqueIdentifier>{202d6f36-d2d1-4ffa-9edd-ff4835357478}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Project\Utility\EventBus">
+      <UniqueIdentifier>{302cc72b-25e9-4d75-9af0-7290a75b7840}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="CLEYERA\Config\.editorconfig">
@@ -1700,6 +1703,9 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\Lava\LavaManager.h">
       <Filter>Project\GameObject\Lava</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Utility\EventBus\EventBus.h">
+      <Filter>Project\Utility\EventBus</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

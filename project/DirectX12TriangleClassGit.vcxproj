@@ -347,6 +347,7 @@
     <ClInclude Include="Application\Scene\ISceneContext.h" />
     <ClInclude Include="Application\Scene\GameScene\IGameSceneState.h" />
     <ClInclude Include="Application\Utility\convert\convert.h" />
+    <ClInclude Include="Application\Utility\EventBus\EventBus.h" />
     <ClInclude Include="Application\Utility\LerpMotion\LerpMotion.h" />
     <ClInclude Include="Application\Utility\ObjectNumberPool\ObjectPool.h" />
     <ClInclude Include="Application\Utility\SplineMotion\SplineMotion.h" />
