@@ -126,7 +126,6 @@
     <ClCompile Include="Application\GameObject\Warp\WarpGate\WarpGate.cpp" />
     <ClCompile Include="Application\GameObject\Warp\WarpManager.cpp" />
     <ClCompile Include="Application\GameObject\Warp\WarpRuate\WarpRuate.cpp" />
-    <ClCompile Include="Application\Scene\GameClearScene.cpp" />
     <ClCompile Include="Application\Scene\GameOverScene.cpp" />
     <ClCompile Include="Application\Scene\GameScene\GameSceneEndState.cpp" />
     <ClCompile Include="Application\Scene\GameScene\GameScenePlayState.cpp" />
@@ -162,8 +161,6 @@
     <ClCompile Include="Application\GameObject\UI\GameSceneUI\GameSceneUI.cpp" />
     <ClCompile Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.cpp" />
     <ClCompile Include="Application\Scene\GameScene.cpp" />
-    <ClCompile Include="Application\Scene\SelectScene.cpp" />
-    <ClCompile Include="Application\Scene\TitleScene.cpp" />
     <ClCompile Include="Application\GameObject\Arch\Arch.cpp" />
     <ClCompile Include="Application\GameObject\Bridge\Bridge.cpp" />
     <ClCompile Include="Application\GameObject\Lava\Lava.cpp" />
@@ -339,7 +336,6 @@
     <ClInclude Include="Application\GameObject\Warp\WarpGate\WarpGate.h" />
     <ClInclude Include="Application\GameObject\Warp\WarpManager.h" />
     <ClInclude Include="Application\GameObject\Warp\WarpRuate\WarpRuate.h" />
-    <ClInclude Include="Application\Scene\GameClearScene.h" />
     <ClInclude Include="Application\Scene\GameOverScene.h" />
     <ClInclude Include="Application\Scene\GameScene\GameSceneEndState.h" />
     <ClInclude Include="Application\Scene\GameScene\GameScenePlayState.h" />
@@ -382,8 +378,6 @@
     <ClInclude Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.h" />
     <ClInclude Include="Application\Scene\GameScene.h" />
     <ClInclude Include="Application\Scene\IScene.h" />
-    <ClInclude Include="Application\Scene\SelectScene.h" />
-    <ClInclude Include="Application\Scene\TitleScene.h" />
     <ClInclude Include="Application\GameObject\Arch\Arch.h" />
     <ClInclude Include="Application\GameObject\Arch\state\IArchState.h" />
     <ClInclude Include="Application\GameObject\Bridge\Bridge.h" />

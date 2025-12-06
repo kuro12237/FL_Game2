@@ -6,12 +6,10 @@
 #include"Utility/GlobalVariables/GlobalVariables.h"
 
 #include"GameScene.h"
-#include"TitleScene.h"
-#include"SelectScene.h"
 #include"GameOverScene.h"
 
 /// <summary>
-/// ƒQ[ƒ€ŠÇ—ƒNƒ‰ƒX
+/// ã‚²ãƒ¼ãƒ ç®¡ç†ã‚¯ãƒ©ã‚¹
 /// </summary>
 class GameManager
 {
@@ -21,24 +19,24 @@ public:
 	~GameManager();
 
     /// <summary>
-    /// Às
+    /// å®Ÿè¡Œ
     /// </summary>
     void Run();
 
     /// <summary>
-    /// ƒV[ƒ“Ø‘Ö
+    /// ã‚·ãƒ¼ãƒ³åˆ‡æ›¿
     /// </summary>
     /// <param name="newScene"></param>
     void ChangeScene(unique_ptr<IScene>newScene);
 
     /// <summary>
-    /// ƒf[ƒ^‚ğˆÚ“®
+    /// ãƒ‡ãƒ¼ã‚¿ã‚’ç§»å‹•
     /// </summary>
     /// <param name="data"></param>
     void SetMoveSceneContext(unique_ptr<ISceneContext> data) { sceneContext_ = move(data); }
 
     /// <summary>
-    /// ƒf[ƒ^‚ğ“üè
+    /// ãƒ‡ãƒ¼ã‚¿ã‚’å…¥æ‰‹
     /// </summary>
     /// <returns></returns>
     ISceneContext* GetMoveSceneContext() { return move(sceneContext_.get()); }

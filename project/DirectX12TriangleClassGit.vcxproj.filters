@@ -625,9 +625,6 @@
     <ClCompile Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.cpp">
       <Filter>Project\SceneFileLoader</Filter>
     </ClCompile>
-    <ClCompile Include="Application\Scene\SelectScene.cpp">
-      <Filter>Project\Scene</Filter>
-    </ClCompile>
     <ClCompile Include="CLEYERA\Utility\SkyBox\SkyBox.cpp">
       <Filter>CLEYERA\Utility\SkyBox</Filter>
     </ClCompile>
@@ -642,9 +639,6 @@
     </ClCompile>
     <ClCompile Include="CLEYERA\Particle\Emitter\StructGpuParticleEmitter.cpp">
       <Filter>CLEYERA\Particle</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\Scene\TitleScene.cpp">
-      <Filter>Project\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Arch\Arch.cpp">
       <Filter>Project\GameObject\Arch</Filter>
@@ -741,9 +735,6 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneJoyStick.cpp">
       <Filter>Project\GameObject\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\Scene\GameClearScene.cpp">
-      <Filter>Project\Scene</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\UI\ISceneUI.cpp">
       <Filter>Project\GameObject\UI</Filter>
@@ -1308,9 +1299,6 @@
     <ClInclude Include="Application\GameFileLoader\SceneFileLoder\SceneFileLoader.h">
       <Filter>Project\SceneFileLoader</Filter>
     </ClInclude>
-    <ClInclude Include="Application\Scene\SelectScene.h">
-      <Filter>Project\Scene</Filter>
-    </ClInclude>
     <ClInclude Include="CLEYERA\Utility\SkyBox\SkyBox.h">
       <Filter>CLEYERA\Utility\SkyBox</Filter>
     </ClInclude>
@@ -1328,9 +1316,6 @@
     </ClInclude>
     <ClInclude Include="CLEYERA\Particle\Field\StructParticleField.h">
       <Filter>CLEYERA\Particle</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\Scene\TitleScene.h">
-      <Filter>Project\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Arch\Arch.h">
       <Filter>Project\GameObject\Arch</Filter>
@@ -1436,9 +1421,6 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\GameCollider\ColliderData.h">
       <Filter>Project\GameObject\Collision</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\Scene\GameClearScene.h">
-      <Filter>Project\Scene</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\ObjectInterface\JsonComponent.h">
       <Filter>Project\GameObject\Interface</Filter>
