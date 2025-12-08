@@ -1,5 +1,7 @@
 #include "GameManager.h"
 
+#include "Title/TitleScene.h"
+
 using namespace Engine;
 using namespace Engine::Base::Win;
 using namespace Engine::Base::DX;

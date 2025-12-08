@@ -131,6 +131,7 @@
     <ClCompile Include="Application\Scene\GameScene\GameScenePlayState.cpp" />
     <ClCompile Include="Application\Scene\GameScene\GameSceneStartState.cpp" />
     <ClCompile Include="Application\Scene\IScene.cpp" />
+    <ClCompile Include="Application\Scene\Title\TitleScene.cpp" />
     <ClCompile Include="Application\Utility\convert\convert.cpp" />
     <ClCompile Include="Application\Utility\LerpMotion\LerpMotion.cpp" />
     <ClCompile Include="Application\Utility\SplineMotion\SplineMotion.cpp" />
@@ -342,6 +343,7 @@
     <ClInclude Include="Application\Scene\GameScene\GameSceneStartState.h" />
     <ClInclude Include="Application\Scene\ISceneContext.h" />
     <ClInclude Include="Application\Scene\GameScene\IGameSceneState.h" />
+    <ClInclude Include="Application\Scene\Title\TitleScene.h" />
     <ClInclude Include="Application\Utility\convert\convert.h" />
     <ClInclude Include="Application\Utility\EventBus\EventBus.h" />
     <ClInclude Include="Application\Utility\LerpMotion\LerpMotion.h" />

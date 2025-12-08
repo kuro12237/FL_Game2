@@ -94,7 +94,7 @@ void GameOverScene::Update([[maybe_unused]] GameManager *Scene)
       return;
    }
    if (gameOverUiManager_->GetSelectIndex() == TITLE) {
-      Scene->ChangeScene(make_unique<TitleScene>());
+      //Scene->ChangeScene(make_unique<TitleScene>());
       return;
    }
    if (gameOverUiManager_->GetSelectIndex() == GAME) {
@@ -102,7 +102,7 @@ void GameOverScene::Update([[maybe_unused]] GameManager *Scene)
       return;
    }
    if (gameOverUiManager_->GetSelectIndex() == SELECT) {
-      Scene->ChangeScene(make_unique<SelectScene>());
+      //Scene->ChangeScene(make_unique<SelectScene>());
       return;
    }
 }

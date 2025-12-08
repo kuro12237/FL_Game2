@@ -124,9 +124,6 @@
     <Filter Include="Project\Utility">
       <UniqueIdentifier>{2df31ff6-7e31-46dd-b85b-0a148da18c19}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Project\GameObject\Sun">
-      <UniqueIdentifier>{ff6c3ada-0d10-4bc1-a23f-436509fd401c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Project\Utility\GameCollider">
       <UniqueIdentifier>{4effafe8-ec4e-4616-acdc-dca0fe45207a}</UniqueIdentifier>
     </Filter>
@@ -321,6 +318,12 @@
     </Filter>
     <Filter Include="Project\Utility\EventBus">
       <UniqueIdentifier>{302cc72b-25e9-4d75-9af0-7290a75b7840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Scene\Title">
+      <UniqueIdentifier>{83373102-fcab-46ef-9436-57bb435f0d42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\GameObject\Sun">
+      <UniqueIdentifier>{ff6c3ada-0d10-4bc1-a23f-436509fd401c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -966,6 +969,9 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\Lava\LavaManager.cpp">
       <Filter>Project\GameObject\Lava</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Scene\Title\TitleScene.cpp">
+      <Filter>Project\Scene\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1688,6 +1694,9 @@
     </ClInclude>
     <ClInclude Include="Application\Utility\EventBus\EventBus.h">
       <Filter>Project\Utility\EventBus</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Scene\Title\TitleScene.h">
+      <Filter>Project\Scene\Title</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

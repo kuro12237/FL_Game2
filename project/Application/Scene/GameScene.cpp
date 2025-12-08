@@ -183,7 +183,7 @@ bool GameScene::CheckChangeScene(GameManager *Scene)
       context_->SetData(nextSceneData_);
 
       Scene->SetMoveSceneContext(move(context_));
-      Scene->ChangeScene(make_unique<GameClearScene>());
+      //Scene->ChangeScene(make_unique<GameClearScene>());
       return true;
    }
 }
