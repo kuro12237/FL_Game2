@@ -16,6 +16,7 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->SetAllParents();
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
+   gameObjectManager_->CameraReset("DefaultCamera");
 
    context_ = make_unique<ISceneContext>();
 
