@@ -15,4 +15,4 @@ void Package::Initialize() {
 
 void Package::Update() {}
 
-void Package::OnCollision(ObjectComponent *objData) {}
+void Package::OnCollision([[maybe_unused]]ObjectComponent *objData) {}

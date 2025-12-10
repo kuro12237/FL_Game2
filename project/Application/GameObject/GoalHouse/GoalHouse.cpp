@@ -17,4 +17,4 @@ void GoalHouse::Initialize() {
 
 void GoalHouse::Update() {}
 
-void GoalHouse::OnCollision(ObjectComponent *objData) {}
+void GoalHouse::OnCollision([[maybe_unused]]ObjectComponent *objData) {}

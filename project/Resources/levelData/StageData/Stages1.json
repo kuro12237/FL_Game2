@@ -31,7 +31,7 @@
             "DrawType": "Normal",
             "transform": {
                 "translate": [
-                    0.0,
+                    -5.373311996459961,
                     0.0,
                     4.0
                 ],
@@ -315,6 +315,82 @@
             },
             "gravity_Flag": false,
             "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    24.90332794189453,
+                    0.0,
+                    3.245347023010254
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Package",
+            "file_name": "Package",
+            "Directory_name": "Resources/Models/Package",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -1.1530840396881104,
+                    0.0,
+                    3.287627935409546
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
         }
     ]
 }
