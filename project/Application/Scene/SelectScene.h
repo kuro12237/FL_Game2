@@ -57,22 +57,12 @@ class SelectScene : public IScene, JsonComponent
    unique_ptr<ISceneContext> context_ = nullptr;
    GameObjectManager *gameObjectManager_;
    string inputLevelDataFileName_ = "SelectSceneData.json";
-   StageManager *stageManager_ = nullptr;
 
    Engine::Light::PointLight_param light_{};
 
-   unique_ptr<PlayerManager> player_ = nullptr;
-
-   uint32_t portalMax_ = 3;
-
-   shared_ptr<BlockManager> blockManager_ = nullptr;
    unique_ptr<GravityManager> gravityManager_ = nullptr;
    unique_ptr<BoxCollisionManager> gameCollisionManager_ = nullptr;
   
-   unique_ptr<SelectSceneUI> ui_ = nullptr;
-
-   vector<unique_ptr<StageNumber>> stageNumbers_;
-
    bool *isGameEnd_ = nullptr;
    bool isGameStart_ = false;
 };

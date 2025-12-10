@@ -4,13 +4,11 @@ using namespace Engine::Manager;
 
 void SelectScene::Initialize([[maybe_unused]] GameManager *state)
 {
-   GlobalVariables::GetInstance()->SetDirectoryFilePath(
-       "Resources/LevelData/ParamData/SelectScene/");
+   GlobalVariables::GetInstance()->SetDirectoryFilePath("Resources/LevelData/ParamData/SelectScene/");
    GlobalVariables::GetInstance()->LoadFiles("Resources/LevelData/ParamData/SelectScene/");
 
    // levelDataの読み込み
-   shared_ptr<LevelData> levelData =
-       move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
+   shared_ptr<LevelData> levelData = move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
 
    gameObjectManager_ = GameObjectManager::GetInstance();
    gameObjectManager_->ClearAllData();
@@ -21,17 +19,10 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
 
    context_ = make_unique<ISceneContext>();
 
-
-   player_ = make_unique<PlayerManager>();
-   player_->Initialize();
-
-
-
-   blockManager_ = make_shared<BlockManager>();
-   blockManager_->Initialize();
    gameCollisionManager_ = make_unique<BoxCollisionManager>();
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
+
 
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
@@ -56,9 +47,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    light_.position = lightPos;
    light_.decay = lightDecay;
 
-   isGameEnd_ = &player_->GetPlayerCore()->GetIsGameEnd();
-   player_->SetGameStartFlag(&isGameStart_);
-
 
    SkyBox::GetInstance()->Reset();
    const float kSkyBoxScale_ = 256.0f;
@@ -75,89 +63,35 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    postEffect_->GetAdjustedColorParam().fogAttenuationRate_ = fogParam.y;
    postEffect_->GetAdjustedColorParam().fogStart = fogParam.z;
    postEffect_->GetAdjustedColorParam().fogEnd = fogParam.w;
-
-   ui_ = make_unique<SelectSceneUI>();
-   ui_->Initialize();
-
-   stageNumbers_.resize(portalMax_);
-
-   for (size_t i = 0; i < portalMax_; i++) {
-      stageNumbers_[i] = make_unique<StageNumber>();
-      stageNumbers_[i]->SetNum(uint32_t(i) + 1);
-      stageNumbers_[i]->Initialize();
-   }
-
-
 }
 
 void SelectScene::Update(GameManager *Scene)
 {
-
+   // 更新
    ChangeSceneAnimation::GetInstance()->Update();
 
-   //// シーン切替が終わったら
-   //if (ChangeSceneAnimation::GetInstance()->GetIsComplite()) {
-   //   isGameStart_ = true;
-   //}
-
-   //player_->Update();
-
-   //for (size_t i = 0; i < portalMax_; i++) {
-   //   goals_[i]->Update();
-   //}
-
-   //for (size_t i = 0; i < portalMax_; i++) {
-   //   stageNumbers_[i]->Update();
-   //}
-
-   //SkyBox::GetInstance()->Update();
-   //goalParticle_->Update();
-   //lava_->Update();
-
-   //blockManager_->Update();
-
-   //LightingManager::AddList(light_);
-
-   //Gravitys();
-
-   //Collision();
-
-   //gameObjectManager_->Update();
-
-   //ui_->Update();
-
-   //for (size_t i = 0; i < goals_.size(); i++) {
-   //   if (goals_[i]->GetIsGoalFlag()) {
-
-   //      ChangeSceneAnimation::GetInstance()->ChangeStart();
-   //   }
-   //}
-
+   // 切替スタート
    ChangeSceneAnimation::GetInstance()->ChangeStart();
+
+   // 終わったら
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
- 
+      // ステージ選択番号
       contextData_.stageNumber = 1;
+      //データを次のシーンへ
       context_->SetData(contextData_);
       Scene->SetMoveSceneContext(move(context_));
       Scene->ChangeScene(make_unique<GameScene>());
       return;
    }
-
-   //gameCollisionManager_->End();
 }
 
 void SelectScene::ImGuiUpdate()
 {
    ImGui::Begin("PostEffect");
-   ImGui::DragFloat("scale::%f",
-                    &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogScale_, 0.01f);
-   ImGui::DragFloat("att::%f",
-                    &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogAttenuationRate_,
-                    0.01f);
-   ImGui::DragFloat("start::%f",
-                    &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogStart, 1.0f);
-   ImGui::DragFloat("end::%f", &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogEnd,
-                    1.0f);
+   ImGui::DragFloat("scale::%f", &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogScale_, 0.01f);
+   ImGui::DragFloat("att::%f", &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogAttenuationRate_, 0.01f);
+   ImGui::DragFloat("start::%f", &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogStart, 1.0f);
+   ImGui::DragFloat("end::%f", &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogEnd, 1.0f);
    ImGui::End();
    gameObjectManager_->ImGuiUpdate();
    if (ImGui::TreeNode("light")) {
@@ -169,7 +103,6 @@ void SelectScene::ImGuiUpdate()
       ImGui::TreePop();
    }
 
-   ui_->ImGuiUpdate();
    ChangeSceneAnimation::GetInstance()->ImGuiUpdate();
 }
 
@@ -177,31 +110,15 @@ void SelectScene::PostProcessDraw()
 {
    gameObjectManager_->InstancingDraw();
    gameObjectManager_->NormalDraw();
-
-
 }
 
 void SelectScene::Flont2dSpriteDraw()
 {
-  /* return;
-   player_->Draw2d();
-   player_->Draw2dBullet();
-   ui_->Draw2d();*/
    ChangeSceneAnimation::GetInstance()->Draw();
 }
 
 void SelectScene::Collision()
 {
-   // プレイヤー本体
-   if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
-      gameCollisionManager_->ListPushback(player_->GetPlayerCore());
-   }
- 
-   // ブロック
-   for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
-      gameCollisionManager_->ListPushback(b.get());
-   }
-
 
    gameCollisionManager_->CheckAllCollisoin();
 }
@@ -211,10 +128,7 @@ void SelectScene::Gravitys()
    gravityManager_->Update();
    gravityManager_->ClearList();
 
-   if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
-      gravityManager_->PushList(player_->GetPlayerCore());
-   }
-  
+
    gravityManager_->CheckGravity();
 }
 
@@ -222,18 +136,6 @@ bool SelectScene::CheckLoadScene()
 {
    bool changeFlag = false;
 
-   // プレイヤーと当たったidがportalIdが一致していた場合
-   queue<uint32_t> allHitIds = player_->GetPlayerCore()->GetCollider()->GetAllHitIds();
-   size_t size = allHitIds.size();
 
-   for (size_t id = 0; id < size; id++) {
-      uint32_t hitId = allHitIds.front();
-      allHitIds.pop();
-      for (size_t portalCount = 0; portalCount < portalMax_; portalCount++) {
-         if (hitId == ObjectId::kPortalIds[portalCount]) {
-            changeFlag = true;
-         }
-      }
-   }
    return changeFlag;
 }
