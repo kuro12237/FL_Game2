@@ -16,7 +16,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->SetAllParents();
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
-   gameObjectManager_->CameraReset("DefaultCamera");
 
    context_ = make_unique<ISceneContext>();
 
@@ -24,6 +23,15 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
 
+   camera_ = make_shared<PlayerCamera>();
+   camera_
+       ->Initialize();
+
+   gameObjectManager_
+       ->CameraReset(camera_->GetName());
+   camera_
+       ->Update();
+   
 
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
@@ -74,6 +82,8 @@ void SelectScene::Update(GameManager *Scene)
    // 切替スタート
    ChangeSceneAnimation::GetInstance()->ChangeStart();
 
+   camera_->Update();
+
    // 終わったら
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
       // ステージ選択番号
@@ -115,7 +125,7 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
-   ChangeSceneAnimation::GetInstance()->Draw();
+   //ChangeSceneAnimation::GetInstance()->Draw();
 }
 
 void SelectScene::Collision()

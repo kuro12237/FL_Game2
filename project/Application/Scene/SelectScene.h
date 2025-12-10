@@ -65,4 +65,6 @@ class SelectScene : public IScene, JsonComponent
   
    bool *isGameEnd_ = nullptr;
    bool isGameStart_ = false;
+
+   shared_ptr<PlayerCamera> camera_ = nullptr;
 };
