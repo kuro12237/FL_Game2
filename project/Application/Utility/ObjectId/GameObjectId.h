@@ -16,6 +16,7 @@ namespace ObjectId {
 	const static uint32_t kEnemyWalkId = 0b000001000;      // 8
 	const static uint32_t kGoalId = 0b000010000;           // 16
 
+	const static uint32_t kPackageId = 0b000100000;
 
 	const static uint32_t kGunEnemyId = 0b000100000;
 	const static uint32_t kGunEnemyBulletId = 0b000100001;

@@ -22,10 +22,9 @@ void Block::Initialize()
 
 void Block::Update()
 {
-  
 
-       // hitフラグをクリア
-       collider_->ClearExtrusion();
+   // hitフラグをクリア
+   collider_->ClearExtrusion();
    collider_->ClearHitDirection();
 }
 
