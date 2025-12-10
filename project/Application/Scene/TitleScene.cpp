@@ -55,11 +55,6 @@ void TitleScene::Initialize([[maybe_unused]] GameManager *state)
    titleLight_->Initialize();
    titleLight_->SetP_CameraPos(cameraWt.transform.translate);
 
-   lava_ = make_unique<Lava>();
-   lava_->Initialize();
-   lava_->SetCameraParent(cameraWt.transform.translate);
-   p_LavaPos_ = &lava_->GetObjectData().lock()->GetWorldTransform().transform.translate;
-
    titleName_ = make_unique<TitleName>();
    titleName_->Initialize();
 
@@ -114,8 +109,6 @@ void TitleScene::Update([[maybe_unused]] GameManager *Scene)
    }
 
    arch_->Update();
-   lava_->Update();
-
    titleNameParticle_->Update();
    camera_->Update();
 
@@ -137,8 +130,6 @@ void TitleScene::Update([[maybe_unused]] GameManager *Scene)
    gravityManager_->GetParticleGravityField()->GetParam(0).translate = *p_LavaPos_;
 
    gravityManager_->ClearList();
-   gravityManager_->PushParticleList(lava_->GetLavaParticle().lock()->GetParticle());
-
    gravityManager_->Update();
    gravityManager_->CheckGravity();
    gameObjectManager_->Update();
@@ -177,7 +168,6 @@ void TitleScene::PostProcessDraw()
 {
    gameObjectManager_->InstancingDraw();
    gameObjectManager_->NormalDraw();
-   lava_->GetLavaParticle().lock()->Draw();
 }
 
 void TitleScene::Flont2dSpriteDraw()

@@ -18,21 +18,4 @@ void PlayerStateDeadAnimation::Initialize([[maybe_unused]] Player* p)
 void PlayerStateDeadAnimation::Update([[maybe_unused]] Player* p)
 {
 
-	const float flameAdd = 1.0f / 30.0f;
-	if (deadAnimationFlame_ <= 1.0f) {
-		deadAnimationFlame_ += flameAdd;
-		deadAnimationFlame_ = std::fmod(deadAnimationFlame_, deadAnimationData_.duration);
-	}
-	else
-	{
-		flame_ += flameAdd_;
-	}
-
-	if (flame_ >= flameMax_)
-	{
-		p->SetIsDeadComplite(true);
-	}
-
-	SAnimation::Skeleton& skeleton = gameObjectInstance_->GetObj3dData(p->INameable::GetName())->GetGameObject()->GetSkeleton();
-	AnimationManager::ApplyAnimation(skeleton, deadAnimationData_, deadAnimationFlame_);
 }

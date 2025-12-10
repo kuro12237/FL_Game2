@@ -529,18 +529,6 @@
     <ClCompile Include="Application\GameObject\Particles\CharacterMoveParticle.cpp">
       <Filter>Project\GameObject\Particles</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.cpp">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClCompile>
     <ClCompile Include="Application\GameManager\GameManager.cpp">
       <Filter>Project</Filter>
     </ClCompile>
@@ -561,12 +549,6 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\UI\GameSceneUI\GameSceneUI.cpp">
       <Filter>Project\GameObject\UI</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Goal\Goal.cpp">
-      <Filter>Project\GameObject\Goal</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Goal\Particle\GoalParticle.cpp">
-      <Filter>Project\GameObject\Particles</Filter>
     </ClCompile>
     <ClCompile Include="CLEYERA\Model\Game3dInstancingObject\IGameInstancing3dObject.cpp">
       <Filter>Project\GameObject\ObjectData</Filter>
@@ -654,9 +636,6 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\ObjectInterface\ISpriteData.cpp">
       <Filter>Project\GameObject\ObjectInterface</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Lava\Lava.cpp">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Warp\Warp.cpp">
       <Filter>Project\GameObject\Warp</Filter>
@@ -814,9 +793,6 @@
     <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineDepthNoneWriteCommand.cpp">
       <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyManager.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.cpp">
       <Filter>Project\GameObject\UI</Filter>
     </ClCompile>
@@ -826,41 +802,11 @@
     <ClCompile Include="Application\GameObject\ClearCharacter\ClearCharacter.cpp">
       <Filter>Project\GameObject\ClearCharacter</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\ClearCoinManager\ClearCoin.cpp">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\ClearCoinManager\ClearCoinManager.cpp">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\ClearCoinManager\particle\ClearCoinSplashParticle.cpp">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\ClearCoinManager\state\ClearCoinStateActive.cpp">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClCompile>
     <ClCompile Include="Application\Scene\IScene.cpp">
       <Filter>Project\Scene</Filter>
     </ClCompile>
     <ClCompile Include="CLEYERA\Graphics\CallPipline\commands\DissolvePipline\DissolvePiplineRasterFrontBackWriteCommand.cpp">
       <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\StageCoin\StageCoin.cpp">
-      <Filter>Project\GameObject\StageCoin</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\StageCoin\StageCoinManager.cpp">
-      <Filter>Project\GameObject\StageCoin</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemy.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyBullet\GunEnemyBullet.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateMove.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateShoot.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.cpp">
       <Filter>Project\GameObject\UI</Filter>
@@ -877,23 +823,11 @@
     <ClCompile Include="Application\GameObject\BreakBlock\BreakBlockManager.cpp">
       <Filter>Project\GameObject\BreakBlock</Filter>
     </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\GunEnemyPart.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\state\GunEnemyStateDeadAnimation.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\GunEnemy\IGunEnemy.cpp">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClCompile>
     <ClCompile Include="Application\GameObject\ObjectInterface\ParticleComponent.cpp">
       <Filter>Project\GameObject\ObjectData</Filter>
     </ClCompile>
     <ClCompile Include="Application\GameObject\Player\Particle\PlayerMoveParticle.cpp">
       <Filter>Project\GameObject\Character\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Lava\LavaParticle.cpp">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClCompile>
     <ClCompile Include="Application\Scene\GameOverScene.cpp">
       <Filter>Project\GameObject\UI</Filter>
@@ -939,9 +873,6 @@
     </ClCompile>
     <ClCompile Include="Application\Scene\GameScene\GameSceneStartState.cpp">
       <Filter>Project\Scene\GameSceneState</Filter>
-    </ClCompile>
-    <ClCompile Include="Application\GameObject\Lava\LavaManager.cpp">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1170,18 +1101,6 @@
     <ClInclude Include="Application\Utility\CollisionMask\CollisionMask.h">
       <Filter>Project\GameObject\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.h">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.h">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameManager\GameManager.h">
       <Filter>Project</Filter>
     </ClInclude>
@@ -1206,12 +1125,6 @@
     <ClInclude Include="Application\GameObject\UI\GameSceneUI\GameSceneUI.h">
       <Filter>Project\GameObject\UI</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\Goal\Goal.h">
-      <Filter>Project\GameObject\Goal</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Goal\Particle\GoalParticle.h">
-      <Filter>Project\GameObject\Particles</Filter>
-    </ClInclude>
     <ClInclude Include="CLEYERA\Utility\ObjectManager\IGameObjectData.h">
       <Filter>Project\GameObject\ObjectData</Filter>
     </ClInclude>
@@ -1229,9 +1142,6 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\state\IPlayerState.h">
       <Filter>Project\GameObject\Character\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h">
-      <Filter>Project\GameObject\Character\EnemyWalk</Filter>
     </ClInclude>
     <ClInclude Include="CLEYERA\Utility\Noise\NoiseTexture.h">
       <Filter>CLEYERA\Utility\Noise</Filter>
@@ -1310,9 +1220,6 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\ObjectInterface\ISpriteData.h">
       <Filter>Project\GameObject\ObjectInterface</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Lava\Lava.h">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\Warp\Warp.h">
       <Filter>Project\GameObject\Warp</Filter>
@@ -1497,9 +1404,6 @@
     <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\Phong3dPiplineDepthNoneWriteCommand.h">
       <Filter>CLEYERA\Graphics\GraphicsPipelineManager</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyManager.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.h">
       <Filter>Project\GameObject\UI</Filter>
     </ClInclude>
@@ -1509,18 +1413,6 @@
     <ClInclude Include="Application\GameObject\ClearCharacter\ClearCharacter.h">
       <Filter>Project\GameObject\ClearCharacter</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\ClearCoinManager\ClearCoin.h">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\ClearCoinManager\ClearCoinManager.h">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\ClearCoinManager\Particle\ClearCoinSplashParticle.h">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\ClearCoinManager\state\ClearCoinStateActive.h">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameObject\SceneContextData\SceneContextData.h">
       <Filter>Project\Scene</Filter>
     </ClInclude>
@@ -1529,30 +1421,6 @@
     </ClInclude>
     <ClInclude Include="CLEYERA\Graphics\CallPipline\commands\DissolvePipline\DissolvePiplineRasterFrontBackWriteCommand.h">
       <Filter>CLEYERA\Graphics\CallPipline\commands</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\ClearCoinManager\state\IClearCoinState.h">
-      <Filter>Project\GameObject\ClearCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\StageCoin\StageCoin.h">
-      <Filter>Project\GameObject\StageCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\StageCoin\StageCoinManager.h">
-      <Filter>Project\GameObject\StageCoin</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\state\IGunEnemyState.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemy.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyBullet\GunEnemyBullet.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateMove.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateShoot.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
     </ClInclude>
     <ClInclude Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.h">
       <Filter>Project\GameObject\UI</Filter>
@@ -1569,15 +1437,6 @@
     <ClInclude Include="Application\GameObject\BreakBlock\BreakBlockManager.h">
       <Filter>Project\GameObject\BreakBlock</Filter>
     </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\GunEnemyPart.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\state\GunEnemyStateDeadAnimation.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\GunEnemy\IGunEnemy.h">
-      <Filter>Project\GameObject\Character\GunEnemy</Filter>
-    </ClInclude>
     <ClInclude Include="Application\GameObject\ObjectInterface\ManagerComponent.h">
       <Filter>Project\GameObject\ObjectData</Filter>
     </ClInclude>
@@ -1586,9 +1445,6 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\Player\Particle\PlayerMoveParticle.h">
       <Filter>Project\GameObject\Character\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Lava\LavaParticle.h">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClInclude>
     <ClInclude Include="Application\Scene\GameOverScene.h">
       <Filter>Project\GameObject\UI</Filter>
@@ -1634,9 +1490,6 @@
     </ClInclude>
     <ClInclude Include="Application\Scene\GameScene\IGameSceneState.h">
       <Filter>Project\Scene\GameSceneState</Filter>
-    </ClInclude>
-    <ClInclude Include="Application\GameObject\Lava\LavaManager.h">
-      <Filter>Project\GameObject\Lava</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

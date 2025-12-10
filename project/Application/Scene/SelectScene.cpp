@@ -19,34 +19,19 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
 
-   goalParticle_ = make_unique<GoalParticle>();
-   goalParticle_->Initialize();
    context_ = make_unique<ISceneContext>();
 
-   return;
 
    player_ = make_unique<PlayerManager>();
    player_->Initialize();
 
-   goals_.resize(portalMax_);
 
-   for (size_t portalIndex = 0; portalIndex < portalMax_; portalIndex++) {
-      shared_ptr<Goal> goal = make_shared<Goal>();
-      goals_[portalIndex] = make_shared<Goal>();
-      goals_[portalIndex]->SetGoalObjectId(ObjectId::kGoalId);
-      goals_[portalIndex]->SetGoalIndex(uint32_t(portalIndex));
-      goals_[portalIndex]->SetGoalParticle(goalParticle_);
-      goals_[portalIndex]->Initialize();
-   }
 
    blockManager_ = make_shared<BlockManager>();
    blockManager_->Initialize();
    gameCollisionManager_ = make_unique<BoxCollisionManager>();
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
-
-   lava_ = make_unique<Lava>();
-   lava_->Initialize();
 
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
@@ -150,13 +135,7 @@ void SelectScene::Update(GameManager *Scene)
 
    ChangeSceneAnimation::GetInstance()->ChangeStart();
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
-      int32_t stageNumber = 0;
-      for (size_t i = 0; i < goals_.size(); i++) {
-         if (goals_[i]->GetIsGoalFlag()) {
-            stageNumber = int32_t(i);
-         }
-      }
-
+ 
       contextData_.stageNumber = 1;
       context_->SetData(contextData_);
       Scene->SetMoveSceneContext(move(context_));
@@ -169,7 +148,6 @@ void SelectScene::Update(GameManager *Scene)
 
 void SelectScene::ImGuiUpdate()
 {
-   return;
    ImGui::Begin("PostEffect");
    ImGui::DragFloat("scale::%f",
                     &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogScale_, 0.01f);
@@ -197,13 +175,10 @@ void SelectScene::ImGuiUpdate()
 
 void SelectScene::PostProcessDraw()
 {
-   return;
    gameObjectManager_->InstancingDraw();
    gameObjectManager_->NormalDraw();
 
-   lava_->GetLavaParticle().lock()->Draw();
 
-   goalParticle_->Draw();
 }
 
 void SelectScene::Flont2dSpriteDraw()
@@ -226,10 +201,7 @@ void SelectScene::Collision()
    for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
       gameCollisionManager_->ListPushback(b.get());
    }
-   // portal
-   for (shared_ptr<Goal> g : goals_) {
-      gameCollisionManager_->ListPushback(g.get());
-   }
+
 
    gameCollisionManager_->CheckAllCollisoin();
 }
@@ -242,8 +214,7 @@ void SelectScene::Gravitys()
    if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
       gravityManager_->PushList(player_->GetPlayerCore());
    }
-   gravityManager_->PushParticleList(lava_->GetLavaParticle().lock()->GetParticle());
-
+  
    gravityManager_->CheckGravity();
 }
 

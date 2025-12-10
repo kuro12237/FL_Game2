@@ -12,8 +12,6 @@
 #include "GameObject/GravityManager/GravityManager.h"
 
 #include "GameObject/Block/BlockManager.h"
-#include "GameObject/EnemyWalk/EnemyWalkManager.h"
-#include "GameObject/Goal/Goal.h"
 #include "GameObject/Player/PlayerManager.h"
 
 #include "GameObject/Particles/CharacterDeadParticle.h"
@@ -29,7 +27,6 @@
 #include "GameObject/ClearCharacter/ClearCharacter.h"
 #include "GameObject/SceneContextData/SceneContextData.h"
 
-#include "GameObject/ClearCoinManager/ClearCoinManager.h"
 #include "GameObject/Particles/Explosion/ExplosionParticle.h"
 
 /// <summary>
@@ -76,10 +73,8 @@ class GameClearScene : public IScene, JsonComponent
    unique_ptr<ClearSceneUI> ui_ = nullptr;
 
    unique_ptr<ClearCharacter> character_ = nullptr;
-   unique_ptr<ClearCoinManager> coinManager_ = nullptr;
    unique_ptr<ClearCamera> camera_ = nullptr;
 
-   unique_ptr<Lava> lava_ = nullptr;
    unique_ptr<GravityManager> gravityManager_ = nullptr;
 
    unique_ptr<ExplosionParticle> explosionParticle_ = nullptr;

@@ -37,7 +37,7 @@ void BoxCollisionManager::CheckAllCollisoin()
 			AABB b = SettingAABBParam((*itr2)->GetCollider());
 
 			// 衝突判定をとる
-			if (IsCollision(a, b)) 
+			if (IsCollision(a, b))
 			{
 				//めり込み計算
 				(*itr1)->GetCollider()->ClearExtrusion();

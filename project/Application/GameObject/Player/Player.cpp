@@ -25,9 +25,9 @@ void Player::Initialize()
    auto &transform = objectData_.lock()->GetWorldTransform().transform;
 
    // Scale値を外部から読み込む
-   float dfScale = 0.0f;
-   AddJsonItem<float>("DefaultScale", dfScale);
-   dfScale = GetJsonItem<float>("DefaultScale");
+   float dfScale = 0.5f;
+   //AddJsonItem<float>("DefaultScale", dfScale);
+   //dfScale = GetJsonItem<float>("DefaultScale");
    transform.scale = {dfScale, dfScale, dfScale};
 
    // スタート入りの記録
@@ -71,94 +71,27 @@ void Player::Update()
       statesToRemoveQueue_.pop();
    }
 
-   // 落下
-   if (velocity_.y <= -0.1f) {
-      if (!IsInState<PlayerStateFall>()) {
-         AddState<PlayerStateFall>();
-      }
-   }
-
-   /// ダメージ処理
-   if (IsInState<PlayerStateInvincible>()) {
-      damegeCoolTimer_ += DeltaTimer(damegeFlame_);
-
-      if (damegeUpdateFunc_) {
-         damegeUpdateFunc_();
-      }
-
-      // 上限値になったら
-      if (damegeCoolTimer_ >= damageCoolTimerMax_) {
-         damegeCoolTimer_ = 0;
-         // ダメージ演出の終わり処理
-         if (damegeUpdateEndFunc_) {
-            damegeUpdateEndFunc_();
-         }
-         this->MarkStateForRemoval<PlayerStateInvincible>();
-      }
-   }
-
-   isAim_ = false;
-   isShoot_ = false;
 
    TransformUpdate();
 
-   TransformEular &transform = objData->GetWorldTransform().transform;
+   //TransformEular &transform = objData->GetWorldTransform().transform;
 
    RotateUpdate();
 
-   // 落ちたら
-   if (transform.translate.y <= -5.0f) {
-      // 無敵化
-      AddState<PlayerStateInvincible>();
-      ResetPos();
 
-      if (reduceHpFunc_) {
-         reduceHpFunc_();
-      }
-   }
 }
 
 void Player::OnCollision([[maybe_unused]] ObjectComponent *objData)
 {
    auto c = objData->GetCollider();
 
-   if (ObjectId::kOnlyCollideWithBlocksid) {
+  /* if (ObjectId::kOnlyCollideWithBlocksid) {
       return;
-   }
+   }*/
 
-   if (c->GetId() == ObjectId::kGoalId) {
-      hitGoalName_ = objData->GetName();
-      if (!IsInState<PlayerStateGoalAnimation>()) {
-         AddState<PlayerStateGoalAnimation>();
-      }
-      return;
-   }
-
-   if (c->GetId() == ObjectId::kWarpGateId) {
-      warpFilePath_ = gameObjectManager_->GetObj3dData(objData->GetName())->GetParamFilePaths()[0];
-      AddState<PlayerStateWarpMove>();
-   }
-
-   if (!IsInState<PlayerStateInvincible>()) {
-      if (c->GetId() == ObjectId::kEnemyWalkId) {
-         if (reduceHpFunc_) {
-            reduceHpFunc_();
-         }
-         AddState<PlayerStateInvincible>();
-      }
-
-      if (c->GetId() == ObjectId::kGunEnemyId) {
-         if (reduceHpFunc_) {
-            reduceHpFunc_();
-         }
-         AddState<PlayerStateInvincible>();
-      }
-      if (c->GetId() == ObjectId::kGunEnemyBulletId) {
-         if (reduceHpFunc_) {
-            reduceHpFunc_();
-         }
-         AddState<PlayerStateInvincible>();
-      }
+   if (c->GetId() == ObjectId::kPlayerId) {
+   
+   return;
    }
 
    if (c->GetId() == ObjectId::kNormalBlock) {

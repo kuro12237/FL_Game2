@@ -75,8 +75,6 @@ uint32_t SceneFileLoader::LoadModelData(nlohmann::json& object, shared_ptr<Game3
 
 	if (fileType == "obj")
 	{
-		//ModelManager::ModelLoadNormalMap();
-           //ModelManager::SetIsDirectoryFilePath();
 		modelHandle = ModelManager::LoadObjectFile(fileName);
 	}
 	if (fileType == "gltf")
@@ -113,11 +111,11 @@ AABB SceneFileLoader::LoadCollider(nlohmann::json& object)
 	if (type == "Box")
 	{
 		aabb.max.x = float(object["size"][0]) / 2.0f;
-		aabb.max.y = float(object["size"][2]) / 2.0f;
-		aabb.max.z = float(object["size"][1]) / 2.0f;
+		aabb.max.y = float(object["size"][1]) / 2.0f;
+		aabb.max.z = float(object["size"][2]) / 2.0f;
 		aabb.min.x = -float(object["size"][0]) / 2.0f;
-		aabb.min.y = -float(object["size"][2]) / 2.0f;
-		aabb.min.z = -float(object["size"][1]) / 2.0f;
+		aabb.min.y = -float(object["size"][1]) / 2.0f;
+		aabb.min.z = -float(object["size"][2]) / 2.0f;
 
 	}
 	return aabb;

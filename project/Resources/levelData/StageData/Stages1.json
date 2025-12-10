@@ -45,6 +45,19 @@
                     1.0,
                     2.0
                 ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
             }
         },
         {
@@ -89,9 +102,9 @@
                     1.0
                 ],
                 "rotate": [
-                    90.00000762939453,
-                    2.8787088273037054e-13,
-                    179.99998474121094
+                    0.0,
+                    -0.0,
+                    0.0
                 ],
                 "scale": [
                     20.0,
@@ -99,32 +112,17 @@
                     1.0
                 ]
             },
-            "gravity_Flag": false,
-            "terrain_Flag": false
-        },
-        {
-            "type": "MESH",
-            "name": "NormalBlock.004",
-            "file_name": "NormalBlock",
-            "Directory_name": "Resources/Models/Blocks/NormalBlock",
-            "ModelFileType": "obj",
-            "DrawType": "Instancing",
-            "InstancingObjName": "Map",
-            "transform": {
-                "translate": [
-                    -10.0,
+            "collider": {
+                "type": "Box",
+                "center": [
                     0.0,
-                    15.0
+                    0.0,
+                    0.0
                 ],
-                "rotate": [
-                    90.00000762939453,
-                    -0.0,
-                    179.99998474121094
-                ],
-                "scale": [
-                    1.0,
-                    15.0,
-                    1.0
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
                 ]
             },
             "gravity_Flag": false,
@@ -145,14 +143,27 @@
                     29.0
                 ],
                 "rotate": [
-                    90.00000762939453,
-                    2.8787088273037054e-13,
-                    179.99998474121094
+                    0.0,
+                    -0.0,
+                    0.0
                 ],
                 "scale": [
                     20.0,
                     1.0,
                     1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
                 ]
             },
             "gravity_Flag": false,
@@ -168,47 +179,32 @@
             "InstancingObjName": "Map",
             "transform": {
                 "translate": [
-                    9.0,
-                    0.0,
-                    9.0
-                ],
-                "rotate": [
-                    90.00000762939453,
-                    2.8787088273037054e-13,
-                    179.99998474121094
-                ],
-                "scale": [
-                    20.0,
-                    1.0,
-                    1.0
-                ]
-            },
-            "gravity_Flag": false,
-            "terrain_Flag": false
-        },
-        {
-            "type": "MESH",
-            "name": "NormalBlock.003",
-            "file_name": "NormalBlock",
-            "Directory_name": "Resources/Models/Blocks/NormalBlock",
-            "ModelFileType": "obj",
-            "DrawType": "Instancing",
-            "InstancingObjName": "Map",
-            "transform": {
-                "translate": [
-                    28.0,
+                    -10.0,
                     0.0,
                     15.0
                 ],
                 "rotate": [
-                    90.00000762939453,
+                    0.0,
                     -0.0,
-                    179.99998474121094
+                    0.0
                 ],
                 "scale": [
                     1.0,
-                    15.0,
-                    1.0
+                    1.0,
+                    15.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
                 ]
             },
             "gravity_Flag": false,
@@ -237,6 +233,88 @@
                     1.0
                 ]
             }
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.003",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Models/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    9.0,
+                    0.0,
+                    9.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    20.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
+        },
+        {
+            "type": "MESH",
+            "name": "NormalBlock.004",
+            "file_name": "NormalBlock",
+            "Directory_name": "Resources/Models/Blocks/NormalBlock",
+            "ModelFileType": "obj",
+            "DrawType": "Instancing",
+            "InstancingObjName": "Map",
+            "transform": {
+                "translate": [
+                    28.0,
+                    0.0,
+                    15.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    15.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            },
+            "gravity_Flag": false,
+            "terrain_Flag": false
         }
     ]
 }

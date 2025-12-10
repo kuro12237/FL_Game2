@@ -37,12 +37,8 @@ void GameClearScene::Initialize([[maybe_unused]] GameManager *state)
    explosionParticle_ = make_unique<ExplosionParticle>();
    explosionParticle_->Initialize();
 
-   coinManager_ = make_unique<ClearCoinManager>();
-   coinManager_->CoinsCount(contextData_.stageConinsCount);
-   coinManager_->Initialize();
 
-   lava_ = make_unique<Lava>();
-   lava_->Initialize();
+
 
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
@@ -95,13 +91,9 @@ void GameClearScene::Update([[maybe_unused]] GameManager *Scene)
 
    camera_->Update();
 
-   if (camera_->GetIsComplite() && !coinManager_->GetIsAnimStart()) {
-      coinManager_->SetIsAnimStart(true);
-   }
-
+  
    ui_->SetIsCearTextUIAnimStart(true);
 
-   coinManager_->Update();
 
    gravityManager_->Update();
    gravityManager_->ClearList();
@@ -136,8 +128,6 @@ void GameClearScene::ImGuiUpdate() {
    gameObjectManager_->ImGuiUpdate();
    ui_->ImGuiUpdate();
 
-   lava_->Update();
-   coinManager_->ImGuiUpdate();
    ImGui::Begin("PostEffect");
    ImGui::DragFloat("scale::%f",
                     &Engine::PostEffect::GetInstance()->GetAdjustedColorParam().fogScale_, 0.01f);
@@ -155,12 +145,6 @@ void GameClearScene::ImGuiUpdate() {
 
 void GameClearScene::PostProcessDraw()
 {
-   gameObjectManager_->InstancingDraw();
-   coinManager_->ParticleDraw();
-   gameObjectManager_->NormalDraw();
-
-   explosionParticle_->Draw();
-   lava_->GetLavaParticle().lock()->Draw();
 }
 
 void GameClearScene::Flont2dSpriteDraw()

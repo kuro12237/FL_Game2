@@ -84,8 +84,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    deadParticle_ = make_unique<CharacterDeadParticle>();
    particleList_.push_back(deadParticle_);
 
-   goalParticle_ = make_shared<GoalParticle>();
-   goalParticle_->Initialize();
 
    for (auto obj : particleList_) {
       obj.lock()->Initialize();
@@ -250,7 +248,6 @@ void GameScene::ParticlesUpdate()
 {
    deadParticle_->GetParticle()->CallBarrier();
    blockManager_->Dispach(deadParticle_->GetParticle());
-   goalParticle_->Update();
 }
 
 void GameScene::ParticlesDraw()
@@ -259,5 +256,4 @@ void GameScene::ParticlesDraw()
    for (auto p : particleList_) {
       p.lock()->Draw();
    }
-   goalParticle_->Draw();
 }

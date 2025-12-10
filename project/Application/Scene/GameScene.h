@@ -8,15 +8,9 @@
 
 #include "GameObject/Block/BlockManager.h"
 #include "GameObject/BreakBlock/BreakBlockManager.h"
-#include "GameObject/EnemyWalk/EnemyWalkManager.h"
-#include "GameObject/GunEnemy/GunEnemyManager.h"
-#include "GameObject/Lava/LavaManager.h"
 #include "GameObject/Player/PlayerManager.h"
-#include "GameObject/StageCoin/StageCoinManager.h"
 #include "GameObject/Warp/WarpManager.h"
 
-#include "GameObject/Goal/Goal.h"
-#include "GameObject/Lava/Lava.h"
 #include "GameObject/Light/GameLight.h"
 
 #include "GameObject/Particles/CharacterDeadParticle.h"
@@ -143,5 +137,4 @@ class GameScene : public IScene, public JsonComponent
    shared_ptr<PlayerMoveParticle> playerMoveParticle_ = nullptr;
    shared_ptr<PlayerDeadParticle> playerDeadParticle_ = nullptr;
 
-   shared_ptr<GoalParticle> goalParticle_ = nullptr;
 };

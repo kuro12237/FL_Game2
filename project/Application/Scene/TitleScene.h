@@ -10,14 +10,12 @@
 #include "GameObject/GravityManager/GravityManager.h"
 
 #include "GameObject/Block/BlockManager.h"
-#include "GameObject/EnemyWalk/EnemyWalkManager.h"
 #include "GameObject/Player/PlayerManager.h"
 
 #include "GameObject/Particles/CharacterDeadParticle.h"
 
 #include "GameObject/Arch/Arch.h"
 #include "GameObject/Bridge/Bridge.h"
-#include "GameObject/Lava/Lava.h"
 #include "GameObject/TitleCamera/TitleCamera.h"
 #include "GameObject/TitleLight/TitleLight.h"
 #include "GameObject/TitleName/TitleName.h"
@@ -79,7 +77,6 @@ private:
   size_t bridgeSizeMax_ = 2;
   vector<unique_ptr<Bridge>> bridge_ = {};
   unique_ptr<TitleLight> titleLight_ = nullptr;
-  unique_ptr<Lava> lava_ = nullptr;
   unique_ptr<TowerManager> towerManager_ = nullptr;
   unique_ptr<GravityManager> gravityManager_ = nullptr;
 
