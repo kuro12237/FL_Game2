@@ -16,7 +16,7 @@ class StageSelectUI
  void Draw();
 
  #pragma region Accessor 
- int GetCurrentSelectStageNum() const { return currentIndex_; }
+ int GetCurrentSelectStageNum() const { return currentIndex_ + 1; }
  #pragma endregion
 
 private:

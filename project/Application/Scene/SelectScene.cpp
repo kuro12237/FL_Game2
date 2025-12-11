@@ -36,7 +36,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    selectUI_
        ->Init();
    
-
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
 
