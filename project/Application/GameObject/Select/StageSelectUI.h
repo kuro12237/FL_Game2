@@ -15,11 +15,16 @@ class StageSelectUI
 
  void Draw();
 
-
+ #pragma region Accessor 
+ int GetCurrentSelectStageNum() const { return currentIndex_; }
+ #pragma endregion
 
 private:
- unique_ptr<Engine::Objects::Sprite> sprite_ = nullptr;
- Engine::Transform::WorldTransform worldTransform_ = {};
+ std::vector<uint32_t> textureHandles_;
+ std::vector<std::unique_ptr<Engine::Objects::Sprite>> stageSprites_;
+ std::vector<Engine::Transform::WorldTransform> stageTransforms_; 
 
+ int currentIndex_ = 0;
+ const float M_PI = 3.14159265358979323846f;
 
 };

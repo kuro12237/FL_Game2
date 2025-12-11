@@ -3,46 +3,78 @@ using namespace Engine::Manager;
 
 StageSelectUI::StageSelectUI() 
 {
-   sprite_ = std::make_unique<Engine::Objects::Sprite>();
    
 }
 
 void StageSelectUI::Init()
 {
-   uint32_t selectnum1 = TextureManager::LoadPngTexture("SelectNumber/selectNum_1.png");
-   uint32_t selectnum2 = TextureManager::LoadPngTexture("SelectNumber/selectNum_2.png");
-   uint32_t selectnum3 = TextureManager::LoadPngTexture("SelectNumber/selectNum_3.png");
-   uint32_t selectnum4 = TextureManager::LoadPngTexture("SelectNumber/selectNum_4.png");
-   uint32_t selectnum5 = TextureManager::LoadPngTexture("SelectNumber/selectNum_5.png");
-   uint32_t selectnum6 = TextureManager::LoadPngTexture("SelectNumber/selectNum_6.png");
-   uint32_t selectnum7 = TextureManager::LoadPngTexture("SelectNumber/selectNum_7.png");
-   uint32_t selectnum8 = TextureManager::LoadPngTexture("SelectNumber/selectNum_8.png");
-   uint32_t selectnum9 = TextureManager::LoadPngTexture("SelectNumber/selectNum_9.png");
-   uint32_t selectnum10 = TextureManager::LoadPngTexture("SelectNumber/selectNum_10.png");
+   const int stageCount = 10;
+   stageSprites_.resize(stageCount);
+   stageTransforms_.resize(stageCount);
 
-   selectnum1;
-   selectnum2;
-   selectnum3;
-   selectnum4;
-   selectnum5;
-   selectnum6;
-   selectnum7;
-   selectnum8;
-   selectnum9;
-   selectnum10;
+   // --- テクスチャロード（キャッシュされるので1回でOK） ---
+   textureHandles_.resize(stageCount);
+   for (int i = 0; i < stageCount; ++i) {
+      std::string path = "SelectNumber/selectNum_" + std::to_string(i + 1) + ".png";
+      textureHandles_[i] = TextureManager::LoadPngTexture(path);
+   }
 
-   sprite_->Initialize();
-   sprite_->SetTexHandle(selectnum1);
+   // --- スプライト生成 ---
+   for (int i = 0; i < stageCount; ++i) {
+      stageSprites_[i] = std::make_unique<Engine::Objects::Sprite>();
+      stageSprites_[i]->Initialize();
+      stageSprites_[i]->SetTexHandle(textureHandles_[i]);
+      stageSprites_[i]->SetSize({140.0f, 140.0f});
 
-   worldTransform_.Initialize();
+      // WorldTransform
+      stageTransforms_[i].Initialize();
+   }
+
+
+   float startX = 10.0f;  // 左端の開始位置
+   float startY = 150.0f;  // 上からの高さ（固定）
+   float offsetX = 115.0f; // X移動量：これが階段の幅
+   float offsetY = 250.0f;  // Y移動量：段を下げる量
+
+   for (int i = 0; i < stageCount; ++i) {
+      bool upperStep = (i % 2 == 0); // 偶数: 上段, 奇数: 下段
+
+      stageTransforms_[i].transform.translate.x = startX + i * offsetX;
+      stageTransforms_[i].transform.translate.y = upperStep ? startY : startY + offsetY;
+   }
 }
 
 void StageSelectUI::Update()
 {
-   worldTransform_.UpdateMatrix();
+   for (auto &wt : stageTransforms_) {
+      wt.UpdateMatrix();
+   }
+
+   for (int i = 0; i < stageTransforms_.size(); ++i) {
+      if (i == currentIndex_) {
+         // 選択中は少し大きく
+         stageTransforms_[i].transform.scale = {1.5f, 1.5f, 1.0f};
+      }
+      else {
+         // 他は通常サイズ
+         stageTransforms_[i].transform.scale = {1.0f, 1.0f, 1.0f};
+      }
+
+      stageTransforms_[i].UpdateMatrix();
+   }
+
+   ImGui::Begin("Select");
+   ImGui::InputInt("Current", &currentIndex_, 1, 1);
+   ImGui::End();
+
+   // 強制的に範囲内に戻す
+   int minStage = 0, maxStage = 9;
+   currentIndex_ = std::clamp(currentIndex_, minStage, maxStage);
 }
 
 void StageSelectUI::Draw()
 {
-   sprite_->Draw(worldTransform_);
+   for (int i = 0; i < stageSprites_.size(); ++i) {
+      stageSprites_[i]->Draw(stageTransforms_[i]);
+   }
 }
