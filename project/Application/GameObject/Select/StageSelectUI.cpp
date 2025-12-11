@@ -1,5 +1,7 @@
 #include "StageSelectUI.h"
+using namespace Engine;
 using namespace Engine::Manager;
+#include "Input/Input.h"
 
 StageSelectUI::StageSelectUI() 
 {
@@ -42,6 +44,9 @@ void StageSelectUI::Init()
       stageTransforms_[i].transform.translate.x = startX + i * offsetX;
       stageTransforms_[i].transform.translate.y = upperStep ? startY : startY + offsetY;
    }
+
+
+   currentIndex_ = 0; // 最初のステージ選択は0(1stage目)
 }
 
 void StageSelectUI::Update()
@@ -54,14 +59,31 @@ void StageSelectUI::Update()
       if (i == currentIndex_) {
          // 選択中は少し大きく
          stageTransforms_[i].transform.scale = {1.5f, 1.5f, 1.0f};
+         stageSprites_[i]->SetColor({1.0f, 1.0f, 1.0f, 1.0f});
       }
       else {
          // 他は通常サイズ
          stageTransforms_[i].transform.scale = {1.0f, 1.0f, 1.0f};
+         stageSprites_[i]->SetColor({0.0f, 0.0f, 0.0f, 1.0f});
       }
 
       stageTransforms_[i].UpdateMatrix();
    }
+
+   if (Input::PushKeyPressed(DIK_D) || 
+       Input::PushKeyPressed(DIK_RIGHT) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_RIGHT) || 
+       IsLJoystickRight()) {
+       currentIndex_++;   
+   }
+
+   if (Input::PushKeyPressed(DIK_A) || 
+       Input::PushKeyPressed(DIK_LEFT) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_LEFT) || 
+       IsLJoystickLeft()) {
+       currentIndex_--;
+   }
+
 
    ImGui::Begin("Select");
    ImGui::InputInt("Current", &currentIndex_, 1, 1);
@@ -77,4 +99,28 @@ void StageSelectUI::Draw()
    for (int i = 0; i < stageSprites_.size(); ++i) {
       stageSprites_[i]->Draw(stageTransforms_[i]);
    }
+}
+
+bool StageSelectUI::IsLJoystickRight()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isRight = (Ljoy.x > joystickThreshold_);
+
+   bool triggered = (!prevRight_ && isRight); // 今回押され、前回押されてない → タイミング発生
+
+   prevRight_ = isRight; // 状態更新
+
+   return triggered;
+}
+
+bool StageSelectUI::IsLJoystickLeft()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isLeft = (Ljoy.x < -joystickThreshold_);
+
+   bool triggered = (!prevLeft_ && isLeft);
+
+   prevLeft_ = isLeft;
+
+   return triggered;
 }
