@@ -74,6 +74,8 @@ class SelectScene : public IScene, JsonComponent
 
    
    unique_ptr<StageSelectUI> selectUI_;
+   bool isSelected_ = false;
+
    string fileName_ = "";
 
    uint32_t texHandle_ = 0;

@@ -63,6 +63,14 @@ void StageSelectUI::Init()
 #endif
 
    currentIndex_ = 0; // 最初のステージ選択は0(1stage目)
+
+   int texhandle = TextureManager::LoadPngTexture("SelectNumber/selectButton.png");
+   buttonSprite_ = make_unique<Engine::Objects::Sprite>();
+   buttonSprite_->Initialize();
+   buttonSprite_->SetTexHandle(texhandle);
+   buttonSprite_->SetSize({480.0f / 2.5f, 360.0f / 2.5f});
+   buttonTransform_.Initialize();
+   buttonTransform_.transform.translate = {640.0f - (480.0f / 2.5f) / 2.0f, 550.0f, 0.0f};
 }
 
 void StageSelectUI::Update()
@@ -71,6 +79,7 @@ void StageSelectUI::Update()
    for (auto &wt : stageTransforms_) {
       wt.UpdateMatrix();
    }
+   buttonTransform_.UpdateMatrix();
 
    // 選択中のスプライトは拡大、白色へ
    for (int i = 0; i < stageTransforms_.size(); ++i) {
@@ -112,6 +121,7 @@ void StageSelectUI::Draw()
    for (int i = 0; i < stageSprites_.size(); ++i) {
       stageSprites_[i]->Draw(stageTransforms_[i]);
    }
+   buttonSprite_->Draw(buttonTransform_);
 }
 
 bool StageSelectUI::IsLJoystickRight()
