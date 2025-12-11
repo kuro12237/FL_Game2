@@ -119,7 +119,7 @@ void Player::OnCollision([[maybe_unused]] ObjectComponent *objData)
       transform.translate.y += collider_->GetExtrusion().y;
    }
 
-      if (c->GetId() == ObjectId::kGoalId) {
+   if (c->GetId() == ObjectId::kGoalId) {
       for (auto &hitDirection : collider_->GetHItDirection()) {
          if (hitDirection == TOP && velocity_.y >= 0.0f) {
             velocity_ = {};

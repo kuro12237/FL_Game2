@@ -38,6 +38,8 @@
 #include"GameObject/Package/PackageManager.h"
 #include"GameObject/GoalHouse/GoalHouseManager.h"
 
+#include"GameObject/EnemyWalk/EnemyWalkManager.h"
+
 /// <summary>
 /// ゲームプレイ
 /// </summary>
@@ -142,5 +144,5 @@ class GameScene : public IScene, public JsonComponent
 
    shared_ptr<PlayerMoveParticle> playerMoveParticle_ = nullptr;
    shared_ptr<PlayerDeadParticle> playerDeadParticle_ = nullptr;
-
+   shared_ptr<EnemyWalkManager> enemy_;
 };

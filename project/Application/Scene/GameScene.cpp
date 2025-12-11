@@ -39,11 +39,15 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    // マネージャー初期化
    player_ = make_shared<PlayerManager>();
    managerList_.push_back(player_);
+
    packageManager_ = make_shared<PackageManager>();
    managerList_.push_back(packageManager_);
 
    blockManager_ = make_shared<BlockManager>();
    managerList_.push_back(blockManager_);
+
+   //enemy_ = make_shared<EnemyWalkManager>();
+   //managerList_.push_back(enemy_);
 
    breakBlockManager_ = make_shared<BreakBlockManager>();
    managerList_.push_back(breakBlockManager_);
@@ -192,14 +196,17 @@ void GameScene::ChangeGameSceneState(unique_ptr<IGameSceneState> state)
 
 void GameScene::Collision()
 {
+ 
+
    if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
       gameCollisionManager_->ListPushback(player_->GetPlayerCore());
    }
 
-   // ブロック
-   for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
+  
+     for (shared_ptr<GoalHouse> b : goalHouseManager_->GetBlocks()) {
       gameCollisionManager_->ListPushback(b.get());
    }
+
    for (shared_ptr<Package> b : this->packageManager_->GetPackages()) {
 
       if (!b)
@@ -207,17 +214,13 @@ void GameScene::Collision()
 
       gameCollisionManager_->ListPushback(b.get());
    }
-   for (shared_ptr<GoalHouse> b : goalHouseManager_->GetBlocks()) {
+
+   // ブロック
+   for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
       gameCollisionManager_->ListPushback(b.get());
    }
-   // 壊れるブロック
-   for (shared_ptr<BreakBlock> b : breakBlockManager_->GetBlocks()) {
-      if (b) {
-         weak_ptr<BreakBlock> it = b;
-         auto obj = it.lock();
-         gameCollisionManager_->ListPushback(obj.get());
-      }
-   }
+ 
+
    // ゴール
 
    gameCollisionManager_->CheckAllCollisoin();
