@@ -34,6 +34,23 @@ void StageSelectUI::Init()
    }
 
    // --- スプライト配置 ---
+#if 0
+   int columns = 5;  // 列数
+   float startX = 100.0f;  // 最初の配置X座標
+   float startY = 180.0f;  // 最初の配置Y座標
+   float offsetX = 240.0f;  // 横方向の間隔
+   float offsetY = 240.0f;  // 縦方向の間隔
+
+   for (int i = 0; i < stageCount; ++i) {
+      int col = i % columns;
+      int row = i / columns;
+
+      stageTransforms_[i].transform.translate.x = startX + col * offsetX;
+      stageTransforms_[i].transform.translate.y = startY + row * offsetY;
+   }
+#endif
+
+#if 1
    float startX = 10.0f;  // 左端の開始位置
    float startY = 150.0f;  // 上からの高さ（固定）
    float offsetX = 115.0f; // X移動量：これが階段の幅
@@ -43,6 +60,7 @@ void StageSelectUI::Init()
       stageTransforms_[i].transform.translate.x = startX + i * offsetX;
       stageTransforms_[i].transform.translate.y = upperStep ? startY : startY + offsetY;
    }
+#endif
 
    currentIndex_ = 0; // 最初のステージ選択は0(1stage目)
 }
