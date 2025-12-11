@@ -10,6 +10,7 @@ StageSelectUI::StageSelectUI()
 
 void StageSelectUI::Init()
 {
+    // 配列のresize
    const int stageCount = 10;
    stageSprites_.resize(stageCount);
    stageTransforms_.resize(stageCount);
@@ -32,29 +33,28 @@ void StageSelectUI::Init()
       stageTransforms_[i].Initialize();
    }
 
-
+   // --- スプライト配置 ---
    float startX = 10.0f;  // 左端の開始位置
    float startY = 150.0f;  // 上からの高さ（固定）
    float offsetX = 115.0f; // X移動量：これが階段の幅
    float offsetY = 250.0f;  // Y移動量：段を下げる量
-
    for (int i = 0; i < stageCount; ++i) {
       bool upperStep = (i % 2 == 0); // 偶数: 上段, 奇数: 下段
-
       stageTransforms_[i].transform.translate.x = startX + i * offsetX;
       stageTransforms_[i].transform.translate.y = upperStep ? startY : startY + offsetY;
    }
-
 
    currentIndex_ = 0; // 最初のステージ選択は0(1stage目)
 }
 
 void StageSelectUI::Update()
 {
+    // worldtransformの更新
    for (auto &wt : stageTransforms_) {
       wt.UpdateMatrix();
    }
 
+   // 選択中のスプライトは拡大、白色へ
    for (int i = 0; i < stageTransforms_.size(); ++i) {
       if (i == currentIndex_) {
          // 選択中は少し大きく
@@ -66,28 +66,23 @@ void StageSelectUI::Update()
          stageTransforms_[i].transform.scale = {1.0f, 1.0f, 1.0f};
          stageSprites_[i]->SetColor({0.0f, 0.0f, 0.0f, 1.0f});
       }
-
       stageTransforms_[i].UpdateMatrix();
    }
 
+   // 右入力
    if (Input::PushKeyPressed(DIK_D) || 
        Input::PushKeyPressed(DIK_RIGHT) || 
        Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_RIGHT) || 
        IsLJoystickRight()) {
        currentIndex_++;   
    }
-
+   // 左入力
    if (Input::PushKeyPressed(DIK_A) || 
        Input::PushKeyPressed(DIK_LEFT) || 
        Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_LEFT) || 
        IsLJoystickLeft()) {
        currentIndex_--;
    }
-
-
-   ImGui::Begin("Select");
-   ImGui::InputInt("Current", &currentIndex_, 1, 1);
-   ImGui::End();
 
    // 強制的に範囲内に戻す
    int minStage = 0, maxStage = 9;
@@ -106,9 +101,9 @@ bool StageSelectUI::IsLJoystickRight()
    Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
    bool isRight = (Ljoy.x > joystickThreshold_);
 
-   bool triggered = (!prevRight_ && isRight); // 今回押され、前回押されてない → タイミング発生
+   bool triggered = (!prevRight_ && isRight);
 
-   prevRight_ = isRight; // 状態更新
+   prevRight_ = isRight;
 
    return triggered;
 }
