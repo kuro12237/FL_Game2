@@ -1,5 +1,6 @@
 #include "SelectScene.h"
 
+using namespace Engine;
 using namespace Engine::Manager;
 
 void SelectScene::Initialize([[maybe_unused]] GameManager *state)
@@ -16,7 +17,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->SetAllParents();
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
-   gameObjectManager_->CameraReset("DefaultCamera");
 
    context_ = make_unique<ISceneContext>();
 
@@ -24,6 +24,17 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
 
+   camera_ = make_shared<TitleCamera>();
+   camera_->Initialize();
+
+   gameObjectManager_
+       ->CameraReset(camera_->GetName());
+   camera_->Update();
+
+   selectUI_ = make_unique<StageSelectUI>();
+   selectUI_->Init();
+   // 選択したかのフラグは折っておく
+   isSelected_ = false;
 
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
@@ -71,13 +82,22 @@ void SelectScene::Update(GameManager *Scene)
    // 更新
    ChangeSceneAnimation::GetInstance()->Update();
 
-   // 切替スタート
-   ChangeSceneAnimation::GetInstance()->ChangeStart();
+   // 入力
+   if(Input::PushKeyPressed(DIK_SPACE) && !isSelected_ || 
+      Input::PushBottonPressed(XINPUT_GAMEPAD_A) && !isSelected_) {
+      // 切替スタート
+      ChangeSceneAnimation::GetInstance()->ChangeStart();
+      isSelected_ = true;
+   }
+
+   camera_->Update();
+   selectUI_->Update();
+   gameObjectManager_->Update();
 
    // 終わったら
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
       // ステージ選択番号
-      contextData_.stageNumber = 1;
+      contextData_.stageNumber = selectUI_->GetCurrentSelectStageNum();
       //データを次のシーンへ
       context_->SetData(contextData_);
       Scene->SetMoveSceneContext(move(context_));
@@ -115,7 +135,8 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
-   ChangeSceneAnimation::GetInstance()->Draw();
+   //ChangeSceneAnimation::GetInstance()->Draw();
+   selectUI_->Draw();
 }
 
 void SelectScene::Collision()

@@ -2,11 +2,11 @@
 
 void TitleCamera::Initialize()
 {
-	name_ = "TitleCamera";
+	name_ = "DefaultCamera";
 
 	CreateJsonData();
 
-	///カメラのセット
+	///繧ｫ繝｡繝ｩ縺ｮ繧ｻ繝�繝�
 	gameObjectManager_->CameraReset(name_);
 	this->jsonGropName_ = name_;
 	this->AddJsonItem("speed", speed_);

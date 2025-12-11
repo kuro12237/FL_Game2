@@ -4,10 +4,10 @@ using namespace Engine::Transform;
 
 void PlayerCamera::Initialize()
 {
-   name_ = VAR_NAME(PlayerCamera);
+   name_ = "DefaultCamera";
 
    objectData_ = gameObjectManager_->GetCameraData(name_);
-   auto transform = objectData_.lock()->GetWorldTransform().transform;
+  /* auto transform = objectData_.lock()->GetWorldTransform().transform;
    
    this->jsonGropName_ = name_;
    CreateJsonData();
@@ -20,12 +20,12 @@ void PlayerCamera::Initialize()
    cameraFacter_ = GetJsonItem<decltype(cameraFacter_)>(VAR_NAME(cameraFacter_));
 
    AddJsonItem<decltype(cameraOffset_)>(VAR_NAME(cameraOffset_), cameraOffset_);
-   cameraOffset_ = GetJsonItem<decltype(cameraOffset_)>(VAR_NAME(cameraOffset_));
+   cameraOffset_ = GetJsonItem<decltype(cameraOffset_)>(VAR_NAME(cameraOffset_));*/
 }
 
 void PlayerCamera::Update()
 {
-   auto &cameraWt = objectData_.lock()->GetWorldTransform();
+   /*auto &cameraWt = objectData_.lock()->GetWorldTransform();
 
    if (target_) {
       interTarget_ = Math::Vector::Lerp(interTarget_, target_->transform.translate, cameraFacter_);
@@ -33,7 +33,7 @@ void PlayerCamera::Update()
 
    Math::Vector::Vector3 offset = cameraOffset_;
    offset = CalcOffset(cameraWt, offset);
-   cameraWt.transform.translate = Math::Vector::Add(interTarget_, offset);
+   cameraWt.transform.translate = Math::Vector::Add(interTarget_, offset);*/
 }
 
 void PlayerCamera::Shake() {}

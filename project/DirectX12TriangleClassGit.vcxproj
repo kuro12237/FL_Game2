@@ -86,6 +86,7 @@
     <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartAnimation.cpp" />
     <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCameraMotion\StartCameraMotion.cpp" />
     <ClCompile Include="Application\GameObject\SelectStageNumber\StageNumber.cpp" />
+    <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
     <ClCompile Include="Application\GameObject\StageManager\StageManager.cpp" />
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.cpp" />
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneJoyStick.cpp" />
@@ -255,6 +256,7 @@
     <ClInclude Include="Application\GameObject\ObjectInterface\ParticleComponent.h" />
     <ClInclude Include="Application\GameObject\ObjectInterface\ITransform.h" />
     <ClInclude Include="Application\GameObject\Package\Package.h" />
+    <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
     <ClInclude Include="Application\GameObject\Particles\Explosion\ExplosionParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\TitleNameParticle\TitleNameParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\WallHitParticle.h" />

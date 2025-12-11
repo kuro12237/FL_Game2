@@ -882,6 +882,9 @@
     <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp" />
+    <ClCompile Include="Application\Package\Package.cpp" />
+    <ClCompile Include="Application\Package\PackageManager.cpp" />
+    <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1508,6 +1511,9 @@
     <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h" />
+    <ClInclude Include="Application\Package\Package.h" />
+    <ClInclude Include="Application\Package\PackageManager.h" />
+    <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">
