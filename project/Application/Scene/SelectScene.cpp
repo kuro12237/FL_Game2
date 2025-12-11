@@ -83,11 +83,16 @@ void SelectScene::Update(GameManager *Scene)
    ChangeSceneAnimation::GetInstance()->Update();
 
    // 入力
-   if(Input::PushKeyPressed(DIK_SPACE) && !isSelected_ || 
-      Input::PushBottonPressed(XINPUT_GAMEPAD_A) && !isSelected_) {
-      // 切替スタート
-      ChangeSceneAnimation::GetInstance()->ChangeStart();
-      isSelected_ = true;
+   if(Input::PushKeyPressed(DIK_SPACE) || 
+      Input::PushBottonPressed(XINPUT_GAMEPAD_A)) {
+
+       if (isSelected_) return;
+
+       if (ChangeSceneAnimation::GetInstance()->GetIsComplite()) {
+          // 切替スタート
+          ChangeSceneAnimation::GetInstance()->ChangeStart();
+          isSelected_ = true;
+       }
    }
 
    camera_->Update();
