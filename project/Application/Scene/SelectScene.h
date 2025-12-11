@@ -21,6 +21,8 @@
 
 #include "GameObject/SelectStageNumber/StageNumber.h"
 
+#include "GameObject/TitleCamera/TitleCamera.h"
+
 /// <summary>
 /// MapSelect
 /// </summary>
@@ -66,5 +68,13 @@ class SelectScene : public IScene, JsonComponent
    bool *isGameEnd_ = nullptr;
    bool isGameStart_ = false;
 
-   shared_ptr<PlayerCamera> camera_ = nullptr;
+   shared_ptr<TitleCamera> camera_ = nullptr;
+
+   
+	unique_ptr<Engine::Objects::Sprite> sprite_ = nullptr;
+   Engine::Transform::WorldTransform worldTransform_ = {};
+   string fileName_ = "";
+
+   uint32_t texHandle_ = 0;
+   Math::Vector::Vector2 ankerPos_ = {};
 };

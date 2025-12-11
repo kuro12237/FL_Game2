@@ -24,6 +24,44 @@
                     1.0
                 ]
             }
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    0.6577396392822266,
+                    0.0,
+                    2.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
         }
     ]
 }
