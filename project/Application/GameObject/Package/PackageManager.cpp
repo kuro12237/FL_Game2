@@ -2,9 +2,10 @@
 
 void PackageManager::Initialize() {
 
-   auto &transforms = GameObjectManager::GetInstance()->GetObjInstancingData(name_)->GetTransforms();
+   //auto &transforms = GameObjectManager::GetInstance()->GetObj3dData(name_)->GetWorldTransform();
 
-   for (int i = 0; i < int(transforms.size()); i++) {
+   //後でサイズ設定
+   for (int i = 0; i < 1; i++) {
       shared_ptr<Package> package = make_shared<Package>();
 
       package->SetName(name_);

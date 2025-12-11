@@ -39,4 +39,11 @@ class Package : public ObjectComponent
 
  private:
    uint32_t unitNumber_ = 0;
+
+   Math::Vector::Vector3 *playerPos_ = nullptr;
+   Math::Vector::Vector3 *playerVelo_ = nullptr;
+
+   bool isPlayerHit_ = false;
+
+
 };

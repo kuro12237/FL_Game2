@@ -103,8 +103,8 @@
     <ClCompile Include="Application\GameObject\Warp\WarpGate\WarpGate.cpp" />
     <ClCompile Include="Application\GameObject\Warp\WarpManager.cpp" />
     <ClCompile Include="Application\GameObject\Warp\WarpRuate\WarpRuate.cpp" />
-    <ClCompile Include="Application\Package\Package.cpp" />
-    <ClCompile Include="Application\Package\PackageManager.cpp" />
+    <ClCompile Include="Application\GameObject\Package\Package.cpp" />
+    <ClCompile Include="Application\GameObject\Package\PackageManager.cpp" />
     <ClCompile Include="Application\Scene\GameClearScene.cpp" />
     <ClCompile Include="Application\Scene\GameOverScene.cpp" />
     <ClCompile Include="Application\Scene\GameScene\GameSceneEndState.cpp" />
@@ -245,7 +245,7 @@
     <ClInclude Include="Application\GameObject\ObjectInterface\INameable.h" />
     <ClInclude Include="Application\GameObject\ObjectInterface\ParticleComponent.h" />
     <ClInclude Include="Application\GameObject\ObjectInterface\ITransform.h" />
-    <ClInclude Include="Application\Package\Package.h" />
+    <ClInclude Include="Application\GameObject\Package\Package.h" />
     <ClInclude Include="Application\GameObject\Particles\Explosion\ExplosionParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\TitleNameParticle\TitleNameParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\WallHitParticle.h" />
@@ -285,7 +285,7 @@
     <ClInclude Include="Application\GameObject\Warp\WarpGate\WarpGate.h" />
     <ClInclude Include="Application\GameObject\Warp\WarpManager.h" />
     <ClInclude Include="Application\GameObject\Warp\WarpRuate\WarpRuate.h" />
-    <ClInclude Include="Application\Package\PackageManager.h" />
+    <ClInclude Include="Application\GameObject\Package\PackageManager.h" />
     <ClInclude Include="Application\Scene\GameClearScene.h" />
     <ClInclude Include="Application\Scene\GameOverScene.h" />
     <ClInclude Include="Application\Scene\GameScene\GameSceneEndState.h" />

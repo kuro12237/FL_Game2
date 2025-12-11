@@ -3,9 +3,9 @@
 void GoalHouseManager::Initialize()
 {
 
-   auto &transforms = GameObjectManager::GetInstance()->GetObjInstancingData(name_)->GetTransforms();
+  // auto &transforms = GameObjectManager::GetInstance()->GetObj3dData(name_);
 
-   for (int i = 0; i < int(transforms.size()); i++) {
+   for (int i = 0; i < int(1); i++) {
       shared_ptr<GoalHouse> block = make_shared<GoalHouse>();
 
       block->SetName(name_);
@@ -17,8 +17,12 @@ void GoalHouseManager::Initialize()
 
 void GoalHouseManager::Update()
 {
-
    for (shared_ptr<GoalHouse> &b : blocks_) {
-      b->Update();
+    
+       if (b->GetIsClear()) {
+         isClear_ = true;
+      }
+       b->Update();
    }
+
 }

@@ -20,7 +20,7 @@ void ChangeSceneAnimation::Initialize()
 	}
 	initializeLock_ = true;
 
-	///ƒmƒCƒY‚ÌƒeƒNƒXƒ`ƒƒ‚ğ“Ç‚İ‚Ş
+	///ãƒã‚¤ã‚ºã®ãƒ†ã‚¯ã‚¹ãƒãƒ£ã‚’èª­ã¿è¾¼ã‚€
 	uint32_t noiseTexHandle= TextureManager::LoadPngTexture("GameObject/Noise/Noise.png");
 
 	titleName2d_ = make_unique<TitleName2d>();
@@ -47,15 +47,15 @@ void ChangeSceneAnimation::Update()
 {
 
 	isChangeSceneFlag_ = false;
-	//ƒXƒ^[ƒg
+	//ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚
 	if (isUpdateFlag_)
 	{
 		flame_ += 1.0f / 120.0f;
 	}
-	//‘O”¼
+	//å‰åŠ
 	if (isStartFlag_)
 	{
-		//•âŠÔ
+		//è£œé–“
 		dissolveMask_ = Math::Vector::EaseOutQuad(dissolveMax_, 0.0f, flame_);
 
 		if (dissolveMask_ <= 0.0f)
@@ -66,7 +66,7 @@ void ChangeSceneAnimation::Update()
 			isChangeSceneFlag_ = true;
 		}
 	}
-	//Œã”¼
+	//å¾ŒåŠ
 	if (isEndFlag_)
 	{
 		dissolveMask_ = Math::Vector::EaseOutQuad(0.0f, dissolveMax_, flame_);
@@ -92,9 +92,9 @@ void ChangeSceneAnimation::Draw()
 		return;
 	}
 
-	titleBack2d_->Draw2d();
+	titleBack2d_->Draw2d();/*
 	titleName2d_->Draw2d();
-	rodingIcon_->Draw2d();
+	rodingIcon_->Draw2d();*/
 }
 
 void ChangeSceneAnimation::ChangeStart()

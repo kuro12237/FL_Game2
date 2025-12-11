@@ -25,14 +25,17 @@ class GoalHouseManager : public ManagerComponent
 
 #pragma region Get
    vector<shared_ptr<GoalHouse>> GetBlocks() { return blocks_; }
+   bool GetIsClear() { return isClear_; }
 #pragma endregion
 
  private:
-   string name_ = "Package";
+   string name_ = "GoalHouse";
 
    vector<shared_ptr<GoalHouse>> blocks_;
 
    bool isInitialize = false;
+
+   bool isClear_ = false;
 
    unique_ptr<Engine::Particle::ParticleField<Engine::Particle::FieldType::FieldHitBox>> boxField_ = nullptr;
 };

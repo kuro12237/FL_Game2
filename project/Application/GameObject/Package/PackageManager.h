@@ -23,7 +23,7 @@ class PackageManager : public ManagerComponent
    void Update() override;
 
 #pragma region Get
-   vector<shared_ptr<Package>> GetBlocks() { return package_; }
+   vector<shared_ptr<Package>> GetPackages() { return package_; }
 #pragma endregion
 
  private:

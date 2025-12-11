@@ -11,7 +11,7 @@ GameManager::GameManager()
 
    ChangeSceneAnimation::GetInstance()->Initialize();
 
-   scene_ = make_unique<SelectScene>();
+   scene_ = make_unique<GameScene>();
    scene_->Initialize(this);
 }
 

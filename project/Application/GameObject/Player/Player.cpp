@@ -25,9 +25,9 @@ void Player::Initialize()
    auto &transform = objectData_.lock()->GetWorldTransform().transform;
 
    // Scale値を外部から読み込む
-   float dfScale = 0.5f;
-   //AddJsonItem<float>("DefaultScale", dfScale);
-   //dfScale = GetJsonItem<float>("DefaultScale");
+   float dfScale = 0.3f;
+   // AddJsonItem<float>("DefaultScale", dfScale);
+   // dfScale = GetJsonItem<float>("DefaultScale");
    transform.scale = {dfScale, dfScale, dfScale};
 
    // スタート入りの記録
@@ -71,30 +71,60 @@ void Player::Update()
       statesToRemoveQueue_.pop();
    }
 
-
    TransformUpdate();
 
-   //TransformEular &transform = objData->GetWorldTransform().transform;
+   // TransformEular &transform = objData->GetWorldTransform().transform;
 
    RotateUpdate();
-
-
 }
 
 void Player::OnCollision([[maybe_unused]] ObjectComponent *objData)
 {
    auto c = objData->GetCollider();
 
-  /* if (ObjectId::kOnlyCollideWithBlocksid) {
-      return;
-   }*/
+   /* if (ObjectId::kOnlyCollideWithBlocksid) {
+       return;
+    }*/
 
    if (c->GetId() == ObjectId::kPlayerId) {
-   
-   return;
+
+      return;
+   }
+
+   if (c->GetId() == ObjectId::kPackageId) {
+      for (auto &hitDirection : collider_->GetHItDirection()) {
+         if (hitDirection == TOP && velocity_.y >= 0.0f) {
+            velocity_ = {};
+         }
+         if (hitDirection == BOTTOM && velocity_.y <= -0.0f) {
+            velocity_ = {};
+         }
+      }
+
+      auto &transform = objectData_.lock()->GetWorldTransform().transform;
+
+      transform.translate.x += collider_->GetExtrusion().x;
+      transform.translate.y += collider_->GetExtrusion().y;
+      return;
    }
 
    if (c->GetId() == ObjectId::kNormalBlock) {
+      for (auto &hitDirection : collider_->GetHItDirection()) {
+         if (hitDirection == TOP && velocity_.y >= 0.0f) {
+            velocity_ = {};
+         }
+         if (hitDirection == BOTTOM && velocity_.y <= -0.0f) {
+            velocity_ = {};
+         }
+      }
+
+      auto &transform = objectData_.lock()->GetWorldTransform().transform;
+
+      transform.translate.x += collider_->GetExtrusion().x;
+      transform.translate.y += collider_->GetExtrusion().y;
+   }
+
+      if (c->GetId() == ObjectId::kGoalId) {
       for (auto &hitDirection : collider_->GetHItDirection()) {
          if (hitDirection == TOP && velocity_.y >= 0.0f) {
             velocity_ = {};

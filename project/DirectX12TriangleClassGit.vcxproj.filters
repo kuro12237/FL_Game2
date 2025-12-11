@@ -876,8 +876,8 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\GoalHouse\GoalHouse.cpp" />
     <ClCompile Include="Application\GameObject\GoalHouse\GoalHouseManager.cpp" />
-    <ClCompile Include="Application\Package\Package.cpp" />
-    <ClCompile Include="Application\Package\PackageManager.cpp" />
+    <ClCompile Include="Application\GameObject\Package\Package.cpp" />
+    <ClCompile Include="Application\GameObject\Package\PackageManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1497,8 +1497,8 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\GoalHouse\GoalHouse.h" />
     <ClInclude Include="Application\GameObject\GoalHouse\GoalHouseManager.h" />
-    <ClInclude Include="Application\Package\Package.h" />
-    <ClInclude Include="Application\Package\PackageManager.h" />
+    <ClInclude Include="Application\GameObject\Package\Package.h" />
+    <ClInclude Include="Application\GameObject\Package\PackageManager.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">

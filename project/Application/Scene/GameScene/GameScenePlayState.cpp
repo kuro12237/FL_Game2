@@ -15,7 +15,8 @@ void GameScenePlayState::Update([[maybe_unused]] GameScene *scene)
    auto core = playerManager_.lock()->GetPlayerCore();
    core->CheckStatePush<PlayerStateDeadAnimation>();
    core->CheckStatePush<PlayerStateGoalAnimation>();
-   if (core->IsCheckStateRetuen()) {
+ 
+   if (weak_GoalHouseManager_.lock()->GetIsClear()) {
       scene->ChangeGameSceneState(make_unique<GameSceneEndState>());
    }
 }

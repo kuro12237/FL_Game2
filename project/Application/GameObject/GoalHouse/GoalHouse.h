@@ -37,6 +37,10 @@ class GoalHouse : public ObjectComponent
 
 #pragma endregion
 
+   bool GetIsClear() { return isClear_; }
+
  private:
    uint32_t unitNumber_ = 0;
+
+   bool isClear_ = false;
 };
