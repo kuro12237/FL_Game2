@@ -878,6 +878,7 @@
     <ClCompile Include="Application\GameObject\GoalHouse\GoalHouseManager.cpp" />
     <ClCompile Include="Application\Package\Package.cpp" />
     <ClCompile Include="Application\Package\PackageManager.cpp" />
+    <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1499,6 +1500,7 @@
     <ClInclude Include="Application\GameObject\GoalHouse\GoalHouseManager.h" />
     <ClInclude Include="Application\Package\Package.h" />
     <ClInclude Include="Application\Package\PackageManager.h" />
+    <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">

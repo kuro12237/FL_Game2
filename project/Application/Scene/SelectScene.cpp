@@ -32,13 +32,10 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    camera_
        ->Update();
 
-   sprite_ = make_unique<Engine::Objects::Sprite>();
-   sprite_->Initialize();
-   uint32_t noiseTexHandle = TextureManager::LoadPngTexture("GameObject/Noise/Noise.png");
-   sprite_->SetTexHandle(noiseTexHandle);
-   worldTransform_.Initialize();
+   selectUI_ = make_unique<StageSelectUI>();
+   selectUI_
+       ->Init();
    
-
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
 
@@ -89,7 +86,7 @@ void SelectScene::Update(GameManager *Scene)
    //ChangeSceneAnimation::GetInstance()->ChangeStart();
 
    camera_->Update();
-   worldTransform_.UpdateMatrix();
+   selectUI_->Update();
    gameObjectManager_->Update();
 
    // 終わったら
@@ -134,7 +131,7 @@ void SelectScene::PostProcessDraw()
 void SelectScene::Flont2dSpriteDraw()
 {
    //ChangeSceneAnimation::GetInstance()->Draw();
-   sprite_->Draw(worldTransform_);
+   selectUI_->Draw();
 }
 
 void SelectScene::Collision()
