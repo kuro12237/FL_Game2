@@ -22,10 +22,10 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    this->CreateJsonData();
 
    // selectからのデータを移動
-   // selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
+   selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
 
    // levelDataの読み込み
-   inputLevelDataFileName_ = "Stages" + to_string(1) + ".json";
+   inputLevelDataFileName_ = "Stages" + to_string(selectSceneData_.stageNumber) + ".json";
    shared_ptr<LevelData> levelData = move(SceneFileLoader::GetInstance()->ReLoad(inputLevelDataFileName_));
 
    changeSceneAnmation_ = ChangeSceneAnimation::GetInstance();

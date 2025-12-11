@@ -24,10 +24,10 @@ void GameScenePlayState::Update([[maybe_unused]] GameScene *scene)
 void GameScenePlayState::Draw2d()
 {
 
-   playerManager_.lock()->Draw2d();
+ /*  playerManager_.lock()->Draw2d();
    playerManager_.lock()->Draw2dBullet();
    playerManager_.lock()->DrawHp();
-   gameUi_->Draw2d();
+   gameUi_->Draw2d();*/
 }
 
 void GameScenePlayState::ImGuiUpdate()

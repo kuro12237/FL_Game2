@@ -46,7 +46,7 @@ void Package::Update()
          if (Engine::Input::PushBottonPressed(XINPUT_GAMEPAD_B)) {
 
             if (transform.translate.x >= playerPos_->x) {
-               transform.translate.x = playerPos_->x;
+               transform.translate = *playerPos_;
 
                if (playerRotate_->y <= 0.0f) {
                   transform.translate.x += -2.00001f;
@@ -55,6 +55,7 @@ void Package::Update()
 
                   transform.translate.x -= -2.00001f;
                }
+
             }
             gameObjectManager_->GetObj3dData(name_)->GetGameObject()->SetDesc({.colorDesc{.color_{1.0f, 1.0f, 1.0f, 1.0f}}});
 

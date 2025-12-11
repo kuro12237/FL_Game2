@@ -140,8 +140,9 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
-   ChangeSceneAnimation::GetInstance()->Draw();
    selectUI_->Draw();
+
+   ChangeSceneAnimation::GetInstance()->Draw();
 }
 
 void SelectScene::Collision()
