@@ -16,7 +16,6 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->SetAllParents();
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
-   gameObjectManager_->CameraReset("DefaultCamera");
 
    context_ = make_unique<ISceneContext>();
 
@@ -24,6 +23,21 @@ void SelectScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_unique<GravityManager>();
    gravityManager_->Initialize();
 
+   camera_ = make_shared<TitleCamera>();
+   camera_
+       ->Initialize();
+
+   gameObjectManager_
+       ->CameraReset(camera_->GetName());
+   camera_
+       ->Update();
+
+   sprite_ = make_unique<Engine::Objects::Sprite>();
+   sprite_->Initialize();
+   uint32_t noiseTexHandle = TextureManager::LoadPngTexture("GameObject/Noise/Noise.png");
+   sprite_->SetTexHandle(noiseTexHandle);
+   worldTransform_.Initialize();
+   
 
    this->jsonGropName_ = VAR_NAME(SelectScene);
    this->CreateJsonData();
@@ -72,7 +86,11 @@ void SelectScene::Update(GameManager *Scene)
    ChangeSceneAnimation::GetInstance()->Update();
 
    // 切替スタート
-   ChangeSceneAnimation::GetInstance()->ChangeStart();
+   //ChangeSceneAnimation::GetInstance()->ChangeStart();
+
+   camera_->Update();
+   worldTransform_.UpdateMatrix();
+   gameObjectManager_->Update();
 
    // 終わったら
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
@@ -115,7 +133,8 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
-   ChangeSceneAnimation::GetInstance()->Draw();
+   //ChangeSceneAnimation::GetInstance()->Draw();
+   sprite_->Draw(worldTransform_);
 }
 
 void SelectScene::Collision()
