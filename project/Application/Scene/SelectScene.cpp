@@ -135,7 +135,7 @@ void SelectScene::PostProcessDraw()
 
 void SelectScene::Flont2dSpriteDraw()
 {
-   //ChangeSceneAnimation::GetInstance()->Draw();
+   ChangeSceneAnimation::GetInstance()->Draw();
    selectUI_->Draw();
 }
 

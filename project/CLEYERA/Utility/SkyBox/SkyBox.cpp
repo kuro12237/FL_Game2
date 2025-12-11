@@ -55,8 +55,8 @@ void SkyBox::Update()
 	{
 		texHandle_ = TextureManager::LoadDDSTexture(defaultCubeMapName_);
 	}
-	defaultCubeMapName_ = globalVariables_->GetValue<string>("SkyBox", "texFileName");
-	worldTransform_.transform = globalVariables_->GetValue<TransformEular>("SkyBox", "transform");
+	//defaultCubeMapName_ = globalVariables_->GetValue<string>("SkyBox", "texFileName");
+	//worldTransform_.transform = globalVariables_->GetValue<TransformEular>("SkyBox", "transform");
 
 	cMaterial_->Map();
 	cMaterial_->Setbuffer(material_);

@@ -7,7 +7,7 @@ using namespace Engine::Transform;
 
 void GameScene::Initialize([[maybe_unused]] GameManager *state)
 {
-
+   gameObjectManager_->ClearAllData();
    SkyBox::GetInstance()->Reset();
    const float kSkyBoxScale_ = 256.0f;
    SkyBox::GetInstance()->SetTransform({{kSkyBoxScale_, kSkyBoxScale_, kSkyBoxScale_}});
@@ -136,7 +136,7 @@ bool GameScene::CheckChangeScene(GameManager *Scene)
    context_->SetData(nextSceneData_);
 
    Scene->SetMoveSceneContext(move(context_));
-   Scene->ChangeScene(make_unique<GameScene>());
+   Scene->ChangeScene(make_unique<SelectScene>());
    return true;
 }
 
