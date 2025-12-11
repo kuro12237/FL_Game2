@@ -83,8 +83,8 @@ void SelectScene::Update(GameManager *Scene)
    ChangeSceneAnimation::GetInstance()->Update();
 
    // 入力
-   if(Input::PushKeyPressed(DIK_SPACE) && isSelected_ || 
-      Input::PushBottonPressed(XINPUT_GAMEPAD_A) && isSelected_) {
+   if(Input::PushKeyPressed(DIK_SPACE) && !isSelected_ || 
+      Input::PushBottonPressed(XINPUT_GAMEPAD_A) && !isSelected_) {
       // 切替スタート
       ChangeSceneAnimation::GetInstance()->ChangeStart();
       isSelected_ = true;
