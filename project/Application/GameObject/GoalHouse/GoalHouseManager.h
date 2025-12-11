@@ -28,7 +28,11 @@ class GoalHouseManager : public ManagerComponent
    bool GetIsClear() { return isClear_; }
 #pragma endregion
 
+   void SetBlockNum(const int32_t &num) { blockNum_ = &num; }
+
  private:
+   const int32_t *blockNum_ = nullptr;
+
    string name_ = "GoalHouse";
 
    vector<shared_ptr<GoalHouse>> blocks_;

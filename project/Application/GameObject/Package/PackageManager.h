@@ -24,9 +24,12 @@ class PackageManager : public ManagerComponent
 
 #pragma region Get
    vector<shared_ptr<Package>> GetPackages() { return package_; }
+   const int32_t &GetNum() const{ return num_; }
+
 #pragma endregion
 
  private:
+   int32_t num_ = 1;
    string name_ = "Package";
 
    vector<shared_ptr<Package>> package_;

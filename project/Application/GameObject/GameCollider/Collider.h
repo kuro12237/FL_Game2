@@ -44,7 +44,7 @@ public:
 	/// <summary>
 	/// 当たった方向のqueueをクリア
 	/// </summary>
-	void ClearHitDirection() { hitDirection_.clear(); }
+        void ClearHitDirection() { hitDirection_.clear(); }
 
 	/// <summary>
 	/// 当たったもののidのqueueを削除

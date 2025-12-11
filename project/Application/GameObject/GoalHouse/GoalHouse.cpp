@@ -24,6 +24,9 @@ void GoalHouse::OnCollision([[maybe_unused]] ObjectComponent *objData)
 
    if (c->GetId() == ObjectId::kPlayerId) {
 
-      isClear_ = true;
+      if (isPackageComp_) {
+
+         isClear_ = true;
+      }
    }
 }

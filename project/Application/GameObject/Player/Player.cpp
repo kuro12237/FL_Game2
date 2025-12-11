@@ -76,6 +76,14 @@ void Player::Update()
    // TransformEular &transform = objData->GetWorldTransform().transform;
 
    RotateUpdate();
+
+   AABB aabb;
+   aabb.max = {1.0f, 2.0f, 1.0f};
+   aabb.min = {1.0f, -2.0f, 1.0f};
+   collider_->SetAABB(aabb);
+
+   collider_->ClearExtrusion();
+   collider_->ClearHitDirection();
 }
 
 void Player::OnCollision([[maybe_unused]] ObjectComponent *objData)
@@ -92,19 +100,6 @@ void Player::OnCollision([[maybe_unused]] ObjectComponent *objData)
    }
 
    if (c->GetId() == ObjectId::kPackageId) {
-      for (auto &hitDirection : collider_->GetHItDirection()) {
-         if (hitDirection == TOP && velocity_.y >= 0.0f) {
-            velocity_ = {};
-         }
-         if (hitDirection == BOTTOM && velocity_.y <= -0.0f) {
-            velocity_ = {};
-         }
-      }
-
-      auto &transform = objectData_.lock()->GetWorldTransform().transform;
-
-      transform.translate.x += collider_->GetExtrusion().x;
-      transform.translate.y += collider_->GetExtrusion().y;
       return;
    }
 

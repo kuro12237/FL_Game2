@@ -39,6 +39,8 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    // マネージャー初期化
    player_ = make_shared<PlayerManager>();
    managerList_.push_back(player_);
+   packageManager_ = make_shared<PackageManager>();
+   managerList_.push_back(packageManager_);
 
    blockManager_ = make_shared<BlockManager>();
    managerList_.push_back(blockManager_);
@@ -49,8 +51,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_shared<GravityManager>();
    managerList_.push_back(gravityManager_);
 
-   packageManager_ = make_shared<PackageManager>();
-   managerList_.push_back(packageManager_);
 
    goalHouseManager_ = make_shared<GoalHouseManager>();
    managerList_.push_back(goalHouseManager_);
@@ -83,7 +83,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
 
    context_ = make_unique<ISceneContext>();
 
-
 #pragma region PostEffectSetting
 
    Math::Vector::Vector4 fogParam = {};
@@ -98,6 +97,8 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
 
 #pragma endregion
 
+   goalHouseManager_->SetBlockNum(packageManager_->GetNum());
+
    this->ChangeGameSceneState(make_unique<GameSceneStartState>());
 }
 
@@ -111,7 +112,6 @@ void GameScene::Update([[maybe_unused]] GameManager *Scene)
 
    this->ListUpdate();
 
-   // ParticlesUpdate();
 
    Gravitys();
    Collision();
@@ -201,6 +201,10 @@ void GameScene::Collision()
       gameCollisionManager_->ListPushback(b.get());
    }
    for (shared_ptr<Package> b : this->packageManager_->GetPackages()) {
+
+      if (!b)
+         continue;
+
       gameCollisionManager_->ListPushback(b.get());
    }
    for (shared_ptr<GoalHouse> b : goalHouseManager_->GetBlocks()) {

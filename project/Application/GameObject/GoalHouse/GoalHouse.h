@@ -34,7 +34,7 @@ class GoalHouse : public ObjectComponent
 
    void SetName(string name) { name_ = name; }
    void SetUnitIndex(uint32_t index) { unitNumber_ = index; }
-
+   void SetisPackageComp(bool f) { isPackageComp_ = f; }
 #pragma endregion
 
    bool GetIsClear() { return isClear_; }
@@ -43,4 +43,5 @@ class GoalHouse : public ObjectComponent
    uint32_t unitNumber_ = 0;
 
    bool isClear_ = false;
+   bool isPackageComp_ = false;
 };
