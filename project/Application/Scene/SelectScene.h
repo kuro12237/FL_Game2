@@ -23,6 +23,8 @@
 
 #include "GameObject/TitleCamera/TitleCamera.h"
 
+#include "GameObject/Select/StageSelectUI.h"
+
 /// <summary>
 /// MapSelect
 /// </summary>
@@ -71,8 +73,9 @@ class SelectScene : public IScene, JsonComponent
    shared_ptr<TitleCamera> camera_ = nullptr;
 
    
-	unique_ptr<Engine::Objects::Sprite> sprite_ = nullptr;
-   Engine::Transform::WorldTransform worldTransform_ = {};
+	//unique_ptr<Engine::Objects::Sprite> sprite_ = nullptr;
+   //Engine::Transform::WorldTransform worldTransform_ = {};
+   unique_ptr<StageSelectUI> selectUI_;
    string fileName_ = "";
 
    uint32_t texHandle_ = 0;
