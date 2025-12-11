@@ -7,6 +7,13 @@ using namespace Engine::Transform;
 
 void GameScene::Initialize([[maybe_unused]] GameManager *state)
 {
+
+   SkyBox::GetInstance()->Reset();
+   const float kSkyBoxScale_ = 256.0f;
+   SkyBox::GetInstance()->SetTransform({{kSkyBoxScale_, kSkyBoxScale_, kSkyBoxScale_}});
+   uint32_t skyBoxTexHandle = TextureManager::LoadDDSTexture("SkyBox/CubeMap.dds");
+   SkyBox::GetInstance()->SetTexHandle(skyBoxTexHandle);
+
    // paramfilePath変更
    globalVariables_->SetDirectoryFilePath("Resources/LevelData/ParamData/GameScene/");
    globalVariables_->LoadFiles("Resources/LevelData/ParamData/GameScene/");
@@ -15,7 +22,7 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    this->CreateJsonData();
 
    // selectからのデータを移動
-   //selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
+   // selectSceneData_ = *state->GetMoveSceneContext()->GetData<SceneContextData>();
 
    // levelDataの読み込み
    inputLevelDataFileName_ = "Stages" + to_string(1) + ".json";
@@ -33,8 +40,14 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    player_ = make_shared<PlayerManager>();
    managerList_.push_back(player_);
 
+   packageManager_ = make_shared<PackageManager>();
+   managerList_.push_back(packageManager_);
+
    blockManager_ = make_shared<BlockManager>();
    managerList_.push_back(blockManager_);
+
+   //enemy_ = make_shared<EnemyWalkManager>();
+   //managerList_.push_back(enemy_);
 
    breakBlockManager_ = make_shared<BreakBlockManager>();
    managerList_.push_back(breakBlockManager_);
@@ -42,6 +55,9 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
    gravityManager_ = make_shared<GravityManager>();
    managerList_.push_back(gravityManager_);
 
+
+   goalHouseManager_ = make_shared<GoalHouseManager>();
+   managerList_.push_back(goalHouseManager_);
 
    for (weak_ptr<ManagerComponent> manager : managerList_) {
       manager.lock()->Initialize();
@@ -71,30 +87,6 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
 
    context_ = make_unique<ISceneContext>();
 
-   // パーティクル
-   wallHitParticle_ = make_unique<WallHitParticle>();
-   particleList_.push_back(wallHitParticle_);
-
-   playerDeadParticle_ = make_unique<PlayerDeadParticle>();
-   particleList_.push_back(playerDeadParticle_);
-
-   //playerMoveParticle_ = make_unique<PlayerMoveParticle>();
-   //particleList_.push_back(playerMoveParticle_);
-
-   deadParticle_ = make_unique<CharacterDeadParticle>();
-   particleList_.push_back(deadParticle_);
-
-
-   for (auto obj : particleList_) {
-      obj.lock()->Initialize();
-   }
-
-  
-   // obj
-   player_->SetDeadParticle(playerDeadParticle_);
-   //player_->SetMoveParticle(playerMoveParticle_);
-   player_->SetParticlePos();
-
 #pragma region PostEffectSetting
 
    Math::Vector::Vector4 fogParam = {};
@@ -109,6 +101,8 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
 
 #pragma endregion
 
+   goalHouseManager_->SetBlockNum(packageManager_->GetNum());
+
    this->ChangeGameSceneState(make_unique<GameSceneStartState>());
 }
 
@@ -122,7 +116,6 @@ void GameScene::Update([[maybe_unused]] GameManager *Scene)
 
    this->ListUpdate();
 
-   //ParticlesUpdate();
 
    Gravitys();
    Collision();
@@ -139,14 +132,12 @@ bool GameScene::CheckChangeScene(GameManager *Scene)
       return false;
    }
 
-   {
-      // nextSceneData_.stageConinsCount = stageCoinManager_->GetCoinsCount();
-      context_->SetData(nextSceneData_);
+   nextSceneData_.stageNumber = 1;
+   context_->SetData(nextSceneData_);
 
-      Scene->SetMoveSceneContext(move(context_));
-      Scene->ChangeScene(make_unique<GameClearScene>());
-      return true;
-   }
+   Scene->SetMoveSceneContext(move(context_));
+   Scene->ChangeScene(make_unique<GameScene>());
+   return true;
 }
 
 void GameScene::PostProcessDraw()
@@ -195,6 +186,7 @@ void GameScene::ImGuiUpdate()
 void GameScene::ChangeGameSceneState(unique_ptr<IGameSceneState> state)
 {
    state_ = move(state);
+   state_->SetGoalHouse(goalHouseManager_);
 
    if (state_) {
       state_->Initialize(this);
@@ -204,22 +196,31 @@ void GameScene::ChangeGameSceneState(unique_ptr<IGameSceneState> state)
 
 void GameScene::Collision()
 {
+ 
+
    if (!player_->GetPlayerCore()->IsInState<PlayerStateGoalAnimation>()) {
       gameCollisionManager_->ListPushback(player_->GetPlayerCore());
+   }
+
+  
+     for (shared_ptr<GoalHouse> b : goalHouseManager_->GetBlocks()) {
+      gameCollisionManager_->ListPushback(b.get());
+   }
+
+   for (shared_ptr<Package> b : this->packageManager_->GetPackages()) {
+
+      if (!b)
+         continue;
+
+      gameCollisionManager_->ListPushback(b.get());
    }
 
    // ブロック
    for (shared_ptr<Block> b : blockManager_->GetBlocks()) {
       gameCollisionManager_->ListPushback(b.get());
    }
-   // 壊れるブロック
-   for (shared_ptr<BreakBlock> b : breakBlockManager_->GetBlocks()) {
-      if (b) {
-         weak_ptr<BreakBlock> it = b;
-         auto obj = it.lock();
-         gameCollisionManager_->ListPushback(obj.get());
-      }
-   }
+ 
+
    // ゴール
 
    gameCollisionManager_->CheckAllCollisoin();
@@ -238,9 +239,6 @@ void GameScene::Gravitys()
          it->GravityManagerObjListPush(gravityManager_);
       }
    }
-
-   gravityManager_->PushParticleList(deadParticle_->GetParticle());
-
    gravityManager_->CheckGravity();
 }
 
@@ -252,7 +250,6 @@ void GameScene::ParticlesUpdate()
 
 void GameScene::ParticlesDraw()
 {
-
    for (auto p : particleList_) {
       p.lock()->Draw();
    }

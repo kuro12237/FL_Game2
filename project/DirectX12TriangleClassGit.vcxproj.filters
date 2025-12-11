@@ -876,6 +876,12 @@
     </ClCompile>
     <ClCompile Include="Application\GameObject\GoalHouse\GoalHouse.cpp" />
     <ClCompile Include="Application\GameObject\GoalHouse\GoalHouseManager.cpp" />
+    <ClCompile Include="Application\GameObject\Package\Package.cpp" />
+    <ClCompile Include="Application\GameObject\Package\PackageManager.cpp" />
+    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.cpp" />
+    <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp" />
+    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp" />
+    <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp" />
     <ClCompile Include="Application\Package\Package.cpp" />
     <ClCompile Include="Application\Package\PackageManager.cpp" />
     <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
@@ -1498,6 +1504,13 @@
     </ClInclude>
     <ClInclude Include="Application\GameObject\GoalHouse\GoalHouse.h" />
     <ClInclude Include="Application\GameObject\GoalHouse\GoalHouseManager.h" />
+    <ClInclude Include="Application\GameObject\Package\Package.h" />
+    <ClInclude Include="Application\GameObject\Package\PackageManager.h" />
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.h" />
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.h" />
+    <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h" />
+    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h" />
+    <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h" />
     <ClInclude Include="Application\Package\Package.h" />
     <ClInclude Include="Application\Package\PackageManager.h" />
     <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />

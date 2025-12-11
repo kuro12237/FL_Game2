@@ -35,6 +35,11 @@
 #include "GameScene/GameSceneStartState.h"
 #include "GameScene/IGameSceneState.h"
 
+#include"GameObject/Package/PackageManager.h"
+#include"GameObject/GoalHouse/GoalHouseManager.h"
+
+#include"GameObject/EnemyWalk/EnemyWalkManager.h"
+
 /// <summary>
 /// ゲームプレイ
 /// </summary>
@@ -75,6 +80,7 @@ class GameScene : public IScene, public JsonComponent
    weak_ptr<PlayerManager> GetPlayerManager() { return player_; }
    bool GetIsGameEnd() { return *isGameEnd_; }
    const SceneContextData &GetSelectSceneContextData() { return selectSceneData_; }
+   weak_ptr<GoalHouseManager> GetGoalHouseManager() { return goalHouseManager_; }
 #pragma endregion
 
 #pragma region Set
@@ -129,6 +135,8 @@ class GameScene : public IScene, public JsonComponent
 
    shared_ptr<GravityManager> gravityManager_ = nullptr;
    shared_ptr<BoxCollisionManager> gameCollisionManager_ = nullptr;
+   shared_ptr<PackageManager> packageManager_;
+   shared_ptr<GoalHouseManager> goalHouseManager_;
 
    // particle
    shared_ptr<WallHitParticle> wallHitParticle_ = nullptr;
@@ -136,5 +144,5 @@ class GameScene : public IScene, public JsonComponent
 
    shared_ptr<PlayerMoveParticle> playerMoveParticle_ = nullptr;
    shared_ptr<PlayerDeadParticle> playerDeadParticle_ = nullptr;
-
+   shared_ptr<EnemyWalkManager> enemy_;
 };

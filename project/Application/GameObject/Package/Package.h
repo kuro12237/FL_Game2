@@ -3,6 +3,10 @@
 #include "Utility/ObjectId/GameObjectId.h"
 #include "Utility/ObjectManager/GameObjectManager.h"
 
+#include"STransformEular.h"
+
+#include"Input/Input.h"
+
 /// <summary>
 /// 荷物クラス
 /// </summary>
@@ -37,6 +41,19 @@ class Package : public ObjectComponent
 
 #pragma endregion
 
+   bool GetIsDead() { return isDead_; }
+
  private:
    uint32_t unitNumber_ = 0;
+
+   Math::Vector::Vector3 *playerPos_ = nullptr;
+
+   Math::Vector::Vector3 *playerRotate_ = nullptr;
+   Math::Vector::Vector3 *playerVelo_ = nullptr;
+
+   bool isPlayerHit_ = false;
+
+   bool isWarp_ = false;
+
+   bool isDead_ = false;
 };
