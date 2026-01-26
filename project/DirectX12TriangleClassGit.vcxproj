@@ -88,6 +88,8 @@
     <ClCompile Include="Application\GameObject\SelectStageNumber\StageNumber.cpp" />
     <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
     <ClCompile Include="Application\GameObject\StageManager\StageManager.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TPlayer\TPlayerObjComp.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TStatic\TStaticObjComp.cpp" />
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.cpp" />
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneJoyStick.cpp" />
     <ClCompile Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneTitleText.cpp" />
@@ -275,6 +277,9 @@
     <ClInclude Include="Application\GameObject\SceneContextData\SceneContextData.h" />
     <ClInclude Include="Application\GameObject\SelectStageNumber\StageNumber.h" />
     <ClInclude Include="Application\GameObject\StageManager\StageManager.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TPlayer\TPlayerObjComp.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TStatic\TStaticObjComp.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TVehicle\TVehicleObjCompBase.h" />
     <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneClearTextUi.h" />
     <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneJoyStick.h" />
     <ClInclude Include="Application\GameObject\UI\ClearSceneUI\BottonsActions\ClearSceneTitleText.h" />

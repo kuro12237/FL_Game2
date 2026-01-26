@@ -882,9 +882,9 @@
     <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp" />
-    <ClCompile Include="Application\Package\Package.cpp" />
-    <ClCompile Include="Application\Package\PackageManager.cpp" />
     <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TStatic\TStaticObjComp.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TPlayer\TPlayerObjComp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1511,9 +1511,10 @@
     <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h" />
-    <ClInclude Include="Application\Package\Package.h" />
-    <ClInclude Include="Application\Package\PackageManager.h" />
     <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TStatic\TStaticObjComp.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TVehicle\TVehicleObjCompBase.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TPlayer\TPlayerObjComp.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">
