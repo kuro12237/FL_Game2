@@ -7,7 +7,7 @@ namespace Engine::Manager
 	using namespace Engine::Camera;
 
 	/// <summary>
-	/// ƒJƒƒ‰ŠÇ—ƒNƒ‰ƒXƒJƒƒ‰‚ğ‚±‚ÌƒNƒ‰ƒX‚Éİ’è‚·‚é
+	/// ã‚«ãƒ¡ãƒ©ç®¡ç†ã‚¯ãƒ©ã‚¹ã‚«ãƒ¡ãƒ©ã‚’ã“ã®ã‚¯ãƒ©ã‚¹ã«è¨­å®šã™ã‚‹
 	/// </summary>
 	class CameraManager
 	{
@@ -16,34 +16,36 @@ namespace Engine::Manager
 		static CameraManager* GetInstance();
 
 		/// <summary>
-		/// ‰Šú‰»
+		/// åˆæœŸåŒ–
 		/// </summary>
 		void Initialize();
 
 		/// <summary>
-		/// XV
+		/// æ›´æ–°
 		/// </summary>
 		void Update();
 
 	
 		/// <summary>
-		/// ƒJƒƒ‰‚ğƒZƒbƒg
+		/// ã‚«ãƒ¡ãƒ©ã‚’ã‚»ãƒƒãƒˆ
 		/// </summary>
 		/// <param name="camera"></param>
 		void ResetCamera(const CameraData& camera);
 
 #pragma region Get
 		const CameraData* GetCameraData() { return cameraData_; }
+
+		bool HasActiveCamera() const { return cameraData_ && cameraData_->psBuffer_ && cameraData_->buffer_; }
 #pragma endregion
 
 		/// <summary>
-		/// g—p‚µ‚È‚¢
+		/// ä½¿ç”¨ã—ãªã„
 		/// </summary>
 		/// <param name="num"></param>
 		void PsCommandCall(const uint32_t& num);
 
 		/// <summary>
-		/// g—p‚µ‚È‚¢
+		/// ä½¿ç”¨ã—ãªã„
 		/// </summary>
 		/// <param name="num"></param>
 		void VsCommandCall(const uint32_t& num);
