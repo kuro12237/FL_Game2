@@ -6,8 +6,8 @@ using namespace Engine::Base::Win;
 TitleScene::TitleScene()
 {
    WinApp::GetInstance()->SetTiTleName(L"FL_Offside");
-
-   camera_ = make_unique<TitleCamera>();
+   toMgr_ = make_unique<TitleObjectManager>();
+   tsMgr_ = make_unique<TitleSpriteManager>();
 }
 
 void TitleScene::Initialize([[maybe_unused]] GameManager *state)
@@ -24,18 +24,27 @@ void TitleScene::Initialize([[maybe_unused]] GameManager *state)
    gameObjectManager_->CameraReset();
    gameObjectManager_->Update();
 
-   // カメラの初期化
-   camera_->Initialize();
+   toMgr_->Init();
+   tsMgr_->Init();
 }
 
 void TitleScene::Update([[maybe_unused]] GameManager *Scene)
 {
-   // カメラの更新
-   camera_->Update();
+   toMgr_->Update();
+   tsMgr_->Update();
 }
 
 void TitleScene::ImGuiUpdate() {}
 
-void TitleScene::PostProcessDraw() {}
+void TitleScene::PostProcessDraw() 
+{
+   // エンジンのマネージャーに、保持している全オブジェクトを描画させる
+   if (gameObjectManager_) {
+      // もしインスタンス描画（大量のRoadなど）を使っているならこれも
+      gameObjectManager_->InstancingDraw();
+      // 通常の不透明オブジェクトなどの描画
+      gameObjectManager_->NormalDraw();
+   }
+}
 
 void TitleScene::Flont2dSpriteDraw() {}

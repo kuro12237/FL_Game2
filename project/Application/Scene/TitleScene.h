@@ -3,6 +3,8 @@
 #include <memory>
 
 #include "GameObject/TitleCamera/TitleCamera.h"
+#include "GameObject/TitleObj/TitleObjectManager.h"
+#include "GameObject/TitleSpr/TitleSpriteManager.h"
 
 class TitleScene : public IScene
 {
@@ -17,5 +19,6 @@ class TitleScene : public IScene
    void Flont2dSpriteDraw() override;
 
  private:
-   shared_ptr<TitleCamera> camera_ = nullptr;
+   unique_ptr<TitleObjectManager> toMgr_;
+   unique_ptr<TitleSpriteManager> tsMgr_;
 };
