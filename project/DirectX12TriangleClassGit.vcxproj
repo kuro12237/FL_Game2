@@ -54,6 +54,7 @@
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp" />
+    <ClCompile Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.cpp" />
     <ClCompile Include="Application\GameObject\GameSceneAnimation\GameOverAnimation\EndAnimation.cpp" />
     <ClCompile Include="Application\GameObject\GameCollider\BoxCollisionManager.cpp" />
     <ClCompile Include="Application\GameObject\GameCollider\Collider.cpp" />
@@ -90,6 +91,7 @@
     <ClCompile Include="Application\GameObject\StageManager\StageManager.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TCamera\TO_Camera.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TitleObjectManager.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TLight\TO_Light.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TO_Base.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TPlayer\TO_Player.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TStatic\TO_StaticObj.cpp" />
@@ -242,6 +244,7 @@
     <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateDead.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h" />
+    <ClInclude Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.h" />
     <ClInclude Include="Application\GameObject\GameSceneAnimation\GameOverAnimation\EndAnimation.h" />
     <ClInclude Include="Application\GameObject\GameSceneAnimation\IGameSceneAnimation.h" />
     <ClInclude Include="Application\GameObject\GameCollider\BoxCollisionManager.h" />
@@ -284,6 +287,7 @@
     <ClInclude Include="Application\GameObject\StageManager\StageManager.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TCamera\TO_Camera.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TitleObjectManager.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TLight\TO_Light.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TO_Base.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TPlayer\TO_Player.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TStatic\TO_StaticObj.h" />

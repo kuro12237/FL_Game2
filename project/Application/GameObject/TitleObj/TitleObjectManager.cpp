@@ -54,6 +54,13 @@ void TitleObjectManager::Update()
    }
 }
 
+void TitleObjectManager::ImGuiUpdate()
+{
+   if (camera_) {
+      camera_->ImGuiUpdate();
+   }
+}
+
 void TitleObjectManager::Clear()
 {
    camera_.reset();

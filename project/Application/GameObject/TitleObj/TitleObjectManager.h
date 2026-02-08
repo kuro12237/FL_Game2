@@ -17,6 +17,7 @@ class TitleObjectManager
 
    void Init();
    void Update();
+   void ImGuiUpdate();
    void Clear();
 
  private:

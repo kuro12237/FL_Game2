@@ -25,5 +25,4 @@ void LightComponent::CreateLightData()
 	pointLight_.intencity = this->GetJsonItem<float>("intencity");
 	pointLight_.radious = this->GetJsonItem<float>("radious");
 	pointLight_.color = this->GetJsonItem<Math::Vector::Vector4>("color");
-
 }

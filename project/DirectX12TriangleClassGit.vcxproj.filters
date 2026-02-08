@@ -890,6 +890,8 @@
     <ClCompile Include="Application\GameObject\TitleObj\TO_Base.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TitleObjectManager.cpp" />
     <ClCompile Include="Application\GameObject\TitleSpr\TitleSpriteManager.cpp" />
+    <ClCompile Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TLight\TO_Light.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1524,6 +1526,8 @@
     <ClInclude Include="Application\GameObject\TitleObj\TO_Base.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TitleObjectManager.h" />
     <ClInclude Include="Application\GameObject\TitleSpr\TitleSpriteManager.h" />
+    <ClInclude Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TLight\TO_Light.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">
