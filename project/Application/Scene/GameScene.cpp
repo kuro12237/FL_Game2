@@ -80,6 +80,10 @@ void GameScene::Initialize([[maybe_unused]] GameManager *state)
       light.lock()->Initialize();
    }
 
+   // ゲームの操作UI
+   operationUI_ = std::make_unique<GamePlayOperationUIManager>();
+   operationUI_->Init();
+
    gameCollisionManager_ = make_unique<BoxCollisionManager>();
 
    // ゲーム終了のつなぐ
@@ -116,6 +120,10 @@ void GameScene::Update([[maybe_unused]] GameManager *Scene)
 
    this->ListUpdate();
 
+    // Operation UI
+   if (operationUI_) {
+      operationUI_->Update();
+   }
 
    Gravitys();
    Collision();
@@ -150,6 +158,10 @@ void GameScene::PostProcessDraw()
 
 void GameScene::Flont2dSpriteDraw()
 {
+   // Operation UI
+   if (operationUI_) {
+      operationUI_->Draw();
+   }
 
    if (state_) {
       state_->Draw2d();

@@ -8,6 +8,8 @@
 #include "GameObject/TitleObj/TitleObjectManager.h"
 #include "GameObject/TitleSpr/TitleSpriteManager.h"
 
+#include "GameObject/GameOpeSpr/GamePlayOperationUIManager.h"
+
 class TitleScene : public IScene
 {
  public:
