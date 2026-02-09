@@ -1,0 +1,4016 @@
+{
+    "name": "scene",
+    "objects": [
+        {
+            "type": "CAMERA",
+            "name": "PlayerCamera",
+            "transform": {
+                "translate": [
+                    0.0,
+                    -11.929999351501465,
+                    0.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "CAMERA",
+            "name": "StartCamera",
+            "paramFileNames": {
+                "File 0": "stage_1_0"
+            },
+            "transform": {
+                "translate": [
+                    0.0,
+                    -14.929546356201172,
+                    0.0
+                ],
+                "rotate": [
+                    90.00001525878906,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "SkyBox",
+            "particle_group_name": "",
+            "texture_name": "",
+            "param_jsonfilepath": "",
+            "file_name": "SkyBox",
+            "Directory_name": "Resources/Models/SkyBox",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -0.1894582062959671,
+                    0.0,
+                    95.68687438964844
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    100.0,
+                    100.0,
+                    100.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "TruckWheel",
+            "file_name": "TruckWheel",
+            "Directory_name": "Resources/Models/TruckWheel",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -34.39564895629883,
+                    -1.596731185913086,
+                    0.8582156300544739
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "TruckBody",
+            "file_name": "TruckBody",
+            "Directory_name": "Resources/Models/TruckBody",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.093650817871094,
+                    0.0,
+                    0.4001238942146301
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            },
+            "collider": {
+                "type": "Box",
+                "center": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "size": [
+                    2.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "TruckWheel.001",
+            "file_name": "TruckWheel",
+            "Directory_name": "Resources/Models/TruckWheel",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -40.12777328491211,
+                    -1.596731185913086,
+                    0.8582156300544739
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "TruckWheel.002",
+            "file_name": "TruckWheel",
+            "Directory_name": "Resources/Models/TruckWheel",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -40.12777328491211,
+                    1.343069314956665,
+                    0.8582156300544739
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "TruckWheel.003",
+            "file_name": "TruckWheel",
+            "Directory_name": "Resources/Models/TruckWheel",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -34.39564895629883,
+                    1.621199369430542,
+                    0.8582156300544739
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "PlayerBody",
+            "file_name": "PlayerBody",
+            "Directory_name": "Resources/Models/PlayerBody",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.348209381103516,
+                    0.0,
+                    1.1388545036315918
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "PlayerFace",
+            "file_name": "PlayerFace",
+            "Directory_name": "Resources/Models/PlayerFace",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.07622528076172,
+                    0.0,
+                    0.8971537947654724
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "PlayerHat",
+            "file_name": "PlayerHat",
+            "Directory_name": "Resources/Models/PlayerHat",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -48.667415618896484,
+                    0.0,
+                    0.959222674369812
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -97.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.001",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -85.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.002",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -91.0,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.003",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -73.1001205444336,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.004",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -67.1001205444336,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.005",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -79.1001205444336,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.006",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -61.303558349609375,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.007",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.303558349609375,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.008",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -55.303558349609375,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.009",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.463035583496094,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.010",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -31.46303367614746,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.011",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -43.463035583496094,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.012",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -19.69171905517578,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.013",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -13.691719055175781,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.014",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -25.69171905517578,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.015",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -7.729339599609375,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.016",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    4.270660400390625,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.017",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -1.729339361190796,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.018",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    34.17972183227539,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.019",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    40.17972183227539,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.020",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    28.179725646972656,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.021",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    10.217345237731934,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.022",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    22.21734619140625,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.023",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    16.21734619140625,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.024",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    88.01992797851562,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.025",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    94.01992797851562,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.026",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    82.01992797851562,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.027",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    99.98230743408203,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.028",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    52.110862731933594,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.029",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    58.110862731933594,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.030",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    70.0732421875,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.031",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    76.0732421875,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.032",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    64.0732421875,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.033",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    46.110862731933594,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.034",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    58.110862731933594,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.035",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    52.110862731933594,
+                    0.0,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.036",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    46.110862731933594,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.037",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    64.0732421875,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.038",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    76.0732421875,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.039",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    70.0732421875,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.040",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    99.98230743408203,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.041",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    82.01992797851562,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.042",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    94.01992797851562,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.043",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    88.01992797851562,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.044",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    16.21734619140625,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.045",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    22.21734619140625,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.046",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    10.217345237731934,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.047",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    28.179725646972656,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.048",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    40.17972183227539,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.049",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    34.17972183227539,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.050",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -1.729339361190796,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.051",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    4.270660400390625,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.052",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -7.729339599609375,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.053",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -25.69171905517578,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.054",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -13.691719055175781,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.055",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -19.69171905517578,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.056",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -43.463035583496094,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.057",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -31.46303367614746,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.058",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.463035583496094,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.059",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -55.303558349609375,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.060",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.303558349609375,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.061",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -61.303558349609375,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.062",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -79.1001205444336,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.063",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -67.1001205444336,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.064",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -73.1001205444336,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.065",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -91.0,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.066",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -85.0,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.067",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -97.0,
+                    6.06323766708374,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.068",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    52.110862731933594,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.069",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    58.110862731933594,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.070",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    46.110862731933594,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.071",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    64.0732421875,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.072",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    76.0732421875,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.073",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    70.0732421875,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.074",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    99.98230743408203,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.075",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    82.01992797851562,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.076",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    94.01992797851562,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.077",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    88.01992797851562,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.078",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    16.21734619140625,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.079",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    22.21734619140625,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.080",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    10.217345237731934,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.081",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    28.179725646972656,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.082",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    40.17972183227539,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.083",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    34.17972183227539,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.084",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -1.729339361190796,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.085",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    4.270660400390625,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.086",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -7.729339599609375,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.087",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -25.69171905517578,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.088",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -13.691719055175781,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.089",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -19.69171905517578,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.090",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -43.463035583496094,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.091",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -31.46303367614746,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.092",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.463035583496094,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.093",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -55.303558349609375,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.094",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.303558349609375,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.095",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -61.303558349609375,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.096",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -79.1001205444336,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.097",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -67.1001205444336,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.098",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -73.1001205444336,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.099",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -91.0,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.100",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -85.0,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.101",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -97.0,
+                    -6.191312789916992,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.102",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -97.0,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.103",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -85.0,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.104",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -91.0,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.105",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -73.1001205444336,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.106",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -67.1001205444336,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.107",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -79.1001205444336,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.108",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -61.303558349609375,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.109",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -49.303558349609375,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.110",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -55.303558349609375,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.111",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.463035583496094,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.112",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -31.46303367614746,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.113",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -43.463035583496094,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.114",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -19.69171905517578,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.115",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -13.691719055175781,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.116",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -25.69171905517578,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.117",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -7.729339599609375,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.118",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    4.270660400390625,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.119",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -1.729339361190796,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.120",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    34.17972183227539,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.121",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    40.17972183227539,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.122",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    28.179725646972656,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.123",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    10.217345237731934,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.124",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    22.21734619140625,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.125",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    16.21734619140625,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.126",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    88.01992797851562,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.127",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    94.01992797851562,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.128",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    82.01992797851562,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.129",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    99.98230743408203,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.130",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    70.0732421875,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.131",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    76.0732421875,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.132",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    64.0732421875,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.133",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    46.110862731933594,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.134",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    58.110862731933594,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "Road.135",
+            "file_name": "Road",
+            "Directory_name": "Resources/Models/Road",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    52.110862731933594,
+                    12.095420837402344,
+                    0.0
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    0.0,
+                    23.26671028137207,
+                    17.785932540893555
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    4.0,
+                    4.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.001",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -19.222183227539062,
+                    23.26671028137207,
+                    16.729442596435547
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    3.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.002",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -56.18528366088867,
+                    23.26671028137207,
+                    10.755411148071289
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.003",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -37.808834075927734,
+                    23.26671028137207,
+                    10.755411148071289
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    3.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.004",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    44.68584060668945,
+                    23.26671028137207,
+                    10.755411148071289
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.005",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    63.45563507080078,
+                    23.26671028137207,
+                    10.755411148071289
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    2.0,
+                    3.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.006",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    18.436609268188477,
+                    52.36970901489258,
+                    19.702577590942383
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    3.0,
+                    3.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.007",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -32.49797058105469,
+                    44.73799514770508,
+                    28.036922454833984
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    4.0,
+                    3.0,
+                    5.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "building.008",
+            "file_name": "building",
+            "Directory_name": "Resources/Models/building",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    32.642372131347656,
+                    42.09747314453125,
+                    10.755411148071289
+                ],
+                "rotate": [
+                    0.0,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    4.0,
+                    2.0,
+                    2.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    18.403446197509766,
+                    17.74595832824707,
+                    0.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse.001",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    74.84893798828125,
+                    17.74595832824707,
+                    0.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse.002",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -63.677085876464844,
+                    67.0254135131836,
+                    0.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        },
+        {
+            "type": "MESH",
+            "name": "GoalHouse.003",
+            "file_name": "GoalHouse",
+            "Directory_name": "Resources/Models/GoalHouse",
+            "ModelFileType": "obj",
+            "DrawType": "Normal",
+            "transform": {
+                "translate": [
+                    -73.83818054199219,
+                    17.74595832824707,
+                    0.0
+                ],
+                "rotate": [
+                    90.00000762939453,
+                    -0.0,
+                    0.0
+                ],
+                "scale": [
+                    1.0,
+                    1.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

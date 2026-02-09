@@ -882,9 +882,16 @@
     <ClCompile Include="Application\GameObject\EnemyWalk\state\EnemyWalkStateMove.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalk.cpp" />
     <ClCompile Include="Application\GameObject\EnemyWalk\EnemyWalkManager.cpp" />
-    <ClCompile Include="Application\Package\Package.cpp" />
-    <ClCompile Include="Application\Package\PackageManager.cpp" />
     <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TStatic\TO_StaticObj.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TPlayer\TO_Player.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TVehicle\TO_Vehicle.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TCamera\TO_Camera.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TO_Base.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TitleObjectManager.cpp" />
+    <ClCompile Include="Application\GameObject\TitleSpr\TitleSpriteManager.cpp" />
+    <ClCompile Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.cpp" />
+    <ClCompile Include="Application\GameObject\TitleObj\TLight\TO_Light.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CLEYERA\Utility\Pch\Pch.h">
@@ -1511,9 +1518,16 @@
     <ClInclude Include="Application\GameObject\EnemyWalk\state\IEnemyWalkState.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalk.h" />
     <ClInclude Include="Application\GameObject\EnemyWalk\EnemyWalkManager.h" />
-    <ClInclude Include="Application\Package\Package.h" />
-    <ClInclude Include="Application\Package\PackageManager.h" />
     <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TStatic\TO_StaticObj.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TVehicle\TO_Vehicle.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TPlayer\TO_Player.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TCamera\TO_Camera.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TO_Base.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TitleObjectManager.h" />
+    <ClInclude Include="Application\GameObject\TitleSpr\TitleSpriteManager.h" />
+    <ClInclude Include="Application\GameObject\GamePlySpr\GamePlaySpriteManager.h" />
+    <ClInclude Include="Application\GameObject\TitleObj\TLight\TO_Light.h" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="Resources\Shader\ShapeObject3d.PS.hlsl">
