@@ -12,6 +12,11 @@ SelectScene::SelectScene()
 
 void SelectScene::Initialize(GameManager * /*state*/)
 {
+   // paramfilePath変更
+   auto globalVariables = GlobalVariables::GetInstance();
+   globalVariables->SetDirectoryFilePath("Resources/LevelData/ParamData/TitleScene/");
+   globalVariables->LoadFiles("Resources/LevelData/ParamData/TitleScene/");
+
    // title.json をそのまま使う
    std::string levelDataName = "title.json";
    auto levelData = SceneFileLoader::GetInstance()->ReLoad(levelDataName);

@@ -17,6 +17,11 @@ TitleScene::TitleScene()
 
 void TitleScene::Initialize([[maybe_unused]] GameManager *state)
 {
+   // paramfilePath変更
+   auto globalVariables = GlobalVariables::GetInstance();
+   globalVariables->SetDirectoryFilePath("Resources/LevelData/ParamData/TitleScene/");
+   globalVariables->LoadFiles("Resources/LevelData/ParamData/TitleScene/");
+
    // Titleのレベルデータの読み込み
    std::string levelDataName = "title.json";
    shared_ptr<LevelData> levelData = SceneFileLoader::GetInstance()->ReLoad(levelDataName);

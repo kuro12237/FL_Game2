@@ -118,15 +118,39 @@ void StageSelect::UpdateCursor()
 {
    const int prev = cursor_;
 
-   if (Input::PushKeyPressed(DIK_LEFT))
-      cursor_--;
-   if (Input::PushKeyPressed(DIK_RIGHT))
+   // 右入力
+   if (Input::PushKeyPressed(DIK_D) || 
+       Input::PushKeyPressed(DIK_RIGHT) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_RIGHT) || 
+       IsLJoystickRight()) {
       cursor_++;
-   if (Input::PushKeyPressed(DIK_UP))
-      cursor_ -= Cols;
-   if (Input::PushKeyPressed(DIK_DOWN))
-      cursor_ += Cols;
+   }
 
+   // 左入力
+   if (Input::PushKeyPressed(DIK_A) || 
+       Input::PushKeyPressed(DIK_LEFT) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_LEFT) || 
+       IsLJoystickLeft()) {
+      cursor_--;
+   }
+
+   // 上入力
+   if (Input::PushKeyPressed(DIK_W) || 
+       Input::PushKeyPressed(DIK_UP) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_UP) || 
+       IsLJoystickUp()) {
+      cursor_ -= Cols;
+   }
+
+   // 下入力
+   if (Input::PushKeyPressed(DIK_S) ||
+       Input::PushKeyPressed(DIK_DOWN) || 
+       Input::PushBottonPressed(XINPUT_GAMEPAD_DPAD_DOWN) ||
+       IsLJoystickDown()) {
+      cursor_ += Cols;
+   }
+
+   // 範囲制限（0〜9）
    cursor_ = std::clamp(cursor_, 0, StageCount - 1);
 
    if (cursor_ != prev) {
@@ -172,4 +196,52 @@ void StageSelect::ImGuiUpdate()
    ImGui::Text("StageSelect");
    ImGui::Text("Selected Stage : %d", selectedStage_);
    ImGui::Text("Cursor Index   : %d", cursor_);
+}
+
+bool StageSelect::IsLJoystickRight()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isRight = (Ljoy.x > joystickThreshold_);
+
+   bool triggered = (!prevRight_ && isRight);
+
+   prevRight_ = isRight;
+
+   return triggered;
+}
+
+bool StageSelect::IsLJoystickLeft()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isLeft = (Ljoy.x < -joystickThreshold_);
+
+   bool triggered = (!prevLeft_ && isLeft);
+
+   prevLeft_ = isLeft;
+
+   return triggered;
+}
+
+bool StageSelect::IsLJoystickUp()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isUp = (Ljoy.y > joystickThreshold_);
+
+   bool triggered = (!prevUp_ && isUp);
+
+   prevUp_ = isUp;
+
+   return triggered;
+}
+
+bool StageSelect::IsLJoystickDown()
+{
+   Math::Vector::Vector2 Ljoy = Engine::Input::GetInstance()->GetJoyLStickPos();
+   bool isDown = (Ljoy.y < -joystickThreshold_);
+
+   bool triggered = (!prevDown_ && isDown);
+
+   prevDown_ = isDown;
+
+   return triggered;
 }
