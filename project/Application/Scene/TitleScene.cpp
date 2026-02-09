@@ -44,34 +44,28 @@ void TitleScene::Initialize([[maybe_unused]] GameManager *state)
 
 void TitleScene::Update([[maybe_unused]] GameManager *Scene)
 {
-   // ライト更新
    light_->Update();
-
-   // オブジェクト更新
    toMgr_->Update();
    tsMgr_->Update();
 
-   // =========================
-   // 入力（決定）
-   // =========================
-   if (Input::PushKeyPressed(DIK_SPACE) || 
-       Input::PushBottonPressed(XINPUT_GAMEPAD_A)) {
+   // 毎フレーム更新
+   ChangeSceneAnimation::GetInstance()->Update();
+
+   // 入力
+   if (Input::PushKeyPressed(DIK_SPACE) || Input::PushBottonPressed(XINPUT_GAMEPAD_A)) {
+
       if (!isPushed_) {
-         // シーン遷移開始
-         //ChangeSceneAnimation::GetInstance()->ChangeStart();
+         // シーン切替開始
+         ChangeSceneAnimation::GetInstance()->ChangeStart();
          isPushed_ = true;
       }
    }
 
-   // =========================
-   // シーン遷移完了チェック
-   // =========================
-   /*ChangeSceneAnimation::GetInstance()->Update();
-
+   // シーン遷移判定
    if (ChangeSceneAnimation::GetInstance()->GetIsChangeSceneFlag()) {
       Scene->ChangeScene(std::make_unique<SelectScene>());
       return;
-   }*/
+   }
 }
 
 void TitleScene::ImGuiUpdate()
@@ -122,8 +116,8 @@ void TitleScene::PostProcessDraw()
 
 void TitleScene::Flont2dSpriteDraw()
 {
-    //tsMgr_->Draw();
+    tsMgr_->Draw();
 
-     // シーン遷移演出
-    //ChangeSceneAnimation::GetInstance()->Draw();
+    // シーン遷移演出
+    ChangeSceneAnimation::GetInstance()->Draw();
 }

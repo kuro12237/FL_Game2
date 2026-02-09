@@ -2,6 +2,7 @@
 #include <memory>
 #include "Cleyera.h"
 #include "GameManager.h"
+#include "ChangeSceneAnimation/ChangeSceneAnimation.h"
 #include "GameObject/TitleCamera/TitleCamera.h"
 #include "GameObject/TitleObj/TLight/TO_Light.h"
 #include "GameObject/TitleObj/TitleObjectManager.h"
