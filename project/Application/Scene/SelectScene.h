@@ -1,83 +1,47 @@
 #pragma once
+#include <memory>
 
 #include "Cleyera.h"
-
-#include "GameFileLoader/SceneFileLoder/SceneFileLoader.h"
-
-#include "GameObject/GameCollider/BoxCollisionManager.h"
-#include "GameObject/GravityManager/GravityManager.h"
+#include "GameManager.h"
 
 #include "ChangeSceneAnimation/ChangeSceneAnimation.h"
-#include "GameObject/Block/BlockManager.h"
-#include "GameObject/Player/PlayerManager.h"
-
-#include "GameObject/StageManager/StageManager.h"
-
-
-#include "GameScene.h"
-
-#include "GameObject/SceneContextData/SceneContextData.h"
-#include "GameObject/UI/SelectSceneUI/SelectSceneUI.h"
-
-#include "GameObject/SelectStageNumber/StageNumber.h"
 
 #include "GameObject/TitleCamera/TitleCamera.h"
+#include "GameObject/TitleObj/TLight/TO_Light.h"
+#include "GameObject/TitleObj/TitleObjectManager.h"
 
-#include "GameObject/Select/StageSelectUI.h"
+#include "GameObject/StageSelect/StageSelect.h"
+
+#include "GameObject/SceneContextData/SceneContextData.h"
+#include "ISceneContext.h"
+
+#include "Scene/GameScene.h"
 
 /// <summary>
-/// MapSelect
+/// Stage Select Scene
 /// </summary>
-class SelectScene : public IScene, JsonComponent
+class SelectScene : public IScene
 {
  public:
-   SelectScene() {};
-   ~SelectScene() {};
+   SelectScene();
+   ~SelectScene() = default;
 
    void Initialize(GameManager *state) override;
-
-   void Update([[maybe_unused]] GameManager *Scene) override;
-
+   void Update(GameManager *Scene) override;
    void ImGuiUpdate() override;
-
-   /// <summary>
-   /// ポストエフェクトをかける
-   /// </summary>
    void PostProcessDraw() override;
-
-   /// <summary>
-   /// 前景2d
-   /// </summary>
    void Flont2dSpriteDraw() override;
 
  private:
-   void Collision();
+   // Title と同じ構成
+   std::unique_ptr<TO_Light> light_;
+   std::unique_ptr<TitleObjectManager> toMgr_;
 
-   void Gravitys();
-
-   bool CheckLoadScene();
-
-   SceneContextData contextData_;
-   unique_ptr<ISceneContext> context_ = nullptr;
-   GameObjectManager *gameObjectManager_;
-   string inputLevelDataFileName_ = "SelectSceneData.json";
-
-   Engine::Light::PointLight_param light_{};
-
-   unique_ptr<GravityManager> gravityManager_ = nullptr;
-   unique_ptr<BoxCollisionManager> gameCollisionManager_ = nullptr;
-  
-   bool *isGameEnd_ = nullptr;
-   bool isGameStart_ = false;
-
-   shared_ptr<TitleCamera> camera_ = nullptr;
-
-   
-   unique_ptr<StageSelectUI> selectUI_;
+   // Stage Select
+   std::unique_ptr<StageSelect> select_;
    bool isSelected_ = false;
 
-   string fileName_ = "";
-
-   uint32_t texHandle_ = 0;
-   Math::Vector::Vector2 ankerPos_ = {};
+   // Scene transition
+   std::unique_ptr<ISceneContext> context_;
+   SceneContextData contextData_;
 };

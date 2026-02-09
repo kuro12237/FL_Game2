@@ -87,8 +87,8 @@
     <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartAnimation.cpp" />
     <ClCompile Include="Application\GameObject\GameSceneAnimation\StartAnimation\StartCameraMotion\StartCameraMotion.cpp" />
     <ClCompile Include="Application\GameObject\SelectStageNumber\StageNumber.cpp" />
-    <ClCompile Include="Application\GameObject\Select\StageSelectUI.cpp" />
     <ClCompile Include="Application\GameObject\StageManager\StageManager.cpp" />
+    <ClCompile Include="Application\GameObject\StageSelect\StageSelect.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TCamera\TO_Camera.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TitleObjectManager.cpp" />
     <ClCompile Include="Application\GameObject\TitleObj\TLight\TO_Light.cpp" />
@@ -110,7 +110,6 @@
     <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneBottonRB.cpp" />
     <ClCompile Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneJoyStick.cpp" />
     <ClCompile Include="Application\GameObject\UI\ISceneUI.cpp" />
-    <ClCompile Include="Application\GameObject\UI\SelectSceneUI\SelectSceneUI.cpp" />
     <ClCompile Include="Application\GameObject\UI\TitleSceneUI\TitleSceneUI.cpp" />
     <ClCompile Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.cpp" />
     <ClCompile Include="Application\GameObject\Warp\Warp.cpp" />
@@ -266,7 +265,6 @@
     <ClInclude Include="Application\GameObject\ObjectInterface\ParticleComponent.h" />
     <ClInclude Include="Application\GameObject\ObjectInterface\ITransform.h" />
     <ClInclude Include="Application\GameObject\Package\Package.h" />
-    <ClInclude Include="Application\GameObject\Select\StageSelectUI.h" />
     <ClInclude Include="Application\GameObject\Particles\Explosion\ExplosionParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\TitleNameParticle\TitleNameParticle.h" />
     <ClInclude Include="Application\GameObject\Particles\WallHitParticle.h" />
@@ -285,6 +283,7 @@
     <ClInclude Include="Application\GameObject\SceneContextData\SceneContextData.h" />
     <ClInclude Include="Application\GameObject\SelectStageNumber\StageNumber.h" />
     <ClInclude Include="Application\GameObject\StageManager\StageManager.h" />
+    <ClInclude Include="Application\GameObject\StageSelect\StageSelect.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TCamera\TO_Camera.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TitleObjectManager.h" />
     <ClInclude Include="Application\GameObject\TitleObj\TLight\TO_Light.h" />
@@ -307,7 +306,6 @@
     <ClInclude Include="Application\GameObject\UI\GameSceneUI\GameSceneUIData.h" />
     <ClInclude Include="Application\GameObject\UI\ISceneUI.h" />
     <ClInclude Include="Application\GameObject\UI\PlayerControlUI\BottonsActions\GameSceneJoyStick.h" />
-    <ClInclude Include="Application\GameObject\UI\SelectSceneUI\SelectSceneUI.h" />
     <ClInclude Include="Application\GameObject\UI\TitleSceneUI\TitleSceneUI.h" />
     <ClInclude Include="Application\GameObject\UI\UIActiveParticle\UIActiveParticle.h" />
     <ClInclude Include="Application\GameObject\Warp\Warp.h" />

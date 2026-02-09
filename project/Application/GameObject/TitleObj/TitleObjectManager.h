@@ -20,6 +20,8 @@ class TitleObjectManager
    void ImGuiUpdate();
    void Clear();
 
+   TO_Camera *GetCamera() const { return camera_.get(); }
+
  private:
    std::unique_ptr<TO_Camera> camera_;
    std::vector<std::unique_ptr<TO_Base>> updatableObjects_;
