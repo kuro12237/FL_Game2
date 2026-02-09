@@ -54,7 +54,7 @@ void TitleSpriteManager::Init()
 
    {
       TSpriteItem pushA;
-      const Math::Vector::Vector2 size = {1280.0f / 4.0f, 720.0f / 4.0f};
+      const Math::Vector::Vector2 size = {1000.0f * 0.4f, 400.0f * 0.4f};
 
       uint32_t handle = TextureManager::LoadPngTexture("TitleSpr/PushATex.png");
 

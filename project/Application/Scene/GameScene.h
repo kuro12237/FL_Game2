@@ -17,6 +17,7 @@
 #include "GameObject/Particles/CharacterMoveParticle.h"
 
 #include "GameObject/UI/GameSceneUI/GameSceneUI.h"
+#include "GameObject/GameOpeSpr/GamePlayOperationUIManager.h"
 
 #include "GameFileLoader/RailLoader/RailLoader.h"
 
@@ -145,4 +146,6 @@ class GameScene : public IScene, public JsonComponent
    shared_ptr<PlayerMoveParticle> playerMoveParticle_ = nullptr;
    shared_ptr<PlayerDeadParticle> playerDeadParticle_ = nullptr;
    shared_ptr<EnemyWalkManager> enemy_;
+
+   std::unique_ptr<GamePlayOperationUIManager> operationUI_;
 };
