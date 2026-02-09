@@ -34,4 +34,10 @@ class TO_Base : public ObjectComponent
 
  protected:
    std::string targetName_;
+
+   const float kSpeed = 0.5f;
+   const float kLimitX = 100.0f;
+
+   const float kBobAmp = 0.02f;
+   const float kBobSpeed = 6.0f;
 };

@@ -13,5 +13,7 @@ class TO_Vehicle : public TO_Base
    void Update() override;
 
  protected:
-   Math::Vector::Vector3 velocity_{};
+   float velocity_ = 0.0f;
+   float time_ = 0.0f;
+   float baseY_ = 0.0f;
 };

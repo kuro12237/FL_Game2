@@ -19,7 +19,6 @@ void TitleScene::Initialize([[maybe_unused]] GameManager *state)
 {
    // Titleのレベルデータの読み込み
    std::string levelDataName = "title.json";
-   //std::string levelDataName = "title.json";
    shared_ptr<LevelData> levelData = SceneFileLoader::GetInstance()->ReLoad(levelDataName);
 
    // システムの初期設定
