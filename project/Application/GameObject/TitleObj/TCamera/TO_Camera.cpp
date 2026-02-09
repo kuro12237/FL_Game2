@@ -53,3 +53,32 @@ void TO_Camera::ImGuiUpdate()
       ImGui::TreePop();
    }
 }
+
+void TO_Camera::SetTranslate(const Math::Vector::Vector3 &t)
+{
+   auto &cameraData = gameObjectManager_->GetCameraData(targetName_);
+   if (!cameraData)
+      return;
+
+   cameraData->GetWorldTransform().transform.translate = t;
+}
+
+void TO_Camera::SetRotate(const Math::Vector::Vector3 &r)
+{
+   auto &cameraData = gameObjectManager_->GetCameraData(targetName_);
+   if (!cameraData)
+      return;
+
+   cameraData->GetWorldTransform().transform.rotate = r;
+}
+
+void TO_Camera::SetTransform(const Math::Vector::Vector3 &t, const Math::Vector::Vector3 &r)
+{
+   auto &cameraData = gameObjectManager_->GetCameraData(targetName_);
+   if (!cameraData)
+      return;
+
+   auto &tr = cameraData->GetWorldTransform().transform;
+   tr.translate = t;
+   tr.rotate = r;
+}
